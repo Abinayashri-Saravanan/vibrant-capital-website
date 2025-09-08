@@ -258,32 +258,31 @@ const Sectors = () => {
               </CardContent>
             </Card>
 
-            {/* Energy & Utilities */}
-            <Card className="card-premium card-glow">
+            {/* Transportation & Logistics */}
+            <Card className="card-premium card-glow mb-16">
               <CardHeader>
-                <CardTitle className="text-3xl text-gradient">Energy & Utilities</CardTitle>
+                <CardTitle className="text-3xl text-gradient">Transportation & Logistics</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid lg:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 text-primary">Challenges</h3>
                     <p className="text-muted-foreground leading-relaxed mb-4">
-                      Energy companies face a dual imperative: operational reliability and sustainability. 
-                      Equipment failures can cost millions and threaten safety, while regulators demand 
-                      accurate emissions tracking and carbon reporting.
+                      The global supply chain is more complex than ever. Companies struggle with volatile demand, 
+                      geopolitical shocks, and disruptions from weather or pandemics. AI adoption has been limited because:
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start">
                         <span className="text-primary mr-2">•</span>
-                        SCADA and OT systems are old and often air-gapped
+                        Logistics networks span multiple parties with little data standardization
                       </li>
                       <li className="flex items-start">
                         <span className="text-primary mr-2">•</span>
-                        Data is noisy, high-volume, and poorly structured
+                        Predictive models struggle with "black swan" events
                       </li>
                       <li className="flex items-start">
                         <span className="text-primary mr-2">•</span>
-                        Sustainability reporting requirements are complex
+                        Many companies rely on static, manual planning tools
                       </li>
                     </ul>
                   </div>
@@ -291,24 +290,139 @@ const Sectors = () => {
                     <h3 className="text-xl font-semibold mb-4 text-primary">Applied AI Solutions</h3>
                     <div className="space-y-3">
                       <div className="bg-accent/20 border border-accent/30 rounded-lg p-3">
-                        <h4 className="font-semibold mb-1">Predictive Maintenance</h4>
-                        <p className="text-sm text-muted-foreground">AI analyzing sensor data to detect anomalies</p>
+                        <h4 className="font-semibold mb-1">Dynamic Routing & Network Optimization</h4>
+                        <p className="text-sm text-muted-foreground">Real-time AI optimization of shipping and delivery routes</p>
                       </div>
                       <div className="bg-accent/20 border border-accent/30 rounded-lg p-3">
-                        <h4 className="font-semibold mb-1">Emissions Monitoring</h4>
-                        <p className="text-sm text-muted-foreground">Automated tracking and reporting of carbon data</p>
+                        <h4 className="font-semibold mb-1">Exception Management</h4>
+                        <p className="text-sm text-muted-foreground">AI copilots detect delays and recommend proactive re-routing</p>
                       </div>
                       <div className="bg-accent/20 border border-accent/30 rounded-lg p-3">
-                        <h4 className="font-semibold mb-1">Workforce Optimization</h4>
-                        <p className="text-sm text-muted-foreground">AI scheduling and routing for maintenance crews</p>
+                        <h4 className="font-semibold mb-1">Dock & Yard Orchestration</h4>
+                        <p className="text-sm text-muted-foreground">AI-driven scheduling to reduce bottlenecks</p>
                       </div>
                     </div>
                     <div className="mt-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
                       <h4 className="font-semibold text-primary mb-2">Projected Outcomes</h4>
                       <ul className="text-sm space-y-1">
-                        <li>• 20–40% reduction in unplanned downtime</li>
-                        <li>• Accurate, real-time carbon emissions reporting</li>
-                        <li>• Lower O&M costs with optimized fieldwork</li>
+                        <li>• Delivery reliability improved by 20–30%</li>
+                        <li>• Logistics costs reduced by 10–15%</li>
+                        <li>• Faster recovery from disruptions</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Manufacturing */}
+            <Card className="card-premium card-glow mb-16">
+              <CardHeader>
+                <CardTitle className="text-3xl text-gradient">Manufacturing</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid lg:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4 text-primary">Challenges</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Manufacturers face global competition, labor shortages, and sustainability pressures. 
+                      Downtime is costly, and waste impacts both margins and ESG metrics. AI adoption has been 
+                      difficult because:
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">•</span>
+                        Production systems (MES, ERP, OT) are fragmented and not built for AI
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">•</span>
+                        Data quality on factory floors is inconsistent
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">•</span>
+                        Workforce resistance slows adoption of automation
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4 text-primary">Applied AI Solutions</h3>
+                    <div className="space-y-3">
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-3">
+                        <h4 className="font-semibold mb-1">Predictive Yield Optimization</h4>
+                        <p className="text-sm text-muted-foreground">AI models that anticipate defects before they occur</p>
+                      </div>
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-3">
+                        <h4 className="font-semibold mb-1">Quality Analytics</h4>
+                        <p className="text-sm text-muted-foreground">Real-time image and sensor analysis to catch errors</p>
+                      </div>
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-3">
+                        <h4 className="font-semibold mb-1">Autonomous Line Tuning</h4>
+                        <p className="text-sm text-muted-foreground">AI agents that adjust machine parameters dynamically</p>
+                      </div>
+                    </div>
+                    <div className="mt-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
+                      <h4 className="font-semibold text-primary mb-2">Projected Outcomes</h4>
+                      <ul className="text-sm space-y-1">
+                        <li>• Yield improvement of 5–10% with less scrap</li>
+                        <li>• Unplanned downtime reduced by 30–40%</li>
+                        <li>• Lower energy and material waste (ESG goals)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Public Sector */}
+            <Card className="card-premium card-glow">
+              <CardHeader>
+                <CardTitle className="text-3xl text-gradient">Public Sector</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid lg:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4 text-primary">Challenges</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Governments face pressure to deliver digital-first citizen services while constrained by 
+                      tight budgets, old systems, and strict compliance rules. AI adoption has been slow because:
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">•</span>
+                        Legacy infrastructure is decades old
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">•</span>
+                        Procurement and approval cycles are lengthy
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">•</span>
+                        Public trust is fragile — any AI failure risks reputational damage
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4 text-primary">Applied AI Solutions</h3>
+                    <div className="space-y-3">
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-3">
+                        <h4 className="font-semibold mb-1">Citizen Service Copilots</h4>
+                        <p className="text-sm text-muted-foreground">AI-powered assistants for queries, applications, permits</p>
+                      </div>
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-3">
+                        <h4 className="font-semibold mb-1">Case Management Automation</h4>
+                        <p className="text-sm text-muted-foreground">Automating intake, triage, and resolution for public services</p>
+                      </div>
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-3">
+                        <h4 className="font-semibold mb-1">Safety Analytics</h4>
+                        <p className="text-sm text-muted-foreground">AI-powered infrastructure and emergency response monitoring</p>
+                      </div>
+                    </div>
+                    <div className="mt-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
+                      <h4 className="font-semibold text-primary mb-2">Projected Outcomes</h4>
+                      <ul className="text-sm space-y-1">
+                        <li>• Service delivery times reduced from months to days</li>
+                        <li>• Improved citizen satisfaction and trust</li>
+                        <li>• More efficient use of taxpayer dollars</li>
                       </ul>
                     </div>
                   </div>
@@ -324,12 +438,15 @@ const Sectors = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
-              Where <span className="text-gradient">Transformation</span> Meets Reality
+              Applied AI is <span className="text-gradient">Not a Buzzword</span>
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              These sectors represent the frontier of Applied AI — where the promise of artificial intelligence 
-              meets the reality of enterprise operations. Our portfolio companies and playbooks are designed 
-              to solve the unique barriers in each industry and unlock measurable outcomes that matter to CIOs.
+            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+              Applied AI is not a buzzword in these sectors. It is a <span className="text-primary font-semibold">necessity</span>. 
+              Each of these industries faces unique challenges, but they all share one truth: without AI, they cannot meet the demands of the future.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              At Vibrant Capital, we invest in companies that bring the right solutions — tailored, compliant, 
+              and scalable — to help CIOs and their enterprises succeed in these high-stakes arenas.
             </p>
           </div>
         </div>
