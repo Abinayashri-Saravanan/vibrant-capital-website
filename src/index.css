@@ -2,93 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Premium Private Equity Design System - Vibrant Capital
-All colors MUST be HSL for proper theming.
+/* SpaceX-Inspired Design System - Vibrant Capital
+Bold, minimal, futuristic aesthetic with high contrast.
 */
 
 @layer base {
   :root {
-    /* Premium dark theme base */
-    --background: 222 23% 7%;
-    --foreground: 210 40% 98%;
+    /* SpaceX-inspired dark theme */
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
 
     /* Card and surface colors */
-    --card: 222 20% 9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222 20% 9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Brand colors - sophisticated blue palette */
-    --primary: 213 94% 68%;
-    --primary-foreground: 222 23% 7%;
-    --primary-glow: 213 94% 78%;
+    /* Brand colors - SpaceX blue palette */
+    --primary: 212 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    --primary-bright: 212 100% 60%;
 
-    --secondary: 217 19% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217 19% 15%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 213 40% 25%;
-    --accent-foreground: 213 94% 68%;
+    --accent: 212 100% 50%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 62.8% 50.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
     /* Border and input styling */
-    --border: 217 19% 20%;
-    --input: 217 19% 15%;
-    --ring: 213 94% 68%;
+    --border: 0 0% 20%;
+    --input: 0 0% 12%;
+    --ring: 212 100% 50%;
 
-    /* Premium gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(213, 94%, 68%), hsl(213, 94%, 78%));
-    --gradient-subtle: linear-gradient(180deg, hsl(222, 23%, 7%), hsl(222, 20%, 9%));
-    --gradient-section: linear-gradient(135deg, hsl(222, 20%, 9%), hsl(217, 19%, 12%));
+    /* SpaceX-inspired gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(212, 100%, 50%), hsl(212, 100%, 60%));
+    --gradient-hero: linear-gradient(180deg, hsl(0, 0%, 3%) 0%, hsl(0, 0%, 8%) 100%);
+    --gradient-section: linear-gradient(135deg, hsl(0, 0%, 5%), hsl(0, 0%, 8%));
 
-    /* Elegant shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(213, 94%, 68%, 0.3);
-    --shadow-glow: 0 0 40px hsl(213, 94%, 78%, 0.4);
-    --shadow-card: 0 4px 20px -4px hsl(222, 23%, 4%, 0.5);
+    /* Dramatic shadows */
+    --shadow-dramatic: 0 25px 50px -12px hsl(0, 0%, 0%, 0.8);
+    --shadow-glow: 0 0 50px hsl(212, 100%, 50%, 0.3);
+    --shadow-card: 0 8px 32px -8px hsl(0, 0%, 0%, 0.6);
 
     /* Animation timing */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-fast: all 0.15s ease-out;
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s ease-out;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Sidebar colors */
-    --sidebar-background: 222 20% 9%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 213 94% 68%;
-    --sidebar-primary-foreground: 222 23% 7%;
-    --sidebar-accent: 217 19% 20%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217 19% 20%;
-    --sidebar-ring: 213 94% 68%;
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 212 100% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 212 100% 50%;
   }
 
-  /* Light theme fallback (maintain some elements for compatibility) */
+  /* Light theme (minimal for compatibility) */
   .light {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 3%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 3%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 213 94% 68%;
+    --popover-foreground: 0 0% 3%;
+    --primary: 212 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 213 94% 68%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 212 100% 50%;
   }
 }
 
@@ -99,60 +99,77 @@ All colors MUST be HSL for proper theming.
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    background: var(--gradient-hero);
   }
 
   html {
     scroll-behavior: smooth;
   }
 
-  /* Custom scrollbar */
+  /* SpaceX-style scrollbar */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-muted;
+    @apply bg-transparent;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-primary/30 rounded-full;
+    @apply bg-primary/40 rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-primary/50;
+    @apply bg-primary/60;
   }
 }
 
 @layer components {
-  /* Premium button variants */
-  .btn-premium {
-    @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground font-semibold;
-    @apply hover:shadow-[0_0_30px_hsl(var(--primary-glow)/0.5)] transition-all duration-300;
+  /* SpaceX-inspired button variants */
+  .btn-spacex {
+    @apply bg-transparent border-2 border-primary text-primary font-bold uppercase tracking-wider;
+    @apply hover:bg-primary hover:text-background transition-all duration-300;
+    @apply hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)];
   }
 
-  .btn-outline-premium {
-    @apply border-2 border-primary/30 bg-transparent text-primary hover:bg-primary/10;
-    @apply hover:border-primary hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)];
+  .btn-spacex-filled {
+    @apply bg-primary text-background font-bold uppercase tracking-wider;
+    @apply hover:bg-primary-bright hover:shadow-[0_0_30px_hsl(var(--primary)/0.8)];
+    @apply transition-all duration-300;
   }
 
   /* Typography enhancements */
-  .text-gradient {
-    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+  .text-spacex-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-bright bg-clip-text text-transparent;
   }
 
-  .section-gradient {
+  .section-spacex {
     background: var(--gradient-section);
   }
 
-  /* Premium card styling */
-  .card-premium {
-    @apply bg-card/50 backdrop-blur-sm border border-border/50;
-    @apply hover:bg-card/70 hover:border-primary/20 transition-all duration-300;
+  /* SpaceX-style cards */
+  .card-spacex {
+    @apply bg-card/60 backdrop-blur-md border border-border/30;
+    @apply hover:bg-card/80 hover:border-primary/20 transition-all duration-500;
     box-shadow: var(--shadow-card);
   }
 
-  .card-glow {
-    box-shadow: var(--shadow-elegant);
-    @apply hover:shadow-[0_15px_40px_-10px_hsl(var(--primary)/0.4)] transition-all duration-500;
+  .card-spacex-glow {
+    box-shadow: var(--shadow-dramatic);
+    @apply hover:shadow-[0_30px_60px_-15px_hsl(var(--primary)/0.3)] transition-all duration-700;
+  }
+
+  /* Hero section styling */
+  .hero-spacex {
+    background: radial-gradient(circle at center, hsl(212, 100%, 50%, 0.1) 0%, transparent 70%),
+                var(--gradient-hero);
+  }
+
+  /* Grid pattern overlay */
+  .grid-pattern {
+    background-image: 
+      linear-gradient(hsl(0, 0%, 20%, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(0, 0%, 20%, 0.1) 1px, transparent 1px);
+    background-size: 100px 100px;
   }
 }

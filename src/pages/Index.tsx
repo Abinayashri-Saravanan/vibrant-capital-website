@@ -8,162 +8,178 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 section-gradient">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Powering the{" "}
-              <span className="text-gradient">Third Wave of AI</span>
+      <section className="relative min-h-screen flex items-center justify-center hero-spacex grid-pattern overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-6xl mx-auto text-center">
+            <h1 className="text-7xl md:text-8xl lg:text-9xl font-black mb-8 leading-none">
+              POWERING THE
               <br />
-              Applied AI for the Enterprise
+              <span className="text-spacex-gradient">THIRD WAVE</span>
+              <br />
+              OF AI
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              At Vibrant Capital, we believe the true test of technology is not what it promises in theory, 
-              but what it delivers in practice. We are a private equity firm founded by CIOs, for CIOs — 
-              leaders who have lived the daily pressures of running massive IT organizations and who now 
-              dedicate themselves to shaping the future of enterprise AI.
+            <p className="text-2xl md:text-3xl text-muted-foreground mb-12 font-light max-w-4xl mx-auto leading-relaxed">
+              Applied AI for the Enterprise
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-premium">
-                Our Investments
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Button size="lg" className="btn-spacex-filled px-12 py-4 text-lg">
+                EXPLORE INVESTMENTS
               </Button>
-              <Button size="lg" variant="outline" className="btn-outline-premium">
-                Investment Philosophy
+              <Button size="lg" className="btn-spacex px-12 py-4 text-lg">
+                OUR PHILOSOPHY
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Story Section */}
-      <section className="py-16 bg-card/30">
+      {/* Mission Statement */}
+      <section className="py-32 relative">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto text-center">
+            <p className="text-3xl md:text-4xl font-light leading-relaxed text-muted-foreground">
+              We are a private equity firm{" "}
+              <span className="text-primary font-medium">founded by CIOs, for CIOs</span>{" "}
+              — leaders who have lived the daily pressures of running massive IT organizations and who now 
+              dedicate themselves to shaping the future of enterprise AI.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem Statement */}
+      <section className="py-32 section-spacex">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <Card className="card-premium p-8">
-              <CardContent className="p-0">
-                <h2 className="text-2xl font-semibold mb-6 text-primary">The CIO's Dilemma</h2>
-                <p className="text-lg leading-relaxed mb-6">
-                  A few years ago, a Fortune 100 CIO sat in a boardroom with a familiar problem: 
-                  the board demanded an AI strategy. His team had run{" "}
-                  <span className="text-primary font-semibold">six pilots in the past year</span>{" "}
-                  — a chatbot here, a predictive model there — but none had scaled. Compliance flagged every rollout. 
-                  Procurement delayed contracts for months. The board grew impatient.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  That CIO's story is not unique. Across industries, technology leaders face the same dilemma:{" "}
-                  <span className="text-primary font-semibold">
-                    they know AI can transform the business, but they can't get from promise to production.
-                  </span>
-                </p>
-                <p className="text-xl font-semibold mt-6 text-gradient">
-                  This is why Vibrant Capital exists.
-                </p>
+            <Card className="card-spacex card-spacex-glow border-none">
+              <CardContent className="p-12">
+                <h2 className="text-4xl font-bold mb-8 text-center">THE CHALLENGE</h2>
+                <div className="space-y-8 text-xl leading-relaxed">
+                  <p>
+                    A Fortune 100 CIO sat in a boardroom with a familiar problem: the board demanded an AI strategy. 
+                    His team had run <span className="text-primary font-semibold">six pilots in the past year</span> 
+                    — a chatbot here, a predictive model there — but none had scaled.
+                  </p>
+                  <p>
+                    Compliance flagged every rollout. Procurement delayed contracts for months. The board grew impatient.
+                  </p>
+                  <p className="text-center text-2xl font-bold text-primary border-t border-b border-primary/20 py-8">
+                    They know AI can transform the business, but they can't get from promise to production.
+                  </p>
+                  <p className="text-center text-3xl font-black text-spacex-gradient">
+                    THIS IS WHY VIBRANT CAPITAL EXISTS.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Three Waves Section */}
-      <section className="py-16">
+      {/* Three Waves */}
+      <section className="py-32">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">
-              Why the <span className="text-gradient">Third Wave of AI</span> Matters
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-5xl md:text-6xl font-black text-center mb-20">
+              THE THREE WAVES
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="card-premium card-glow">
-                <CardContent className="p-6">
-                  <div className="text-4xl font-bold text-primary mb-4">1</div>
-                  <h3 className="text-xl font-semibold mb-3">Wave 1: Frontier Models</h3>
-                  <p className="text-muted-foreground">
-                    The pioneers built massive models that captured headlines. They demonstrated potential, 
-                    but for CIOs, they remained confined to white papers and demos — impossible to deploy at scale.
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="grid md:grid-cols-3 gap-12">
+              <div className="text-center group">
+                <div className="text-8xl font-black text-primary/20 mb-6 group-hover:text-primary/40 transition-colors duration-500">01</div>
+                <h3 className="text-2xl font-bold mb-4 uppercase tracking-wider">FRONTIER MODELS</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  The pioneers built massive models that captured headlines. They demonstrated potential, 
+                  but remained confined to white papers and demos.
+                </p>
+              </div>
               
-              <Card className="card-premium card-glow">
-                <CardContent className="p-6">
-                  <div className="text-4xl font-bold text-primary mb-4">2</div>
-                  <h3 className="text-xl font-semibold mb-3">Wave 2: Tools & Platforms</h3>
-                  <p className="text-muted-foreground">
-                    Then came the tools. APIs, SaaS platforms, and vendor demos flooded inboxes. 
-                    Pilots proliferated, but integration, security, and governance hurdles turned most into shelfware.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="text-center group">
+                <div className="text-8xl font-black text-primary/20 mb-6 group-hover:text-primary/40 transition-colors duration-500">02</div>
+                <h3 className="text-2xl font-bold mb-4 uppercase tracking-wider">TOOLS & PLATFORMS</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  APIs, SaaS platforms, and vendor demos flooded inboxes. Pilots proliferated, 
+                  but integration hurdles turned most into shelfware.
+                </p>
+              </div>
               
-              <Card className="card-premium card-glow">
-                <CardContent className="p-6">
-                  <div className="text-4xl font-bold text-primary mb-4">3</div>
-                  <h3 className="text-xl font-semibold mb-3">Wave 3: Applied AI</h3>
-                  <p className="text-muted-foreground">
-                    Today, we enter the Third Wave. This is where AI becomes{" "}
-                    <span className="text-primary font-semibold">invisible but indispensable.</span>{" "}
-                    Board-ready, compliant, and financially justifiable.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Proof Points Section */}
-      <section className="py-16 section-gradient">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-12">
-              From <span className="text-gradient">Promise to Production</span>
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">60-90</div>
-                <div className="text-sm text-muted-foreground">Days to Pilot</div>
-                <div className="text-xs text-muted-foreground">Not 12-18 months</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">30-50%</div>
-                <div className="text-sm text-muted-foreground">Efficiency Gains</div>
-                <div className="text-xs text-muted-foreground">Cycle-time reduction</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">&lt;12</div>
-                <div className="text-sm text-muted-foreground">Months ROI</div>
-                <div className="text-xs text-muted-foreground">Payback period</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <div className="text-sm text-muted-foreground">Compliant</div>
-                <div className="text-xs text-muted-foreground">SOC2, HIPAA, PCI</div>
+              <div className="text-center group">
+                <div className="text-8xl font-black text-spacex-gradient mb-6">03</div>
+                <h3 className="text-2xl font-bold mb-4 uppercase tracking-wider text-primary">APPLIED AI</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  AI becomes <span className="text-primary font-semibold">invisible but indispensible.</span>{" "}
+                  Board-ready, compliant, and financially justifiable.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sectors Preview */}
-      <section className="py-16">
+      {/* Metrics */}
+      <section className="py-32 section-spacex">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">
-              Sectors We <span className="text-gradient">Transform</span>
+            <h2 className="text-5xl font-black text-center mb-20 uppercase tracking-wider">
+              MISSION METRICS
+            </h2>
+            <div className="grid md:grid-cols-4 gap-12">
+              <div className="text-center group">
+                <div className="text-6xl font-black text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+                  60-90
+                </div>
+                <div className="text-lg font-bold uppercase tracking-wider">DAYS</div>
+                <div className="text-sm text-muted-foreground mt-2">TO PILOT</div>
+              </div>
+              <div className="text-center group">
+                <div className="text-6xl font-black text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+                  30-50%
+                </div>
+                <div className="text-lg font-bold uppercase tracking-wider">EFFICIENCY</div>
+                <div className="text-sm text-muted-foreground mt-2">GAINS</div>
+              </div>
+              <div className="text-center group">
+                <div className="text-6xl font-black text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+                  &lt;12
+                </div>
+                <div className="text-lg font-bold uppercase tracking-wider">MONTHS</div>
+                <div className="text-sm text-muted-foreground mt-2">ROI</div>
+              </div>
+              <div className="text-center group">
+                <div className="text-6xl font-black text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+                  100%
+                </div>
+                <div className="text-lg font-bold uppercase tracking-wider">COMPLIANT</div>
+                <div className="text-sm text-muted-foreground mt-2">SOC2, HIPAA, PCI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sectors Grid */}
+      <section className="py-32">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-5xl font-black text-center mb-20 uppercase tracking-wider">
+              TARGET SECTORS
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                "Banking & Capital Markets",
-                "Insurance",
-                "Healthcare & Life Sciences", 
-                "Retail & CPG",
-                "Energy & Utilities",
-                "Transportation & Logistics",
-                "Manufacturing",
-                "Public Sector"
+                "BANKING & CAPITAL MARKETS",
+                "INSURANCE",
+                "HEALTHCARE & LIFE SCIENCES", 
+                "RETAIL & CPG",
+                "ENERGY & UTILITIES",
+                "TRANSPORTATION & LOGISTICS",
+                "MANUFACTURING",
+                "PUBLIC SECTOR"
               ].map((sector) => (
-                <Card key={sector} className="card-premium hover:scale-105 transition-transform duration-300">
-                  <CardContent className="p-4 text-center">
-                    <div className="text-sm font-medium">{sector}</div>
+                <Card key={sector} className="card-spacex group hover:scale-105 transition-all duration-500 cursor-pointer">
+                  <CardContent className="p-8 text-center">
+                    <div className="text-sm font-bold uppercase tracking-wider group-hover:text-primary transition-colors duration-300">
+                      {sector}
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -172,24 +188,21 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Vision Section */}
-      <section className="py-16 section-gradient">
+      {/* Call to Action */}
+      <section className="py-32 section-spacex">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8">
-              Our Vision: From <span className="text-gradient">Boardrooms to Breakthroughs</span>
+            <h2 className="text-6xl font-black mb-12 uppercase tracking-wider">
+              JOIN THE MISSION
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We envision a world where CIOs are not forced into defensive postures, where they no longer say, 
-              "We're experimenting with AI" but instead report, "AI is now embedded into how we serve our customers, 
-              protect our data, and grow our business."
+            <p className="text-2xl text-muted-foreground mb-12 font-light leading-relaxed">
+              We are not just investing in companies.<br />
+              <span className="text-spacex-gradient font-bold">
+                We are writing the next chapter of enterprise transformation.
+              </span>
             </p>
-            <p className="text-lg font-semibold text-gradient mb-8">
-              At Vibrant Capital, we are not just investing in companies. 
-              We are writing the next chapter of enterprise transformation.
-            </p>
-            <Button size="lg" className="btn-premium">
-              Partner With Us
+            <Button size="lg" className="btn-spacex-filled px-16 py-6 text-xl">
+              PARTNER WITH US
             </Button>
           </div>
         </div>
