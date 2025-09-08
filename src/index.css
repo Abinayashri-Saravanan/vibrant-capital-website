@@ -91,7 +91,6 @@ All colors MUST be HSL for proper theming.
     --ring: 213 94% 68%;
   }
 }
-}
 
 @layer base {
   * {
