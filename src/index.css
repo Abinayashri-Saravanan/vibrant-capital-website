@@ -8,9 +8,9 @@ Bold, minimal, futuristic aesthetic with high contrast.
 
 @layer base {
   :root {
-    /* Sophisticated milky white theme */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 10%;
+    /* Sophisticated warm white theme */
+    --background: 30 25% 97%;
+    --foreground: 0 0% 8%;
 
     /* Card and surface colors */
     --card: 0 0% 100%;
@@ -19,10 +19,10 @@ Bold, minimal, futuristic aesthetic with high contrast.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    /* Brand colors - Elegant navy blue palette */
-    --primary: 221 83% 53%;
+    /* Brand colors - Sequoia-inspired palette */
+    --primary: 158 84% 44%;
     --primary-foreground: 0 0% 98%;
-    --primary-bright: 213 94% 68%;
+    --primary-bright: 158 84% 54%;
 
     --secondary: 220 14% 96%;
     --secondary-foreground: 220 9% 46%;

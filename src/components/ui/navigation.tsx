@@ -19,7 +19,7 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border/50">
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-3xl font-black uppercase tracking-wider text-spacex-gradient">
+          <Link to="/" className="text-2xl font-semibold tracking-tight text-foreground">
             VIBRANT CAPITAL
           </Link>
           
@@ -29,7 +29,7 @@ const Navigation = () => {
                 key={item.href}
                 to={item.href}
                 className={cn(
-                  "text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary relative group",
+                  "text-sm font-medium uppercase tracking-wide transition-colors hover:text-primary relative group",
                   location.pathname === item.href
                     ? "text-primary"
                     : "text-muted-foreground"
@@ -41,7 +41,7 @@ const Navigation = () => {
             ))}
           </div>
 
-          <Button className="btn-spacex uppercase tracking-wider font-bold">
+          <Button variant="outline" className="uppercase tracking-wide font-medium border-primary text-primary hover:bg-primary hover:text-primary-foreground">
             CONTACT
           </Button>
         </div>
