@@ -1,6 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
+import bankingImg from "@/assets/sector-banking.jpg";
+import insuranceImg from "@/assets/sector-insurance.jpg";
+import healthcareImg from "@/assets/sector-healthcare.jpg";
+import retailImg from "@/assets/sector-retail.jpg";
+import energyImg from "@/assets/sector-energy.jpg";
+import transportationImg from "@/assets/sector-transportation.jpg";
+import manufacturingImg from "@/assets/sector-manufacturing.jpg";
+import publicImg from "@/assets/sector-public.jpg";
 
 const Index = () => {
   return (
@@ -160,25 +168,33 @@ const Index = () => {
       {/* Sectors Grid */}
       <section className="py-32">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <h2 className="text-5xl font-black text-center mb-20 uppercase tracking-wider">
               TARGET SECTORS
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                "BANKING & CAPITAL MARKETS",
-                "INSURANCE",
-                "HEALTHCARE & LIFE SCIENCES", 
-                "RETAIL & CPG",
-                "ENERGY & UTILITIES",
-                "TRANSPORTATION & LOGISTICS",
-                "MANUFACTURING",
-                "PUBLIC SECTOR"
+                { name: "BANKING & CAPITAL MARKETS", image: bankingImg },
+                { name: "INSURANCE", image: insuranceImg },
+                { name: "HEALTHCARE & LIFE SCIENCES", image: healthcareImg },
+                { name: "RETAIL & CPG", image: retailImg },
+                { name: "ENERGY & UTILITIES", image: energyImg },
+                { name: "TRANSPORTATION & LOGISTICS", image: transportationImg },
+                { name: "MANUFACTURING", image: manufacturingImg },
+                { name: "PUBLIC SECTOR", image: publicImg }
               ].map((sector) => (
-                <Card key={sector} className="card-spacex group hover:scale-105 transition-all duration-500 cursor-pointer">
-                  <CardContent className="p-8 text-center">
-                    <div className="text-sm font-bold uppercase tracking-wider group-hover:text-primary transition-colors duration-300">
-                      {sector}
+                <Card key={sector.name} className="card-spacex group hover:scale-105 transition-all duration-500 cursor-pointer overflow-hidden">
+                  <div className="relative h-48 overflow-hidden">
+                    <img 
+                      src={sector.image} 
+                      alt={sector.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  </div>
+                  <CardContent className="p-6">
+                    <div className="text-sm font-bold uppercase tracking-wider group-hover:text-primary transition-colors duration-300 text-center">
+                      {sector.name}
                     </div>
                   </CardContent>
                 </Card>
