@@ -85,40 +85,64 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Three Waves */}
+      {/* Three Waves - Sequoia-style Tiled Layout */}
       <section className="py-32">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl md:text-6xl font-black text-center mb-20">
-              THE THREE WAVES
+            <h2 className="text-4xl font-semibold text-center mb-20 text-foreground">
+              The Three Waves of AI
             </h2>
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="text-center group">
-                <div className="text-8xl font-black text-primary/20 mb-6 group-hover:text-primary/40 transition-colors duration-500">01</div>
-                <h3 className="text-2xl font-bold mb-4 uppercase tracking-wider">FRONTIER MODELS</h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  The pioneers built massive models that captured headlines. They demonstrated potential, 
-                  but remained confined to white papers and demos.
-                </p>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-auto">
               
-              <div className="text-center group">
-                <div className="text-8xl font-black text-primary/20 mb-6 group-hover:text-primary/40 transition-colors duration-500">02</div>
-                <h3 className="text-2xl font-bold mb-4 uppercase tracking-wider">TOOLS & PLATFORMS</h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  APIs, SaaS platforms, and vendor demos flooded inboxes. Pilots proliferated, 
-                  but integration hurdles turned most into shelfware.
-                </p>
-              </div>
-              
-              <div className="text-center group">
-                <div className="text-8xl font-black text-spacex-gradient mb-6">03</div>
-                <h3 className="text-2xl font-bold mb-4 uppercase tracking-wider text-primary">APPLIED AI</h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  AI becomes <span className="text-primary font-semibold">invisible but indispensible.</span>{" "}
-                  Board-ready, compliant, and financially justifiable.
-                </p>
-              </div>
+              {/* Wave 1 - Large card */}
+              <Card className="col-span-1 md:col-span-2 lg:col-span-1 row-span-2 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-8 h-full flex flex-col justify-between">
+                  <div>
+                    <div className="text-6xl font-bold text-primary/30 mb-4">01</div>
+                    <h3 className="text-xl font-semibold mb-4 text-foreground">Frontier Models</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      The pioneers built massive models that captured headlines. They demonstrated potential, 
+                      but remained confined to white papers and demos.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Wave 2 - Medium card */}
+              <Card className="col-span-1 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="text-4xl font-bold text-primary/30 mb-3">02</div>
+                  <h3 className="text-lg font-semibold mb-3 text-foreground">Tools & Platforms</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    APIs, SaaS platforms, and vendor demos flooded inboxes. Pilots proliferated.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Wave 3 - Featured large card */}
+              <Card className="col-span-1 row-span-2 bg-primary/5 border border-primary/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-8 h-full flex flex-col justify-between">
+                  <div>
+                    <div className="text-6xl font-bold text-primary mb-4">03</div>
+                    <h3 className="text-xl font-semibold mb-4 text-primary">Applied AI</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      AI becomes invisible but indispensible. Board-ready, compliant, and financially justifiable.
+                    </p>
+                  </div>
+                  <div className="text-sm font-medium text-primary">← Our Focus</div>
+                </CardContent>
+              </Card>
+
+              {/* Mission Statement - Wide card */}
+              <Card className="col-span-1 md:col-span-2 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-3 text-foreground">The Enterprise Reality</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Integration hurdles turned most pilots into shelfware. We bridge the gap between AI potential and production deployment.
+                  </p>
+                </CardContent>
+              </Card>
+
             </div>
           </div>
         </div>
@@ -165,40 +189,106 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Sectors Grid */}
+      {/* Sectors - Sequoia-style Masonry Grid */}
       <section className="py-32">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl font-black text-center mb-20 uppercase tracking-wider">
-              TARGET SECTORS
+            <h2 className="text-4xl font-semibold text-center mb-20 text-foreground">
+              Target Sectors
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { name: "BANKING & CAPITAL MARKETS", image: bankingImg },
-                { name: "INSURANCE", image: insuranceImg },
-                { name: "HEALTHCARE & LIFE SCIENCES", image: healthcareImg },
-                { name: "RETAIL & CPG", image: retailImg },
-                { name: "ENERGY & UTILITIES", image: energyImg },
-                { name: "TRANSPORTATION & LOGISTICS", image: transportationImg },
-                { name: "MANUFACTURING", image: manufacturingImg },
-                { name: "PUBLIC SECTOR", image: publicImg }
-              ].map((sector) => (
-                <Card key={sector.name} className="card-spacex group hover:scale-105 transition-all duration-500 cursor-pointer overflow-hidden">
-                  <div className="relative h-48 overflow-hidden">
-                    <img 
-                      src={sector.image} 
-                      alt={sector.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-auto">
+              
+              {/* Banking - Large featured card */}
+              <Card className="col-span-1 md:col-span-2 row-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={bankingImg} 
+                    alt="Banking"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <h3 className="text-xl font-semibold text-white mb-2">Banking & Capital Markets</h3>
+                    <p className="text-sm text-white/80">AI-powered risk assessment and compliance</p>
                   </div>
-                  <CardContent className="p-6">
-                    <div className="text-sm font-bold uppercase tracking-wider group-hover:text-primary transition-colors duration-300 text-center">
-                      {sector.name}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                </div>
+              </Card>
+
+              {/* Insurance - Medium card */}
+              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={insuranceImg} 
+                    alt="Insurance"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-3">
+                    <h3 className="text-lg font-semibold text-white">Insurance</h3>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Healthcare - Medium card */}
+              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={healthcareImg} 
+                    alt="Healthcare"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-3">
+                    <h3 className="text-lg font-semibold text-white">Healthcare</h3>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Retail - Wide card */}
+              <Card className="col-span-1 md:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+                <div className="relative h-40 overflow-hidden">
+                  <img 
+                    src={retailImg} 
+                    alt="Retail"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-3">
+                    <h3 className="text-lg font-semibold text-white">Retail & Consumer</h3>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Energy - Tall card */}
+              <Card className="col-span-1 row-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={energyImg} 
+                    alt="Energy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-3">
+                    <h3 className="text-lg font-semibold text-white">Energy & Utilities</h3>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Manufacturing - Medium card */}
+              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+                <div className="relative h-40 overflow-hidden">
+                  <img 
+                    src={manufacturingImg} 
+                    alt="Manufacturing"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-3">
+                    <h3 className="text-lg font-semibold text-white">Manufacturing</h3>
+                  </div>
+                </div>
+              </Card>
+
             </div>
           </div>
         </div>
