@@ -92,13 +92,13 @@ const Index = () => {
             <h2 className="text-4xl font-semibold text-center mb-20 text-foreground">
               The Three Waves of AI
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
               
-              {/* Wave 1 - Large card */}
-              <Card className="col-span-1 md:col-span-2 lg:col-span-1 row-span-2 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-8 h-full flex flex-col justify-between">
+              {/* Wave 1 - Tall card */}
+              <Card className="col-span-1 md:col-span-1 lg:col-span-1 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-8 h-full flex flex-col justify-between min-h-[300px]">
                   <div>
-                    <div className="text-6xl font-bold text-primary/30 mb-4">01</div>
+                    <div className="text-5xl font-bold text-primary/30 mb-4">01</div>
                     <h3 className="text-xl font-semibold mb-4 text-foreground">Frontier Models</h3>
                     <p className="text-muted-foreground leading-relaxed">
                       The pioneers built massive models that captured headlines. They demonstrated potential, 
@@ -109,37 +109,32 @@ const Index = () => {
               </Card>
 
               {/* Wave 2 - Medium card */}
-              <Card className="col-span-1 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="text-4xl font-bold text-primary/30 mb-3">02</div>
-                  <h3 className="text-lg font-semibold mb-3 text-foreground">Tools & Platforms</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    APIs, SaaS platforms, and vendor demos flooded inboxes. Pilots proliferated.
-                  </p>
+              <Card className="col-span-1 md:col-span-1 lg:col-span-1 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-8 h-full flex flex-col justify-between min-h-[300px]">
+                  <div>
+                    <div className="text-5xl font-bold text-primary/30 mb-4">02</div>
+                    <h3 className="text-xl font-semibold mb-4 text-foreground">Tools & Platforms</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      APIs, SaaS platforms, and vendor demos flooded inboxes. Pilots proliferated.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
 
               {/* Wave 3 - Featured large card */}
-              <Card className="col-span-1 row-span-2 bg-primary/5 border border-primary/20 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-8 h-full flex flex-col justify-between">
+              <Card className="col-span-1 md:col-span-1 lg:col-span-2 bg-primary/5 border border-primary/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-8 h-full flex flex-col justify-between min-h-[300px]">
                   <div>
                     <div className="text-6xl font-bold text-primary mb-4">03</div>
-                    <h3 className="text-xl font-semibold mb-4 text-primary">Applied AI</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <h3 className="text-2xl font-semibold mb-4 text-primary">Applied AI</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
                       AI becomes invisible but indispensible. Board-ready, compliant, and financially justifiable.
                     </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Integration hurdles turned most pilots into shelfware. We bridge the gap between AI potential and production deployment.
+                    </p>
                   </div>
-                  <div className="text-sm font-medium text-primary">← Our Focus</div>
-                </CardContent>
-              </Card>
-
-              {/* Mission Statement - Wide card */}
-              <Card className="col-span-1 md:col-span-2 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-3 text-foreground">The Enterprise Reality</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Integration hurdles turned most pilots into shelfware. We bridge the gap between AI potential and production deployment.
-                  </p>
+                  <div className="text-sm font-medium text-primary mt-4">← Our Focus</div>
                 </CardContent>
               </Card>
 
@@ -155,34 +150,73 @@ const Index = () => {
             <h2 className="text-5xl font-black text-center mb-20 uppercase tracking-wider">
               MISSION METRICS
             </h2>
-            <div className="grid md:grid-cols-4 gap-12">
-              <div className="text-center group">
-                <div className="text-6xl font-black text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
-                  60-90
-                </div>
-                <div className="text-lg font-bold uppercase tracking-wider">DAYS</div>
-                <div className="text-sm text-muted-foreground mt-2">TO PILOT</div>
+            <div className="grid md:grid-cols-4 gap-8">
+              <div className="text-center group relative">
+                <Card className="bg-card border border-border/50 p-8 hover:shadow-lg transition-all duration-500 group-hover:scale-105">
+                  <div className="relative">
+                    <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                      <svg className="w-10 h-10 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div className="text-5xl font-black text-primary mb-4 animate-fade-in">
+                      60-90
+                    </div>
+                    <div className="text-lg font-bold uppercase tracking-wider mb-2">DAYS</div>
+                    <div className="text-sm text-muted-foreground">TO PILOT</div>
+                  </div>
+                </Card>
               </div>
-              <div className="text-center group">
-                <div className="text-6xl font-black text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
-                  30-50%
-                </div>
-                <div className="text-lg font-bold uppercase tracking-wider">EFFICIENCY</div>
-                <div className="text-sm text-muted-foreground mt-2">GAINS</div>
+              
+              <div className="text-center group relative">
+                <Card className="bg-card border border-border/50 p-8 hover:shadow-lg transition-all duration-500 group-hover:scale-105">
+                  <div className="relative">
+                    <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                      <svg className="w-10 h-10 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
+                    </div>
+                    <div className="text-5xl font-black text-primary mb-4 animate-fade-in">
+                      30-50%
+                    </div>
+                    <div className="text-lg font-bold uppercase tracking-wider mb-2">EFFICIENCY</div>
+                    <div className="text-sm text-muted-foreground">GAINS</div>
+                  </div>
+                </Card>
               </div>
-              <div className="text-center group">
-                <div className="text-6xl font-black text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
-                  &lt;12
-                </div>
-                <div className="text-lg font-bold uppercase tracking-wider">MONTHS</div>
-                <div className="text-sm text-muted-foreground mt-2">ROI</div>
+              
+              <div className="text-center group relative">
+                <Card className="bg-card border border-border/50 p-8 hover:shadow-lg transition-all duration-500 group-hover:scale-105">
+                  <div className="relative">
+                    <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                      <svg className="w-10 h-10 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                      </svg>
+                    </div>
+                    <div className="text-5xl font-black text-primary mb-4 animate-fade-in">
+                      &lt;12
+                    </div>
+                    <div className="text-lg font-bold uppercase tracking-wider mb-2">MONTHS</div>
+                    <div className="text-sm text-muted-foreground">ROI</div>
+                  </div>
+                </Card>
               </div>
-              <div className="text-center group">
-                <div className="text-6xl font-black text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
-                  100%
-                </div>
-                <div className="text-lg font-bold uppercase tracking-wider">COMPLIANT</div>
-                <div className="text-sm text-muted-foreground mt-2">SOC2, HIPAA, PCI</div>
+              
+              <div className="text-center group relative">
+                <Card className="bg-card border border-border/50 p-8 hover:shadow-lg transition-all duration-500 group-hover:scale-105">
+                  <div className="relative">
+                    <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                      <svg className="w-10 h-10 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <div className="text-5xl font-black text-primary mb-4 animate-fade-in">
+                      100%
+                    </div>
+                    <div className="text-lg font-bold uppercase tracking-wider mb-2">COMPLIANT</div>
+                    <div className="text-sm text-muted-foreground">SOC2, HIPAA, PCI</div>
+                  </div>
+                </Card>
               </div>
             </div>
           </div>
@@ -196,95 +230,95 @@ const Index = () => {
             <h2 className="text-4xl font-semibold text-center mb-20 text-foreground">
               Target Sectors
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               
-              {/* Banking - Large featured card */}
-              <Card className="col-span-1 md:col-span-2 row-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
-                <div className="relative h-64 overflow-hidden">
+              {/* Banking - Featured large card */}
+              <Card className="col-span-1 md:col-span-1 lg:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+                <div className="relative h-72 overflow-hidden">
                   <img 
                     src={bankingImg} 
-                    alt="Banking"
+                    alt="Banking & Capital Markets"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <h3 className="text-xl font-semibold text-white mb-2">Banking & Capital Markets</h3>
-                    <p className="text-sm text-white/80">AI-powered risk assessment and compliance</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-6 left-6">
+                    <h3 className="text-2xl font-semibold text-white mb-2">Banking & Capital Markets</h3>
+                    <p className="text-white/90">AI-powered risk assessment and compliance</p>
                   </div>
                 </div>
               </Card>
 
               {/* Insurance - Medium card */}
               <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-72 overflow-hidden">
                   <img 
                     src={insuranceImg} 
                     alt="Insurance"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-3 left-3">
-                    <h3 className="text-lg font-semibold text-white">Insurance</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-6 left-6">
+                    <h3 className="text-xl font-semibold text-white">Insurance</h3>
                   </div>
                 </div>
               </Card>
 
               {/* Healthcare - Medium card */}
               <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-72 overflow-hidden">
                   <img 
                     src={healthcareImg} 
                     alt="Healthcare"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-3 left-3">
-                    <h3 className="text-lg font-semibold text-white">Healthcare</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-6 left-6">
+                    <h3 className="text-xl font-semibold text-white">Healthcare</h3>
                   </div>
                 </div>
               </Card>
 
               {/* Retail - Wide card */}
-              <Card className="col-span-1 md:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
-                <div className="relative h-40 overflow-hidden">
+              <Card className="col-span-1 md:col-span-1 lg:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+                <div className="relative h-48 overflow-hidden">
                   <img 
                     src={retailImg} 
-                    alt="Retail"
+                    alt="Retail & Consumer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-3 left-3">
-                    <h3 className="text-lg font-semibold text-white">Retail & Consumer</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 left-6">
+                    <h3 className="text-xl font-semibold text-white">Retail & Consumer</h3>
                   </div>
                 </div>
               </Card>
 
-              {/* Energy - Tall card */}
-              <Card className="col-span-1 row-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
-                <div className="relative h-64 overflow-hidden">
+              {/* Energy - Medium card */}
+              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+                <div className="relative h-48 overflow-hidden">
                   <img 
                     src={energyImg} 
-                    alt="Energy"
+                    alt="Energy & Utilities"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-3 left-3">
-                    <h3 className="text-lg font-semibold text-white">Energy & Utilities</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 left-6">
+                    <h3 className="text-xl font-semibold text-white">Energy & Utilities</h3>
                   </div>
                 </div>
               </Card>
 
               {/* Manufacturing - Medium card */}
               <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
-                <div className="relative h-40 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
                   <img 
                     src={manufacturingImg} 
                     alt="Manufacturing"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-3 left-3">
-                    <h3 className="text-lg font-semibold text-white">Manufacturing</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 left-6">
+                    <h3 className="text-xl font-semibold text-white">Manufacturing</h3>
                   </div>
                 </div>
               </Card>
