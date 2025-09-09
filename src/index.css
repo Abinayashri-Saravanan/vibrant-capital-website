@@ -8,48 +8,48 @@ Bold, minimal, futuristic aesthetic with high contrast.
 
 @layer base {
   :root {
-    /* SpaceX-inspired dark theme */
-    --background: 0 0% 3%;
-    --foreground: 0 0% 98%;
+    /* Sophisticated milky white theme */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
 
     /* Card and surface colors */
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Brand colors - SpaceX blue palette */
-    --primary: 212 100% 50%;
+    /* Brand colors - Elegant navy blue palette */
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 98%;
-    --primary-bright: 212 100% 60%;
+    --primary-bright: 213 94% 68%;
 
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 9% 46%;
 
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 212 100% 50%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 9% 46%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     /* Border and input styling */
-    --border: 0 0% 20%;
-    --input: 0 0% 12%;
-    --ring: 212 100% 50%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 221 83% 53%;
 
-    /* SpaceX-inspired gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(212, 100%, 50%), hsl(212, 100%, 60%));
-    --gradient-hero: linear-gradient(180deg, hsl(0, 0%, 3%) 0%, hsl(0, 0%, 8%) 100%);
-    --gradient-section: linear-gradient(135deg, hsl(0, 0%, 5%), hsl(0, 0%, 8%));
+    /* Elegant gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(221, 83%, 53%), hsl(213, 94%, 68%));
+    --gradient-hero: linear-gradient(180deg, hsl(0, 0%, 98%) 0%, hsl(220, 14%, 96%) 100%);
+    --gradient-section: linear-gradient(135deg, hsl(220, 14%, 96%), hsl(0, 0%, 98%));
 
-    /* Dramatic shadows */
-    --shadow-dramatic: 0 25px 50px -12px hsl(0, 0%, 0%, 0.8);
-    --shadow-glow: 0 0 50px hsl(212, 100%, 50%, 0.3);
-    --shadow-card: 0 8px 32px -8px hsl(0, 0%, 0%, 0.6);
+    /* Subtle shadows */
+    --shadow-dramatic: 0 25px 50px -12px hsl(220, 9%, 46%, 0.15);
+    --shadow-glow: 0 0 50px hsl(221, 83%, 53%, 0.1);
+    --shadow-card: 0 8px 32px -8px hsl(220, 9%, 46%, 0.1);
 
     /* Animation timing */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,37 +58,37 @@ Bold, minimal, futuristic aesthetic with high contrast.
     --radius: 0.5rem;
 
     /* Sidebar colors */
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 212 100% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 221 83% 53%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 212 100% 50%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 220 9% 46%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 221 83% 53%;
   }
 
-  /* Light theme (minimal for compatibility) */
-  .light {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3%;
-    --primary: 212 100% 50%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
-    --accent: 0 0% 96%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84% 60%;
+  /* Dark theme (for dark mode toggle) */
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 213 94% 68%;
+    --primary-foreground: 0 0% 8%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62% 70%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 212 100% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 213 94% 68%;
   }
 }
 
@@ -125,16 +125,16 @@ Bold, minimal, futuristic aesthetic with high contrast.
 }
 
 @layer components {
-  /* SpaceX-inspired button variants */
+  /* Elegant button variants */
   .btn-spacex {
     @apply bg-transparent border-2 border-primary text-primary font-bold uppercase tracking-wider;
-    @apply hover:bg-primary hover:text-background transition-all duration-300;
-    @apply hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)];
+    @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300;
+    @apply hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)];
   }
 
   .btn-spacex-filled {
-    @apply bg-primary text-background font-bold uppercase tracking-wider;
-    @apply hover:bg-primary-bright hover:shadow-[0_0_30px_hsl(var(--primary)/0.8)];
+    @apply bg-primary text-primary-foreground font-bold uppercase tracking-wider;
+    @apply hover:bg-primary-bright hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)];
     @apply transition-all duration-300;
   }
 
@@ -147,29 +147,29 @@ Bold, minimal, futuristic aesthetic with high contrast.
     background: var(--gradient-section);
   }
 
-  /* SpaceX-style cards */
+  /* Elegant cards */
   .card-spacex {
-    @apply bg-card/60 backdrop-blur-md border border-border/30;
-    @apply hover:bg-card/80 hover:border-primary/20 transition-all duration-500;
+    @apply bg-card/90 backdrop-blur-md border border-border/50;
+    @apply hover:bg-card hover:border-primary/30 transition-all duration-500;
     box-shadow: var(--shadow-card);
   }
 
   .card-spacex-glow {
     box-shadow: var(--shadow-dramatic);
-    @apply hover:shadow-[0_30px_60px_-15px_hsl(var(--primary)/0.3)] transition-all duration-700;
+    @apply hover:shadow-[0_30px_60px_-15px_hsl(var(--primary)/0.15)] transition-all duration-700;
   }
 
   /* Hero section styling */
   .hero-spacex {
-    background: radial-gradient(circle at center, hsl(212, 100%, 50%, 0.1) 0%, transparent 70%),
+    background: radial-gradient(circle at center, hsl(221, 83%, 53%, 0.05) 0%, transparent 70%),
                 var(--gradient-hero);
   }
 
   /* Grid pattern overlay */
   .grid-pattern {
     background-image: 
-      linear-gradient(hsl(0, 0%, 20%, 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(0, 0%, 20%, 0.1) 1px, transparent 1px);
+      linear-gradient(hsl(220, 13%, 91%, 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(220, 13%, 91%, 0.5) 1px, transparent 1px);
     background-size: 100px 100px;
   }
 }
