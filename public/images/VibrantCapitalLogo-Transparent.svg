@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <!-- Transparent background - no background fill -->
+  
+  <!-- Vibrant Capital Text - Clean, readable design -->
+  <g fill="#FFFFFF" stroke="none">
+    <!-- V -->
+    <path d="M20 15 L30 15 L40 55 L50 15 L60 15 L45 75 L35 75 L20 15 Z"/>
+    
+    <!-- I -->
+    <rect x="70" y="15" width="6" height="60"/>
+    
+    <!-- B -->
+    <path d="M85 15 L85 75 L110 75 Q120 75 120 65 Q120 55 110 50 Q120 45 120 35 Q120 25 110 25 L85 25 Z M91 31 L108 31 Q114 31 114 37 Q114 43 108 43 L91 43 Z M91 49 L110 49 Q116 49 116 55 Q116 61 110 61 L91 61 Z"/>
+    
+    <!-- R -->
+    <path d="M130 15 L130 75 L136 75 L136 50 L150 50 L160 75 L168 75 L157 48 Q164 45 164 35 Q164 25 154 25 L130 25 Z M136 31 L150 31 Q156 31 156 37 Q156 43 150 43 L136 43 Z"/>
+    
+    <!-- A -->
+    <path d="M180 15 L170 75 L178 75 L180 60 L200 60 L202 75 L210 75 L200 15 Z M182 54 L198 54 L190 25 Z"/>
+    
+    <!-- N -->
+    <path d="M220 15 L220 75 L226 75 L226 30 L250 75 L258 75 L258 15 L252 15 L252 60 L228 15 Z"/>
+    
+    <!-- T -->
+    <path d="M270 15 L270 21 L282 21 L282 75 L288 75 L288 21 L300 21 L300 15 Z"/>
+  </g>
+  
+  <!-- Capital Text (Second Line) -->
+  <g fill="#FFFFFF" stroke="none" transform="translate(0, 35)">
+    <!-- C -->
+    <path d="M20 25 Q20 15 30 15 L45 15 L45 21 L32 21 Q26 21 26 25 L26 45 Q26 49 32 49 L45 49 L45 55 L30 55 Q20 55 20 45 Z"/>
+    
+    <!-- A -->
+    <path d="M55 15 L45 55 L53 55 L55 45 L75 45 L77 55 L85 55 L75 15 Z M57 39 L73 39 L65 20 Z"/>
+    
+    <!-- P -->
+    <path d="M95 15 L95 55 L101 55 L101 40 L115 40 Q125 40 125 30 Q125 20 115 20 L95 20 Z M101 26 L115 26 Q119 26 119 30 Q119 34 115 34 L101 34 Z"/>
+    
+    <!-- I -->
+    <rect x="135" y="15" width="6" height="40"/>
+    
+    <!-- T -->
+    <path d="M150 15 L150 21 L162 21 L162 55 L168 55 L168 21 L180 21 L180 15 Z"/>
+    
+    <!-- A -->
+    <path d="M190 15 L180 55 L188 55 L190 45 L210 45 L212 55 L220 55 L210 15 Z M192 39 L208 39 L200 20 Z"/>
+    
+    <!-- L -->
+    <path d="M230 15 L230 55 L255 55 L255 49 L236 49 L236 15 Z"/>
+  </g>
+  
+  <!-- Simple decorative element -->
+  <g fill="#FFFFFF" stroke="none" opacity="0.8">
+    <circle cx="320" cy="25" r="3"/>
+    <circle cx="330" cy="20" r="2"/>
+    <circle cx="330" cy="30" r="2"/>
+    <circle cx="340" cy="25" r="2"/>
+  </g>
+</svg>

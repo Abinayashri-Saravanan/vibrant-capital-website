@@ -27,9 +27,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center group">
             <img
-              src="/images/VibrantCapitalLogo2.svg"
+              src="/images/VibrantCapitalLogo4.svg"
               alt="Vibrant Capital"
-              className="h-12 w-auto transition-all duration-300 group-hover:scale-105 nav-logo"
+              className="h-14 w-auto transition-all duration-300 group-hover:scale-105 nav-logo"
             />
           </Link>
 
@@ -39,28 +39,29 @@ const Navigation = () => {
                 key={item.href}
                 to={item.href}
                 className={cn(
-                  "text-sm font-bold uppercase tracking-wider transition-all duration-300 relative group nav-link",
+                  "text-sm font-bold uppercase tracking-wider transition-all duration-300 relative group",
                   location.pathname === item.href
-                    ? "text-white"
-                    : "text-white/80 hover:text-white"
+                    ? "text-green-400"
+                    : "text-white/80 hover:text-green-400"
                 )}
-                style={{
-                  animationDelay: `${index * 0.1}s`
-                }}
               >
-                <span className="relative z-10 nav-text">
+                <span className="relative z-10 nav-text-item">
                   {item.label.split('').map((char, charIndex) => (
                     <span
                       key={charIndex}
-                      className="inline-block nav-char"
-                      style={{ animationDelay: `${charIndex * 0.05}s` }}
+                      className="inline-block nav-char transition-all duration-200"
                     >
                       {char === ' ' ? '\u00A0' : char}
                     </span>
                   ))}
                 </span>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-bright transition-all duration-500 group-hover:w-full"></span>
-                <span className="absolute inset-0 bg-white/5 rounded-lg scale-0 transition-transform duration-300 group-hover:scale-100 -z-10"></span>
+                <span className={cn(
+                  "absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-green-400 to-green-300 transition-all duration-500",
+                  location.pathname === item.href
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
+                )}></span>
+                <span className="absolute inset-0 bg-green-400/5 rounded-lg scale-0 transition-transform duration-300 group-hover:scale-100 -z-10"></span>
               </Link>
             ))}
           </div>
@@ -70,7 +71,7 @@ const Navigation = () => {
             <Button
               variant="outline"
               size="sm"
-              className="nav-contact-btn uppercase tracking-wider font-bold border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 transition-all duration-300"
+              className="nav-contact-btn uppercase tracking-wider font-bold border-2 border-white/40 text-white bg-transparent hover:bg-white hover:text-slate-900 transition-all duration-300"
             >
               CONTACT
             </Button>
@@ -88,7 +89,7 @@ const Navigation = () => {
           <div className="hidden lg:block">
             <Button
               variant="outline"
-              className="nav-contact-btn uppercase tracking-wider font-bold border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/20"
+              className="nav-contact-btn uppercase tracking-wider font-bold border-2 border-white/40 text-white bg-transparent hover:bg-white hover:text-slate-900 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/20"
             >
               CONTACT
             </Button>
@@ -105,21 +106,17 @@ const Navigation = () => {
                   to={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
-                    "text-sm font-bold uppercase tracking-wider transition-all duration-300 relative group nav-link px-4 py-2 rounded-lg",
+                    "text-sm font-bold uppercase tracking-wider transition-all duration-300 relative group px-4 py-2 rounded-lg",
                     location.pathname === item.href
-                      ? "text-white bg-white/10"
-                      : "text-white/80 hover:text-white hover:bg-white/5"
+                      ? "text-green-400 bg-green-400/10"
+                      : "text-white/80 hover:text-green-400 hover:bg-green-400/5"
                   )}
-                  style={{
-                    animationDelay: `${index * 0.1}s`
-                  }}
                 >
-                  <span className="relative z-10 nav-text">
+                  <span className="relative z-10 nav-text-item">
                     {item.label.split('').map((char, charIndex) => (
                       <span
                         key={charIndex}
-                        className="inline-block nav-char"
-                        style={{ animationDelay: `${charIndex * 0.05}s` }}
+                        className="inline-block nav-char transition-all duration-200"
                       >
                         {char === ' ' ? '\u00A0' : char}
                       </span>
