@@ -19,8 +19,12 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border/50">
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-semibold tracking-tight text-foreground">
-            VIBRANT CAPITAL
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/images/VibrantCapitalLogo2.png" 
+              alt="Vibrant Capital" 
+              className="h-8 w-auto"
+            />
           </Link>
           
           <div className="hidden lg:flex items-center space-x-12">
