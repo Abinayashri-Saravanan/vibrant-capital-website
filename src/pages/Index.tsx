@@ -16,9 +16,22 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center hero-spacex grid-pattern overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background"></div>
-        <div className="container mx-auto px-6 relative z-10">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Video */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src="/Video/Vibrant-Hero-background-1.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Video Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 z-10"></div>
+        
+        <div className="container mx-auto px-6 relative z-20">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-7xl md:text-8xl lg:text-9xl font-black mb-8 leading-none">
               POWERING THE
