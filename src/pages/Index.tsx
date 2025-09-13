@@ -23,7 +23,19 @@ const Index = () => {
           loop 
           muted 
           playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-300"
+          style={{
+            willChange: 'transform',
+            backfaceVisibility: 'hidden',
+            perspective: '1000px'
+          }}
+          onLoadedData={(e) => {
+            const video = e.target as HTMLVideoElement;
+            video.play().catch(() => {
+              // Fallback if autoplay is blocked
+            });
+          }}
         >
           <source src="/Video/Vibrant-Hero-background-1.mp4" type="video/mp4" />
         </video>
