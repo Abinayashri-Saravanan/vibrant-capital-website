@@ -29,18 +29,18 @@ const Index = () => {
         </video>
         
         {/* Video Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 z-10"></div>
         
         <div className="container mx-auto px-6 relative z-20">
           <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-7xl md:text-8xl lg:text-9xl font-black mb-8 leading-none">
+            <h1 className="text-7xl md:text-8xl lg:text-9xl font-black mb-8 leading-none text-white drop-shadow-2xl">
               POWERING THE
               <br />
-              <span className="text-spacex-gradient">THIRD WAVE</span>
+              <span className="text-spacex-gradient drop-shadow-2xl">THIRD WAVE</span>
               <br />
               OF AI
             </h1>
-            <p className="text-2xl md:text-3xl text-muted-foreground mb-12 font-light max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl md:text-3xl text-white/90 mb-12 font-light max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
               Applied AI for the Enterprise
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
