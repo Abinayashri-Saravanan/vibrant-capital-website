@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
+import { useVideoOptimization } from "@/hooks/use-video-optimization";
 import bankingImg from "@/assets/sector-banking.jpg";
 import insuranceImg from "@/assets/sector-insurance.jpg";
 import healthcareImg from "@/assets/sector-healthcare.jpg";
@@ -11,30 +12,40 @@ import manufacturingImg from "@/assets/sector-manufacturing.jpg";
 import publicImg from "@/assets/sector-public.jpg";
 
 const Index = () => {
+  const { videoRef } = useVideoOptimization({
+    autoPlay: true,
+    loop: true,
+    muted: true,
+    preload: 'auto',
+    onReady: () => {
+      console.log('Hero video is ready and playing smoothly');
+    },
+    onError: () => {
+      console.warn('Hero video failed to load, using fallback background');
+    }
+  });
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Fallback Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 z-0"></div>
+
         {/* Background Video */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-300"
+          className="absolute inset-0 w-full h-full object-cover z-0 hero-video"
           style={{
-            willChange: 'transform',
-            backfaceVisibility: 'hidden',
-            perspective: '1000px'
-          }}
-          onLoadedData={(e) => {
-            const video = e.target as HTMLVideoElement;
-            video.play().catch(() => {
-              // Fallback if autoplay is blocked
-            });
+            opacity: 0,
+            transition: 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
           }}
         >
           <source src="/Video/Vibrant-Hero-background-1.mp4" type="video/mp4" />

@@ -167,9 +167,50 @@ Bold, minimal, futuristic aesthetic with high contrast.
 
   /* Grid pattern overlay */
   .grid-pattern {
-    background-image: 
+    background-image:
       linear-gradient(hsl(220, 13%, 91%, 0.5) 1px, transparent 1px),
       linear-gradient(90deg, hsl(220, 13%, 91%, 0.5) 1px, transparent 1px);
     background-size: 100px 100px;
+  }
+
+  /* Video optimization for smooth playback */
+  video {
+    /* Hardware acceleration */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+
+    /* Prevent flickering */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    /* Optimize rendering */
+    will-change: auto;
+
+    /* Smooth scaling */
+    image-rendering: optimizeQuality;
+    -webkit-image-rendering: optimizeQuality;
+
+    /* Prevent layout shifts */
+    contain: layout style paint;
+
+    /* Optimize compositing */
+    isolation: isolate;
+  }
+
+  /* Specific optimizations for hero video */
+  .hero-video {
+    /* Force GPU acceleration */
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+
+    /* Optimize for video content */
+    image-rendering: optimizeSpeed;
+    -webkit-image-rendering: optimizeSpeed;
+
+    /* Prevent repaints */
+    will-change: auto;
+
+    /* Smooth transitions */
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
