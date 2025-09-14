@@ -64,14 +64,24 @@ const About = () => {
               <CardContent className="p-0">
                 <div className="grid lg:grid-cols-2 gap-0 items-stretch">
                   {/* Photo Section */}
-                  <div className="flex items-start justify-center p-6 lg:p-8">
-                    <img 
-                      src="/images/shadman-about.jpeg" 
-                      alt="Shadman Zafar - Founder, Chairman"
-                      className="block w-auto h-auto max-w-full rounded-xl shadow-xl"
-                      loading="eager"
-                      decoding="async"
-                    />
+                  <div className="p-6 lg:p-8 space-y-6">
+                    <div className="flex items-start justify-center">
+                      <img 
+                        src="/images/shadman-about.jpeg" 
+                        alt="Shadman Zafar - Founder, Chairman"
+                        className="block w-auto h-auto max-w-full rounded-xl shadow-xl"
+                        loading="eager"
+                        decoding="async"
+                      />
+                    </div>
+                    
+                    {/* Quote Section */}
+                    <div className="p-6 bg-spacex-gradient/10 border border-spacex-accent/20 rounded-lg">
+                      <p className="text-center text-lg font-bold text-spacex-gradient border-t border-b border-spacex-accent/20 py-6 leading-relaxed">
+                        "My experience is not theoretical. I've presented to boards under pressure, 
+                        answered regulators in the toughest jurisdictions, and delivered multi-billion-dollar transformations."
+                      </p>
+                    </div>
                   </div>
                   
                   {/* Content Section */}
@@ -127,13 +137,6 @@ const About = () => {
                           </p>
                         </div>
                       </div>
-                    </div>
-                    
-                    <div className="p-6 bg-spacex-gradient/10 border border-spacex-accent/20 rounded-lg">
-                      <p className="text-center text-2xl font-bold text-spacex-gradient border-t border-b border-spacex-accent/20 py-8 leading-relaxed">
-                        "My experience is not theoretical. I've presented to boards under pressure, 
-                        answered regulators in the toughest jurisdictions, and delivered multi-billion-dollar transformations."
-                      </p>
                     </div>
                   </div>
                 </div>
