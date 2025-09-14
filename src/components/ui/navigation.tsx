@@ -27,9 +27,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center group">
             <img
-              src="/images/VibrantCapitalLogo4.svg"
+              src="/images/VibrantCapitalLogo2.svg"
               alt="Vibrant Capital"
-              className="h-14 w-auto transition-all duration-300 group-hover:scale-105 nav-logo"
+              className="h-16 w-auto transition-all duration-300 group-hover:scale-105 nav-logo logo-green-style"
             />
           </Link>
 

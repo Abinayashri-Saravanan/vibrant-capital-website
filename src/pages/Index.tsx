@@ -108,7 +108,7 @@ const Index = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="mt-12 sm:mt-10 mb-8 sm:mb-0 flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="mt-16 sm:mt-10 mb-12 sm:mb-0 flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button size="lg" className="btn-spacex-filled px-12 py-4 text-lg" asChild>
                 <Link to="/investments">EXPLORE INVESTMENTS</Link>
               </Button>
@@ -242,110 +242,6 @@ const Index = () => {
       </section>
 
 
-      {/* Sectors - Sequoia-style Masonry Grid */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-semibold text-center mb-20 text-foreground">
-              Target Sectors
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              
-               {/* Banking - Featured large card */}
-              <Card className="col-span-1 md:col-span-1 lg:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
-                <div className="relative h-72 overflow-hidden">
-                  <img 
-                    src={bankingImg} 
-                    alt="Banking & Capital Markets"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-6 left-6">
-                    <h3 className="text-2xl font-semibold text-white mb-2">Banking & Capital Markets</h3>
-                    <p className="text-white/90">AI-powered risk assessment and compliance</p>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Insurance - Medium card */}
-              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
-                <div className="relative h-72 overflow-hidden">
-                  <img 
-                    src={insuranceImg} 
-                    alt="Insurance"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-6 left-6">
-                    <h3 className="text-xl font-semibold text-white">Insurance</h3>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Healthcare - Medium card */}
-              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
-                <div className="relative h-72 overflow-hidden">
-                  <img 
-                    src={healthcareImg} 
-                    alt="Healthcare"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-6 left-6">
-                    <h3 className="text-xl font-semibold text-white">Healthcare</h3>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Retail - Wide card */}
-              <Card className="col-span-1 md:col-span-1 lg:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={retailImg} 
-                    alt="Retail & Consumer"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 left-6">
-                    <h3 className="text-xl font-semibold text-white">Retail & Consumer</h3>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Energy - Medium card */}
-              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={energyImg} 
-                    alt="Energy & Utilities"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 left-6">
-                    <h3 className="text-xl font-semibold text-white">Energy & Utilities</h3>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Manufacturing - Medium card */}
-              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={manufacturingImg} 
-                    alt="Manufacturing"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 left-6">
-                    <h3 className="text-xl font-semibold text-white">Manufacturing</h3>
-                  </div>
-                </div>
-              </Card>
-
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action */}
       <section className="py-20 section-spacex">

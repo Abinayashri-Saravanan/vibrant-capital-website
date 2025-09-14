@@ -24,16 +24,49 @@ const Sectors = () => {
               <br />
               <span className="text-spacex-gradient">SECTORS</span>
             </h1>
-            <p className="text-2xl text-muted-foreground leading-relaxed font-light">
+            <p className="text-2xl text-muted-foreground leading-relaxed font-light mb-12">
               We focus on industries where data is abundant, regulation is strict, and inefficiency 
               is costly. These are the sectors where AI can create transformational impact.
             </p>
+            
+            {/* Quick Navigation */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              <a href="#banking" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+                <h3 className="font-semibold text-sm mb-1">Banking &</h3>
+                <h3 className="font-semibold text-sm">Capital Markets</h3>
+              </a>
+              <a href="#insurance" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+                <h3 className="font-semibold text-sm">Insurance</h3>
+              </a>
+              <a href="#healthcare" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+                <h3 className="font-semibold text-sm">Healthcare &</h3>
+                <h3 className="font-semibold text-sm">Life Sciences</h3>
+              </a>
+              <a href="#retail" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+                <h3 className="font-semibold text-sm">Retail &</h3>
+                <h3 className="font-semibold text-sm">Consumer Goods</h3>
+              </a>
+              <a href="#transportation" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+                <h3 className="font-semibold text-sm">Transportation &</h3>
+                <h3 className="font-semibold text-sm">Logistics</h3>
+              </a>
+              <a href="#energy" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+                <h3 className="font-semibold text-sm">Energy &</h3>
+                <h3 className="font-semibold text-sm">Utilities</h3>
+              </a>
+              <a href="#manufacturing" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+                <h3 className="font-semibold text-sm">Manufacturing</h3>
+              </a>
+              <a href="#public" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+                <h3 className="font-semibold text-sm">Public Sector</h3>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Banking & Capital Markets */}
-      <section className="py-16 section-spacex">
+      <section id="banking" className="py-16 section-spacex">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
@@ -91,7 +124,7 @@ const Sectors = () => {
             </Card>
 
             {/* Insurance */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="insurance" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={insuranceImg} 
@@ -146,7 +179,7 @@ const Sectors = () => {
             </Card>
 
             {/* Healthcare & Life Sciences */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="healthcare" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={healthcareImg} 
@@ -201,7 +234,7 @@ const Sectors = () => {
             </Card>
 
             {/* Retail & CPG */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="retail" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={retailImg} 
@@ -256,7 +289,7 @@ const Sectors = () => {
             </Card>
 
             {/* Transportation & Logistics */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="transportation" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={transportationImg} 
@@ -311,7 +344,7 @@ const Sectors = () => {
             </Card>
 
             {/* Energy & Utilities */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="energy" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={energyImg} 
@@ -366,7 +399,7 @@ const Sectors = () => {
             </Card>
 
             {/* Manufacturing */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="manufacturing" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={manufacturingImg} 
@@ -421,7 +454,7 @@ const Sectors = () => {
             </Card>
 
             {/* Public Sector */}
-            <Card className="card-spacex card-spacex-glow overflow-hidden">
+            <Card id="public" className="card-spacex card-spacex-glow overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={publicImg} 
