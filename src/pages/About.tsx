@@ -62,13 +62,13 @@ const About = () => {
             </h2>
             <Card className="card-spacex card-spacex-glow border-none bg-card/80 backdrop-blur-sm overflow-hidden">
               <CardContent className="p-0">
-                <div className="grid lg:grid-cols-2 gap-0">
+                <div className="grid lg:grid-cols-2 gap-0 items-stretch">
                   {/* Photo Section */}
-                  <div className="flex items-center justify-center p-6">
+                  <div className="flex items-stretch justify-center p-6 lg:p-8">
                     <img 
                       src="/images/shadman-about.jpeg" 
                       alt="Shadman Zafar - Founder, Chairman"
-                      className="block w-auto max-w-full h-auto rounded-xl shadow-xl"
+                      className="block w-auto max-w-full h-full object-cover rounded-xl shadow-xl"
                       loading="eager"
                       decoding="async"
                     />
@@ -130,8 +130,8 @@ const About = () => {
                     </div>
                     
                     <div className="p-6 bg-spacex-gradient/10 border border-spacex-accent/20 rounded-lg">
-                      <p className="text-foreground font-semibold text-center leading-relaxed">
-                        "Experience is not theoretical. I've presented to boards under pressure, 
+                      <p className="text-center text-2xl font-bold text-spacex-gradient border-t border-b border-spacex-accent/20 py-8 leading-relaxed">
+                        "My experience is not theoretical. I've presented to boards under pressure, 
                         answered regulators in the toughest jurisdictions, and delivered multi-billion-dollar transformations."
                       </p>
                     </div>
