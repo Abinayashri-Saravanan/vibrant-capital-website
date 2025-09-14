@@ -226,7 +226,7 @@ const Index = () => {
                 <CardContent className="p-6 h-full flex flex-col justify-between min-h-[280px]">
                   <div>
                     <div className="text-4xl font-bold text-secondary mb-4">04</div>
-                    <h3 className="text-lg font-semibold mb-3 text-secondary">AI‑Native Enterprises</h3>
+                    <h3 className="text-lg font-semibold mb-3 text-foreground">AI‑Native Enterprises</h3>
                     <p className="text-muted-foreground leading-relaxed text-sm mb-3">
                       The future we are building toward. Entire enterprises re‑architected around AI — from infrastructure and governance to customer engagement and operations. CIOs won't bolt AI on; they will run organizations designed to be AI‑first from the ground up.
                     </p>
