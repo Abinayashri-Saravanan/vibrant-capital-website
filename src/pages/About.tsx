@@ -64,11 +64,11 @@ const About = () => {
               <CardContent className="p-0">
                 <div className="grid lg:grid-cols-2 gap-0 items-stretch">
                   {/* Photo Section */}
-                  <div className="flex items-stretch justify-center p-6 lg:p-8">
+                  <div className="flex items-start justify-center p-6 lg:p-8">
                     <img 
                       src="/images/shadman-about.jpeg" 
                       alt="Shadman Zafar - Founder, Chairman"
-                      className="block w-auto max-w-full h-full object-cover rounded-xl shadow-xl"
+                      className="block w-auto h-auto max-w-full rounded-xl shadow-xl"
                       loading="eager"
                       decoding="async"
                     />
