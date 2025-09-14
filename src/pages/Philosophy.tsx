@@ -124,31 +124,6 @@ const Philosophy = () => {
         </div>
       </section>
 
-      {/* Philosophy Statement */}
-      <section className="py-24 section-spacex">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <Card className="card-spacex card-spacex-glow border-none bg-card/80 backdrop-blur-sm">
-              <CardContent className="p-12">
-                <h2 className="text-4xl font-bold mb-8 text-center text-foreground">
-                  Beyond Traditional PE
-                </h2>
-                <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-                  <p>
-                    Traditional private equity focuses on financial engineering and cost optimization. We focus on transformation through applied intelligence. Our approach recognizes that the companies winning in the AI-driven economy won't be those that simply optimize existing processes, but those that fundamentally reimagine how work gets done.
-                  </p>
-                  <p>
-                    We partner with companies ready to make this transition - from process automation to intelligent operations, from reactive decision-making to predictive insights, from siloed departments to integrated AI-native workflows.
-                  </p>
-                  <p className="text-center text-2xl font-bold text-primary border-t border-b border-primary/20 py-8">
-                    We don't just invest in AI companies. We create them.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Investment Approach */}
       <section className="py-24">
