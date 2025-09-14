@@ -72,8 +72,9 @@ const Navigation = () => {
               variant="outline"
               size="sm"
               className="nav-contact-btn uppercase tracking-wider font-bold border-2 border-white/40 text-white bg-transparent hover:bg-white hover:text-slate-900 transition-all duration-300"
+              asChild
             >
-              CONTACT
+              <Link to="/contact">CONTACT</Link>
             </Button>
             <Button
               variant="ghost"
@@ -90,8 +91,9 @@ const Navigation = () => {
             <Button
               variant="outline"
               className="nav-contact-btn uppercase tracking-wider font-bold border-2 border-white/40 text-white bg-transparent hover:bg-white hover:text-slate-900 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/20"
+              asChild
             >
-              CONTACT
+              <Link to="/contact">CONTACT</Link>
             </Button>
           </div>
         </div>

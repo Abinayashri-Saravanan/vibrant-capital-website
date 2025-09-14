@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
 import { useVideoOptimization } from "@/hooks/use-video-optimization";
@@ -108,11 +109,11 @@ const Index = () => {
 
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button size="lg" className="btn-spacex-filled px-12 py-4 text-lg">
-                EXPLORE INVESTMENTS
+              <Button size="lg" className="btn-spacex-filled px-12 py-4 text-lg" asChild>
+                <Link to="/investments">EXPLORE INVESTMENTS</Link>
               </Button>
-              <Button size="lg" className="btn-spacex px-12 py-4 text-lg">
-                OUR PHILOSOPHY
+              <Button size="lg" className="btn-spacex px-12 py-4 text-lg" asChild>
+                <Link to="/philosophy">OUR PHILOSOPHY</Link>
               </Button>
             </div>
           </div>
@@ -359,8 +360,8 @@ const Index = () => {
                 We are writing the next chapter of enterprise transformation.
               </span>
             </p>
-            <Button size="lg" className="btn-spacex-filled px-16 py-6 text-xl">
-              PARTNER WITH US
+            <Button size="lg" className="btn-spacex-filled px-16 py-6 text-xl" asChild>
+              <Link to="/contact">PARTNER WITH US</Link>
             </Button>
           </div>
         </div>
