@@ -1,8 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
+
+  const handleJoinMission = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -292,7 +299,7 @@ const About = () => {
               We invest with conviction, operate with empathy, and partner with CIOs to deliver transformations 
               that are secure, measurable, and future-proof.
             </p>
-            <Button size="lg" className="btn-premium">
+            <Button size="lg" className="btn-premium" onClick={handleJoinMission}>
               Join Our Mission
             </Button>
           </div>

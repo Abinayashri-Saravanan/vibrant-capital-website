@@ -1,8 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const ForInvestors = () => {
+  const navigate = useNavigate();
+
+  const handlePartnerWithUs = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -285,7 +292,7 @@ const ForInvestors = () => {
               By partnering with us, you are not just investing in companies — you are investing in the future 
               operating model of global enterprise.
             </p>
-            <Button size="lg" className="btn-premium">
+            <Button size="lg" className="btn-premium" onClick={handlePartnerWithUs}>
               Partner With Us
             </Button>
           </div>
