@@ -120,31 +120,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Mission Statement */}
-      <section className="py-20 relative">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto text-center">
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-muted-foreground mb-8">
-              Vibrant Capital is a private equity firm{" "}
-              <span className="text-primary font-medium">founded by CIOs, for CIOs</span>. We invest in, operate, and accelerate companies that embed AI into the core of enterprise operations, ensuring transformation is practical, secure, and measurable.
-            </p>
-            <div className="max-w-5xl mx-auto text-base md:text-lg leading-relaxed text-muted-foreground space-y-4">
-              <p>
-                While the world is focused on chasing the newest advances in LLMs to achieve near‑AGI intelligence, we stay awake worrying about the fact that medium and large corporations and governments have yet to see transformational commercial or operational impacts from AI technologies that are already good enough to create step‑function changes.
-              </p>
-              <p>
-                While AI only firms debate whether scaling laws for LLM improvements are nearing their yield limits, we stay awake asking why the scaling of current AI capabilities is moving so slowly inside the average enterprise.
-              </p>
-              <p>
-                While AI and hyperscalers worry about how they will spend the next $100B on building a new data center, we refine our thinking on how exactly a CIO can take out $100 million in cost and add $100 million in revenue with AI solutions today.
-              </p>
-              <p className="text-primary font-semibold text-lg">
-                We focus on the pragmatic, practical basis of scaling AI in enterprises and governments. We know humanity has seen at least two AI winters when all investments froze after initial fervor subsided because commercial promise did not materialize. We stay awake to ensure another AI winter does not come — by making sure AI delivers practical, measurable results today.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Four Waves Framework */}
       <section className="py-20">

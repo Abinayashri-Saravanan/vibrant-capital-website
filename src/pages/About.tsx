@@ -64,16 +64,16 @@ const About = () => {
               <CardContent className="p-0">
                 <div className="grid lg:grid-cols-2 gap-0">
                   {/* Photo Section */}
-                  <div className="relative h-[600px] lg:h-auto">
+                  <div className="relative h-[400px] lg:h-[500px]">
                     <img 
                       src="/images/shadman-about.jpeg" 
-                      alt="Shadman Zafar - Founder & Managing Partner"
-                      className="absolute inset-0 w-full h-full object-cover"
+                      alt="Shadman Zafar - Founder, Chairman"
+                      className="absolute inset-0 w-full h-full object-cover object-center"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
                     <div className="absolute bottom-8 left-8 lg:hidden">
                       <h3 className="text-3xl font-bold text-white mb-2">Shadman Zafar</h3>
-                      <p className="text-white/80 text-lg">Founder & Managing Partner</p>
+                      <p className="text-white/80 text-lg">Founder, Chairman</p>
                     </div>
                   </div>
                   
@@ -81,7 +81,7 @@ const About = () => {
                   <div className="p-12 lg:p-16 space-y-8">
                     <div className="hidden lg:block">
                       <h3 className="text-4xl font-bold text-foreground mb-4">Shadman Zafar</h3>
-                      <p className="text-xl text-spacex-gradient font-semibold mb-6">Founder & Managing Partner</p>
+                      <p className="text-xl text-spacex-gradient font-semibold mb-6">Founder, Chairman</p>
                       <p className="text-lg text-muted-foreground leading-relaxed">
                         A globally recognized technology leader and innovator whose career spans decades of 
                         driving transformation at Fortune 100 companies.
