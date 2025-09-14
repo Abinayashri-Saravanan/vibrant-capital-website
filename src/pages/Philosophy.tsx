@@ -1,21 +1,109 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
+import { useState, useEffect } from "react";
 
 const Philosophy = () => {
+  const heroMessages = [
+    {
+      title: "Investing Where CIOs Create Durable Edge",
+      subtitle: "At Vibrant Capital, our philosophy is rooted in one conviction: the value of AI will be measured not in research papers or pilot projects, but in the boardroom results delivered by CIOs."
+    },
+    {
+      title: "Sector Depth Over Scatter",
+      subtitle: "We concentrate on sectors where the stakes are highest and where AI adoption has been historically difficult: banking, insurance, healthcare, energy, manufacturing, retail, and logistics."
+    },
+    {
+      title: "AI-Native Readiness",
+      subtitle: "We back companies that are AI-native — designed from the ground up with AI at the core, adaptable to emerging paradigms like GraphRAG, multi-agent systems, and explainable AI."
+    },
+    {
+      title: "Operate to De-Risk",
+      subtitle: "Capital is necessary, but not sufficient. We embed Operators-in-Residence — seasoned CIOs and enterprise technologists — directly into our portfolio companies."
+    }
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroMessages.length);
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(timer);
+  }, [heroMessages.length]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 section-gradient">
+      {/* Hero Section with Auto-Slider */}
+      <section className="pt-24 pb-16 section-gradient relative overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Investing Where CIOs Create <span className="text-gradient">Durable Edge</span>
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              At Vibrant Capital, our philosophy is rooted in one conviction: the value of AI will be measured not in research papers or pilot projects, but in the boardroom results delivered by CIOs. Our strategy is designed to ensure enterprises realize commercial, regulated, and operational outcomes from AI today — while preparing them for the AI-native future.
-            </p>
+          <div className="max-w-5xl mx-auto text-center relative">
+            {/* Slide Indicators */}
+            <div className="flex justify-center space-x-2 mb-8">
+              {heroMessages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentSlide ? 'bg-primary w-8' : 'bg-primary/30 hover:bg-primary/60'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Sliding Content */}
+            <div className="relative h-48 md:h-32">
+              {heroMessages.map((message, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                    index === currentSlide
+                      ? 'opacity-100 transform translate-x-0'
+                      : index < currentSlide
+                      ? 'opacity-0 transform -translate-x-full'
+                      : 'opacity-0 transform translate-x-full'
+                  }`}
+                >
+                  <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
+                    {message.title.split(' ').map((word, i) => 
+                      word === 'Edge' || word === 'Scatter' || word === 'Readiness' || word === 'De-Risk' ? (
+                        <span key={i} className="text-gradient">{word}</span>
+                      ) : (
+                        <span key={i}>{word} </span>
+                      )
+                    )}
+                  </h1>
+                  <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in">
+                    {message.subtitle}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Navigation Arrows */}
+            <div className="flex justify-between items-center absolute top-1/2 left-0 right-0 transform -translate-y-1/2 px-4">
+              <button
+                onClick={() => setCurrentSlide((prev) => (prev - 1 + heroMessages.length) % heroMessages.length)}
+                className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors duration-200 group"
+                aria-label="Previous slide"
+              >
+                <svg className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={() => setCurrentSlide((prev) => (prev + 1) % heroMessages.length)}
+                className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors duration-200 group"
+                aria-label="Next slide"
+              >
+                <svg className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
