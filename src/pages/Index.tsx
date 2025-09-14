@@ -108,7 +108,7 @@ const Index = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="mt-12 sm:mt-10 mb-8 sm:mb-0 flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button size="lg" className="btn-spacex-filled px-12 py-4 text-lg" asChild>
                 <Link to="/investments">EXPLORE INVESTMENTS</Link>
               </Button>
