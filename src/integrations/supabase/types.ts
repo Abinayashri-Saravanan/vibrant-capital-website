@@ -14,6 +14,30 @@ export type Database = {
   }
   public: {
     Tables: {
+      admin_users: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          password_hash: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          password_hash: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          password_hash?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       contacts: {
         Row: {
           company: string | null
@@ -52,7 +76,10 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      is_admin: {
+        Args: Record<PropertyKey, never>
+        Returns: boolean
+      }
     }
     Enums: {
       [_ in never]: never
