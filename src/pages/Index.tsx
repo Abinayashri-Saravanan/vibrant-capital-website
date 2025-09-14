@@ -81,38 +81,48 @@ const Index = () => {
       {/* Mission Statement */}
       <section className="py-32 relative">
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <p className="text-3xl md:text-4xl font-light leading-relaxed text-muted-foreground">
-              We are a private equity firm{" "}
-              <span className="text-primary font-medium">founded by CIOs, for CIOs</span>{" "}
-              — leaders who have lived the daily pressures of running massive IT organizations and who now 
-              dedicate themselves to shaping the future of enterprise AI.
+          <div className="max-w-6xl mx-auto text-center">
+            <p className="text-2xl md:text-3xl font-light leading-relaxed text-muted-foreground mb-12">
+              Vibrant Capital is a private equity firm{" "}
+              <span className="text-primary font-medium">founded by CIOs, for CIOs</span>. We invest in, operate, and accelerate companies that embed AI into the core of enterprise operations, ensuring transformation is practical, secure, and measurable.
             </p>
+            <div className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-muted-foreground space-y-6">
+              <p>
+                While the world is focused on chasing the newest advances in LLMs to achieve near‑AGI intelligence, we stay awake worrying about the fact that medium and large corporations and governments have yet to see transformational commercial or operational impacts from AI technologies that are already good enough to create step‑function changes.
+              </p>
+              <p>
+                While AI only firms debate whether scaling laws for LLM improvements are nearing their yield limits, we stay awake asking why the scaling of current AI capabilities is moving so slowly inside the average enterprise.
+              </p>
+              <p>
+                While AI and hyperscalers worry about how they will spend the next $100B on building a new data center, we refine our thinking on how exactly a CIO can take out $100 million in cost and add $100 million in revenue with AI solutions today.
+              </p>
+              <p className="text-primary font-semibold text-xl">
+                We focus on the pragmatic, practical basis of scaling AI in enterprises and governments. We know humanity has seen at least two AI winters when all investments froze after initial fervor subsided because commercial promise did not materialize. We stay awake to ensure another AI winter does not come — by making sure AI delivers practical, measurable results today.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Problem Statement */}
+      {/* Hero Message */}
       <section className="py-32 section-spacex">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <Card className="card-spacex card-spacex-glow border-none">
               <CardContent className="p-12">
-                <h2 className="text-4xl font-bold mb-8 text-center">THE CHALLENGE</h2>
-                <div className="space-y-8 text-xl leading-relaxed">
+                <h2 className="text-4xl font-bold mb-8 text-center">APPLIED AI IS THE CURRENT WAVE</h2>
+                <div className="space-y-6 text-lg leading-relaxed">
                   <p>
-                    A Fortune 100 CIO sat in a boardroom with a familiar problem: the board demanded an AI strategy. 
-                    His team had run <span className="text-primary font-semibold">six pilots in the past year</span> 
-                    — a chatbot here, a predictive model there — but none had scaled.
+                    Applied AI is the current wave where intelligence moves from lab experiments into the arteries of business and government. For us, this is not about futuristic speculation — it is about helping CIOs translate today's proven AI capabilities into cost savings, revenue growth, and risk reduction.
                   </p>
                   <p>
-                    Compliance flagged every rollout. Procurement delayed contracts for months. The board grew impatient.
+                    We act as the bridge between boardroom ambition and operational execution, giving enterprises the tools, playbooks, partners, and governance frameworks to go from pilots to production.
+                  </p>
+                  <p>
+                    Our focus is on measurable outcomes — cycle‑time reductions, compliance improvements, and ROI in under 12 months — so that AI adoption is not a gamble but a reliable lever of transformation.
                   </p>
                   <p className="text-center text-2xl font-bold text-primary border-t border-b border-primary/20 py-8">
-                    They know AI can transform the business, but they can't get from promise to production.
-                  </p>
-                  <p className="text-center text-3xl font-black text-spacex-gradient">
-                    THIS IS WHY VIBRANT CAPITAL EXISTS.
+                    Vibrant Capital exists to make AI practical and profitable today, while laying the foundations for tomorrow's AI‑native enterprises.
                   </p>
                 </div>
               </CardContent>
@@ -121,56 +131,66 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Three Waves - Sequoia-style Tiled Layout */}
+      {/* Four Waves Framework */}
       <section className="py-32">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-semibold text-center mb-20 text-foreground">
-              The Three Waves of AI
+              Four Waves Framework
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               
-              {/* Wave 1 - Tall card */}
-              <Card className="col-span-1 md:col-span-1 lg:col-span-1 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-8 h-full flex flex-col justify-between min-h-[300px]">
+              {/* Wave 1 */}
+              <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-6 h-full flex flex-col justify-between min-h-[280px]">
                   <div>
-                    <div className="text-5xl font-bold text-primary/30 mb-4">01</div>
-                    <h3 className="text-xl font-semibold mb-4 text-foreground">Frontier Models</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      The pioneers built massive models that captured headlines. They demonstrated potential, 
-                      but remained confined to white papers and demos.
+                    <div className="text-4xl font-bold text-primary/30 mb-4">01</div>
+                    <h3 className="text-lg font-semibold mb-3 text-foreground">Frontier Models</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      Breakthrough research from labs and hyperscalers demonstrated AI's raw potential but remained impractical for enterprise scale. CIOs admired the headlines but could not integrate these models into regulated, legacy-heavy environments.
                     </p>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Wave 2 - Medium card */}
-              <Card className="col-span-1 md:col-span-1 lg:col-span-1 bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-8 h-full flex flex-col justify-between min-h-[300px]">
+              {/* Wave 2 */}
+              <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-6 h-full flex flex-col justify-between min-h-[280px]">
                   <div>
-                    <div className="text-5xl font-bold text-primary/30 mb-4">02</div>
-                    <h3 className="text-xl font-semibold mb-4 text-foreground">Tools & Platforms</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      APIs, SaaS platforms, and vendor demos flooded inboxes. Pilots proliferated.
+                    <div className="text-4xl font-bold text-primary/30 mb-4">02</div>
+                    <h3 className="text-lg font-semibold mb-3 text-foreground">Tools & Platforms</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      APIs, copilots, and SaaS tools democratized access. Enterprises experimented widely, but initiatives stayed fragmented. CIOs were left with pilots that looked exciting in demos but could not pass procurement, compliance, or ROI thresholds.
                     </p>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Wave 3 - Featured large card */}
-              <Card className="col-span-1 md:col-span-1 lg:col-span-2 bg-primary/5 border border-primary/20 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-8 h-full flex flex-col justify-between min-h-[300px]">
+              {/* Wave 3 - Featured */}
+              <Card className="bg-primary/5 border border-primary/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-6 h-full flex flex-col justify-between min-h-[280px]">
                   <div>
-                    <div className="text-6xl font-bold text-primary mb-4">03</div>
-                    <h3 className="text-2xl font-semibold mb-4 text-primary">Applied AI</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                      AI becomes invisible but indispensible. Board-ready, compliant, and financially justifiable.
+                    <div className="text-4xl font-bold text-primary mb-4">03</div>
+                    <h3 className="text-lg font-semibold mb-3 text-primary">Applied AI</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm mb-3">
+                      The wave we operate in. Applied AI is about embedding intelligence into critical workflows: automating claims, enhancing fraud detection, accelerating regulatory reporting, powering revenue cycle management. It is enterprise‑grade, governed, and outcome‑driven.
                     </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Integration hurdles turned most pilots into shelfware. We bridge the gap between AI potential and production deployment.
-                    </p>
+                    <div className="text-xs font-medium text-primary">← Our Focus</div>
                   </div>
-                  <div className="text-sm font-medium text-primary mt-4">← Our Focus</div>
+                </CardContent>
+              </Card>
+
+              {/* Wave 4 - Vision */}
+              <Card className="bg-secondary/10 border border-secondary/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-6 h-full flex flex-col justify-between min-h-[280px]">
+                  <div>
+                    <div className="text-4xl font-bold text-secondary mb-4">04</div>
+                    <h3 className="text-lg font-semibold mb-3 text-secondary">AI‑Native Enterprises</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm mb-3">
+                      The future we are building toward. Entire enterprises re‑architected around AI — from infrastructure and governance to customer engagement and operations. CIOs won't bolt AI on; they will run organizations designed to be AI‑first from the ground up.
+                    </p>
+                    <div className="text-xs font-medium text-secondary">(Vision)</div>
+                  </div>
                 </CardContent>
               </Card>
 

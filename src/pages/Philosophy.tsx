@@ -11,12 +11,10 @@ const Philosophy = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Investment <span className="text-gradient">Philosophy</span>
+              Investing Where CIOs Create <span className="text-gradient">Durable Edge</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Our investment philosophy is built around a simple but powerful conviction: the true value of AI 
-              will not be captured by frontier models or flashy prototypes, but by the enterprises that 
-              successfully embed AI into the very core of how they operate.
+              At Vibrant Capital, our philosophy is rooted in one conviction: the value of AI will be measured not in research papers or pilot projects, but in the boardroom results delivered by CIOs. Our strategy is designed to ensure enterprises realize commercial, regulated, and operational outcomes from AI today — while preparing them for the AI-native future.
             </p>
           </div>
         </div>
@@ -38,32 +36,8 @@ const Philosophy = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    We are unapologetically focused. While others spread capital across dozens of unconnected bets, 
-                    we concentrate our efforts on the industries where data gravity, regulatory scrutiny, and 
-                    operational complexity make AI adoption both difficult and transformative.
+                    We concentrate on sectors where the stakes are highest and where AI adoption has been historically difficult: banking, insurance, healthcare, energy, manufacturing, retail, and logistics. These industries carry massive data gravity, complex compliance obligations, and systemic inefficiencies. They are also where AI's potential for cycle-time reduction, revenue generation, and risk mitigation is greatest. By going deep, not broad, we become trusted partners in industries where CIOs need conviction and credibility most.
                   </p>
-                  <div className="space-y-2">
-                    <div className="flex items-center text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      Banking and Financial Services
-                    </div>
-                    <div className="flex items-center text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      Insurance
-                    </div>
-                    <div className="flex items-center text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      Healthcare and Life Sciences
-                    </div>
-                    <div className="flex items-center text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      Energy and Utilities
-                    </div>
-                    <div className="flex items-center text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      Manufacturing, Transportation, and Retail
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
 
@@ -77,26 +51,8 @@ const Philosophy = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    We don't back companies that are simply "AI-enhanced." We back those that are AI-native.
+                    We back companies that are AI-native — designed from the ground up with AI at the core. AI-native firms build their architectures around intelligence, not as a bolt-on feature. They prioritize compliance and observability from day one. They are adaptable to emerging paradigms like GraphRAG, multi-agent systems, and explainable AI. For CIOs, these companies provide solutions that don't just solve today's pain points but position them to lead tomorrow's enterprise AI landscape.
                   </p>
-                  <div className="space-y-3">
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Architecture-first thinking</h4>
-                      <p className="text-sm text-muted-foreground">Designed around agentic AI, RAG, and secure MLOps</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Data readiness</h4>
-                      <p className="text-sm text-muted-foreground">Ingest, classify, and govern data responsibly</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Compliance by design</h4>
-                      <p className="text-sm text-muted-foreground">Built for the harshest regulators from day one</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Future-proofing</h4>
-                      <p className="text-sm text-muted-foreground">Engineered for multi-agent systems and GraphRAG</p>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
 
@@ -110,28 +66,8 @@ const Philosophy = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Capital alone does not win enterprise markets. Execution does. That is why Vibrant Capital 
-                    deploys Operators-in-Residence — veteran CIOs and technology leaders who know the trenches 
-                    of procurement, security reviews, and enterprise rollouts.
+                    Capital is necessary, but not sufficient. CIOs struggle with procurement bottlenecks, security reviews, and organizational resistance. That is why we embed Operators-in-Residence — seasoned CIOs and enterprise technologists — directly into our portfolio companies. They accelerate sales cycles, prepare governance frameworks, and open doors at Fortune 500s. This operator-led model reduces friction, builds trust, and ensures our companies get to production — not just pilots.
                   </p>
-                  <div className="space-y-2">
-                    <div className="flex items-center text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      Accelerate vendor approvals
-                    </div>
-                    <div className="flex items-center text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      Translate technical innovation into board-ready language
-                    </div>
-                    <div className="flex items-center text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      Navigate compliance and risk committees
-                    </div>
-                    <div className="flex items-center text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      Land Fortune 500 logos and expand globally
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
 
@@ -145,27 +81,29 @@ const Philosophy = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    We don't leave outcomes to chance. Every investment is accompanied by a playbook — 
-                    frameworks, accelerators, and best practices drawn from decades of enterprise leadership.
+                    We deliver proven frameworks to every investment:
                   </p>
                   <div className="space-y-3">
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">AI Deployment Blueprints</h4>
-                      <p className="text-sm text-muted-foreground">Secure landing zones with pre-built compliance controls</p>
+                      <h4 className="font-semibold text-primary mb-1">Deployment Blueprints</h4>
+                      <p className="text-sm text-muted-foreground">Secure landing zones tailored for BFSI, healthcare, and other regulated industries</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Process Intelligence Frameworks</h4>
-                      <p className="text-sm text-muted-foreground">Tools to identify high-ROI workflows</p>
+                      <h4 className="font-semibold text-primary mb-1">Process Intelligence Maps</h4>
+                      <p className="text-sm text-muted-foreground">Data-driven identification of where AI yields the highest ROI</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Agentic Patterns Libraries</h4>
-                      <p className="text-sm text-muted-foreground">Reusable AI workflows for claims, collections, KYC</p>
+                      <h4 className="font-semibold text-primary mb-1">Agentic Patterns Library</h4>
+                      <p className="text-sm text-muted-foreground">Pre-built workflows for claims, collections, revenue cycle, KYC, and more</p>
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary mb-1">Governance Guardrails</h4>
-                      <p className="text-sm text-muted-foreground">Model evaluation and audit logs built in</p>
+                      <p className="text-sm text-muted-foreground">Guardrails, evaluation protocols, and monitoring for trustworthy AI</p>
                     </div>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed mt-4">
+                    These playbooks transform abstract potential into pragmatic execution.
+                  </p>
                 </CardContent>
               </Card>
             </div>
@@ -183,31 +121,34 @@ const Philosophy = () => {
             <Card className="card-premium">
               <CardHeader>
                 <CardTitle className="text-2xl text-center">
-                  Our philosophy is outcomes-first. Every investment is judged by the value it creates for CIOs and their enterprises.
+                  Our philosophy is outcome-driven. We evaluate investments on their ability to deliver:
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="text-center p-6 bg-primary/10 border border-primary/20 rounded-lg">
-                    <div className="text-3xl font-bold text-primary mb-2">30-50%</div>
+                    <div className="text-3xl font-bold text-primary mb-2">30–50%</div>
                     <div className="font-semibold mb-1">Cycle-time reductions</div>
                     <div className="text-sm text-muted-foreground">in targeted workflows</div>
                   </div>
                   <div className="text-center p-6 bg-primary/10 border border-primary/20 rounded-lg">
                     <div className="text-3xl font-bold text-primary mb-2">&lt;12</div>
                     <div className="font-semibold mb-1">Months ROI payback</div>
-                    <div className="text-sm text-muted-foreground">for lighthouse use cases</div>
+                    <div className="text-sm text-muted-foreground">for lighthouse processes</div>
                   </div>
                   <div className="text-center p-6 bg-primary/10 border border-primary/20 rounded-lg">
                     <div className="text-3xl font-bold text-primary mb-2">Enterprise</div>
                     <div className="font-semibold mb-1">Adoption velocity</div>
-                    <div className="text-sm text-muted-foreground">pilots converted to production</div>
+                    <div className="text-sm text-muted-foreground">measured in pilots converted to production deployments</div>
                   </div>
                   <div className="text-center p-6 bg-primary/10 border border-primary/20 rounded-lg">
-                    <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                    <div className="font-semibold mb-1">Governance maturity</div>
-                    <div className="text-sm text-muted-foreground">compliance certifications passed</div>
+                    <div className="text-3xl font-bold text-primary mb-2">Governance</div>
+                    <div className="font-semibold mb-1">Maturity</div>
+                    <div className="text-sm text-muted-foreground">evidenced by certifications, audits passed, and regulatory approvals</div>
                   </div>
+                </div>
+                <div className="mt-8 text-center">
+                  <p className="text-muted-foreground">If a company cannot deliver these outcomes, it does not belong in our portfolio.</p>
                 </div>
               </CardContent>
             </Card>
@@ -241,20 +182,18 @@ const Philosophy = () => {
         </div>
       </section>
 
-      {/* Closing Statement */}
+      {/* Closing Manifesto */}
       <section className="py-16 section-gradient">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
-              Reshaping How <span className="text-gradient">Enterprises Work</span>
+              Closing <span className="text-gradient">Manifesto</span>
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Our investment philosophy is not about capital allocation. It is about reshaping how enterprises 
-              work in the AI era. We invest in companies that don't just promise disruption, but deliver transformation.
+              Our philosophy is not about capital allocation; it is about reshaping how enterprises work in the AI era. We invest in companies that embed AI into the fabric of operations, empower CIOs to lead transformation, and prove that AI can be both trusted and profitable.
             </p>
             <p className="text-lg font-semibold text-gradient">
-              At Vibrant Capital, we believe the Third Wave of AI — Applied AI — will be remembered not by 
-              the size of the models, but by the enterprises that learned how to use them.
+              By holding ourselves accountable to this philosophy, Vibrant Capital ensures that Applied AI becomes the wave of transformation that enterprises — and the world — can count on.
             </p>
           </div>
         </div>
