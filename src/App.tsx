@@ -9,6 +9,7 @@ import Investments from "./pages/Investments";
 import Philosophy from "./pages/Philosophy";
 import Sectors from "./pages/Sectors";
 import ForInvestors from "./pages/ForInvestors";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/philosophy" element={<Philosophy />} />
           <Route path="/sectors" element={<Sectors />} />
           <Route path="/for-investors" element={<ForInvestors />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

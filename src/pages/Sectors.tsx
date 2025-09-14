@@ -8,6 +8,16 @@ import energyImg from "@/assets/sector-energy.jpg";
 import transportationImg from "@/assets/sector-transportation.jpg";
 import manufacturingImg from "@/assets/sector-manufacturing.jpg";
 import publicImg from "@/assets/sector-public.jpg";
+import telecomImg from "@/assets/sector-telecom.jpg";
+import bankingIcon from "@/assets/sector-icons/banking-icon.jpg";
+import insuranceIcon from "@/assets/sector-icons/insurance-icon.jpg";
+import healthcareIcon from "@/assets/sector-icons/healthcare-icon.jpg";
+import retailIcon from "@/assets/sector-icons/retail-icon.jpg";
+import energyIcon from "@/assets/sector-icons/energy-icon.jpg";
+import transportationIcon from "@/assets/sector-icons/transportation-icon.jpg";
+import manufacturingIcon from "@/assets/sector-icons/manufacturing-icon.jpg";
+import publicIcon from "@/assets/sector-icons/public-icon.jpg";
+import telecomIcon from "@/assets/sector-icons/telecom-icon.jpg";
 
 const Sectors = () => {
   return (
@@ -24,16 +34,106 @@ const Sectors = () => {
               <br />
               <span className="text-spacex-gradient">SECTORS</span>
             </h1>
-            <p className="text-2xl text-muted-foreground leading-relaxed font-light">
+            <p className="text-2xl text-muted-foreground leading-relaxed font-light mb-12">
               We focus on industries where data is abundant, regulation is strict, and inefficiency 
               is costly. These are the sectors where AI can create transformational impact.
             </p>
+            
+            {/* Quick Navigation */}
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-4 max-w-6xl mx-auto">
+              <a href="#banking" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={bankingImg} alt="Banking" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Banking &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Capital Markets</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#insurance" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={insuranceImg} alt="Insurance" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Insurance</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#healthcare" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={healthcareImg} alt="Healthcare" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Healthcare &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Life Sciences</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#retail" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={retailImg} alt="Retail" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Retail &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Consumer Goods</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#transportation" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={transportationImg} alt="Transportation" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Transportation &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Logistics</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#energy" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={energyImg} alt="Energy" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Energy &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Utilities</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#manufacturing" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={manufacturingImg} alt="Manufacturing" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Manufacturing</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#telecom" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={telecomImg} alt="Telecom" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Telecom</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#public" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={publicImg} alt="Public Sector" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Public Sector</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Banking & Capital Markets */}
-      <section className="py-16 section-spacex">
+      <section id="banking" className="py-16 section-spacex">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
@@ -91,7 +191,7 @@ const Sectors = () => {
             </Card>
 
             {/* Insurance */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="insurance" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={insuranceImg} 
@@ -146,7 +246,7 @@ const Sectors = () => {
             </Card>
 
             {/* Healthcare & Life Sciences */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="healthcare" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={healthcareImg} 
@@ -201,7 +301,7 @@ const Sectors = () => {
             </Card>
 
             {/* Retail & CPG */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="retail" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={retailImg} 
@@ -256,7 +356,7 @@ const Sectors = () => {
             </Card>
 
             {/* Transportation & Logistics */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="transportation" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={transportationImg} 
@@ -311,7 +411,7 @@ const Sectors = () => {
             </Card>
 
             {/* Energy & Utilities */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="energy" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={energyImg} 
@@ -366,7 +466,7 @@ const Sectors = () => {
             </Card>
 
             {/* Manufacturing */}
-            <Card className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+            <Card id="manufacturing" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={manufacturingImg} 
@@ -421,7 +521,7 @@ const Sectors = () => {
             </Card>
 
             {/* Public Sector */}
-            <Card className="card-spacex card-spacex-glow overflow-hidden">
+            <Card id="public" className="card-spacex card-spacex-glow overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={publicImg} 
@@ -468,6 +568,61 @@ const Sectors = () => {
                         <li>• Higher efficiency with limited budgets</li>
                         <li>• Improved transparency and accountability</li>
                         <li>• Increased citizen trust</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Telecommunications */}
+            <Card id="telecom" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={telecomImg} 
+                  alt="Telecommunications"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 flex items-center">
+                  <div className="pl-8">
+                    <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-wider">
+                      TELECOMMUNICATIONS
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-2xl font-bold mb-6 text-primary uppercase tracking-wider">CHALLENGES</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
+                      Telecom operators manage vast networks generating massive amounts of real‑time data while facing pressure to reduce operational costs and improve service quality. Network outages, security threats, and customer churn are constant challenges. AI adoption has been slow due to the complexity of integrating with legacy OSS/BSS systems and the need for real‑time decision making.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-6 text-primary uppercase tracking-wider">APPLIED AI SOLUTIONS</h3>
+                    <div className="space-y-4">
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-4">
+                        <h4 className="font-bold mb-2 text-lg">NETWORK OPTIMIZATION</h4>
+                        <p className="text-muted-foreground">AI‑driven network optimization and predictive maintenance for infrastructure</p>
+                      </div>
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-4">
+                        <h4 className="font-bold mb-2 text-lg">FRAUD DETECTION</h4>
+                        <p className="text-muted-foreground">Real‑time fraud detection and security threat monitoring</p>
+                      </div>
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-4">
+                        <h4 className="font-bold mb-2 text-lg">CUSTOMER ANALYTICS</h4>
+                        <p className="text-muted-foreground">Customer experience analytics and churn prediction models</p>
+                      </div>
+                    </div>
+                    <div className="mt-6 p-6 bg-primary/10 border border-primary/20 rounded-lg">
+                      <h4 className="font-bold text-primary mb-3 text-xl uppercase tracking-wider">PROJECTED OUTCOMES</h4>
+                      <ul className="space-y-2 font-semibold">
+                        <li>• 30–50% reduction in network downtime</li>
+                        <li>• 20–40% decrease in operational costs</li>
+                        <li>• Improved customer satisfaction and retention</li>
+                        <li>• Enhanced security and compliance</li>
                       </ul>
                     </div>
                   </div>
