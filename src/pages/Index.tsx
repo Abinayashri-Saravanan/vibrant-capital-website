@@ -120,14 +120,14 @@ const Index = () => {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-32 relative">
+      <section className="py-20 relative">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto text-center">
-            <p className="text-2xl md:text-3xl font-light leading-relaxed text-muted-foreground mb-12">
+            <p className="text-xl md:text-2xl font-light leading-relaxed text-muted-foreground mb-8">
               Vibrant Capital is a private equity firm{" "}
               <span className="text-primary font-medium">founded by CIOs, for CIOs</span>. We invest in, operate, and accelerate companies that embed AI into the core of enterprise operations, ensuring transformation is practical, secure, and measurable.
             </p>
-            <div className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-muted-foreground space-y-6">
+            <div className="max-w-5xl mx-auto text-base md:text-lg leading-relaxed text-muted-foreground space-y-4">
               <p>
                 While the world is focused on chasing the newest advances in LLMs to achieve near‑AGI intelligence, we stay awake worrying about the fact that medium and large corporations and governments have yet to see transformational commercial or operational impacts from AI technologies that are already good enough to create step‑function changes.
               </p>
@@ -137,7 +137,7 @@ const Index = () => {
               <p>
                 While AI and hyperscalers worry about how they will spend the next $100B on building a new data center, we refine our thinking on how exactly a CIO can take out $100 million in cost and add $100 million in revenue with AI solutions today.
               </p>
-              <p className="text-primary font-semibold text-xl">
+              <p className="text-primary font-semibold text-lg">
                 We focus on the pragmatic, practical basis of scaling AI in enterprises and governments. We know humanity has seen at least two AI winters when all investments froze after initial fervor subsided because commercial promise did not materialize. We stay awake to ensure another AI winter does not come — by making sure AI delivers practical, measurable results today.
               </p>
             </div>
@@ -146,7 +146,7 @@ const Index = () => {
       </section>
 
       {/* Hero Message */}
-      <section className="py-32 section-spacex">
+      <section className="py-20 section-spacex">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <Card className="card-spacex card-spacex-glow border-none">
@@ -173,7 +173,7 @@ const Index = () => {
       </section>
 
       {/* Four Waves Framework */}
-      <section className="py-32">
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-semibold text-center mb-20 text-foreground">
@@ -240,88 +240,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Metrics */}
-      <section className="py-32 section-spacex">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-5xl font-black text-center mb-20 uppercase tracking-wider">
-              MISSION METRICS
-            </h2>
-            <div className="grid md:grid-cols-4 gap-8">
-              <div className="text-center group relative">
-                <Card className="bg-card border border-border/50 p-8 hover:shadow-lg transition-all duration-500 group-hover:scale-105">
-                  <div className="relative">
-                    <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                      <svg className="w-10 h-10 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div className="text-5xl font-black text-primary mb-4 animate-fade-in">
-                      60-90
-                    </div>
-                    <div className="text-lg font-bold uppercase tracking-wider mb-2">DAYS</div>
-                    <div className="text-sm text-muted-foreground">TO PILOT</div>
-                  </div>
-                </Card>
-              </div>
-              
-              <div className="text-center group relative">
-                <Card className="bg-card border border-border/50 p-8 hover:shadow-lg transition-all duration-500 group-hover:scale-105">
-                  <div className="relative">
-                    <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                      <svg className="w-10 h-10 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                      </svg>
-                    </div>
-                    <div className="text-5xl font-black text-primary mb-4 animate-fade-in">
-                      30-50%
-                    </div>
-                    <div className="text-lg font-bold uppercase tracking-wider mb-2">EFFICIENCY</div>
-                    <div className="text-sm text-muted-foreground">GAINS</div>
-                  </div>
-                </Card>
-              </div>
-              
-              <div className="text-center group relative">
-                <Card className="bg-card border border-border/50 p-8 hover:shadow-lg transition-all duration-500 group-hover:scale-105">
-                  <div className="relative">
-                    <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                      <svg className="w-10 h-10 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                      </svg>
-                    </div>
-                    <div className="text-5xl font-black text-primary mb-4 animate-fade-in">
-                      &lt;12
-                    </div>
-                    <div className="text-lg font-bold uppercase tracking-wider mb-2">MONTHS</div>
-                    <div className="text-sm text-muted-foreground">ROI</div>
-                  </div>
-                </Card>
-              </div>
-              
-              <div className="text-center group relative">
-                <Card className="bg-card border border-border/50 p-8 hover:shadow-lg transition-all duration-500 group-hover:scale-105">
-                  <div className="relative">
-                    <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                      <svg className="w-10 h-10 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
-                    </div>
-                    <div className="text-5xl font-black text-primary mb-4 animate-fade-in">
-                      100%
-                    </div>
-                    <div className="text-lg font-bold uppercase tracking-wider mb-2">COMPLIANT</div>
-                    <div className="text-sm text-muted-foreground">SOC2, HIPAA, PCI</div>
-                  </div>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Sectors - Sequoia-style Masonry Grid */}
-      <section className="py-32">
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-semibold text-center mb-20 text-foreground">
@@ -426,7 +347,7 @@ const Index = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-32 section-spacex">
+      <section className="py-20 section-spacex">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-6xl font-black mb-12 uppercase tracking-wider">
