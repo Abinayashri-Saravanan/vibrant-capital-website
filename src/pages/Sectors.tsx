@@ -40,47 +40,92 @@ const Sectors = () => {
             </p>
             
             {/* Quick Navigation */}
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
-              <a href="#banking" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
-                <img src={bankingIcon} alt="Banking" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-xs text-center">Banking &</h3>
-                <h3 className="font-semibold text-xs text-center">Capital Markets</h3>
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-4 max-w-6xl mx-auto">
+              <a href="#banking" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={bankingImg} alt="Banking" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Banking &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Capital Markets</h3>
+                  </div>
+                </div>
               </a>
-              <a href="#insurance" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
-                <img src={insuranceIcon} alt="Insurance" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-xs text-center">Insurance</h3>
+              <a href="#insurance" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={insuranceImg} alt="Insurance" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Insurance</h3>
+                  </div>
+                </div>
               </a>
-              <a href="#healthcare" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
-                <img src={healthcareIcon} alt="Healthcare" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-xs text-center">Healthcare &</h3>
-                <h3 className="font-semibold text-xs text-center">Life Sciences</h3>
+              <a href="#healthcare" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={healthcareImg} alt="Healthcare" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Healthcare &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Life Sciences</h3>
+                  </div>
+                </div>
               </a>
-              <a href="#retail" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
-                <img src={retailIcon} alt="Retail" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-xs text-center">Retail &</h3>
-                <h3 className="font-semibold text-xs text-center">Consumer Goods</h3>
+              <a href="#retail" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={retailImg} alt="Retail" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Retail &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Consumer Goods</h3>
+                  </div>
+                </div>
               </a>
-              <a href="#transportation" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
-                <img src={transportationIcon} alt="Transportation" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-xs text-center">Transportation &</h3>
-                <h3 className="font-semibold text-xs text-center">Logistics</h3>
+              <a href="#transportation" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={transportationImg} alt="Transportation" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Transportation &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Logistics</h3>
+                  </div>
+                </div>
               </a>
-              <a href="#energy" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
-                <img src={energyIcon} alt="Energy" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-xs text-center">Energy &</h3>
-                <h3 className="font-semibold text-xs text-center">Utilities</h3>
+              <a href="#energy" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={energyImg} alt="Energy" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Energy &</h3>
+                    <h3 className="font-bold text-xs text-white text-center">Utilities</h3>
+                  </div>
+                </div>
               </a>
-              <a href="#manufacturing" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
-                <img src={manufacturingIcon} alt="Manufacturing" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-xs text-center">Manufacturing</h3>
+              <a href="#manufacturing" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={manufacturingImg} alt="Manufacturing" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Manufacturing</h3>
+                  </div>
+                </div>
               </a>
-              <a href="#telecom" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
-                <img src={telecomIcon} alt="Telecom" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-xs text-center">Telecom</h3>
+              <a href="#telecom" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={telecomImg} alt="Telecom" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Telecom</h3>
+                  </div>
+                </div>
               </a>
-              <a href="#public" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
-                <img src={publicIcon} alt="Public Sector" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-xs text-center">Public Sector</h3>
+              <a href="#public" className="group">
+                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <img src={publicImg} alt="Public Sector" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <h3 className="font-bold text-xs text-white text-center">Public Sector</h3>
+                  </div>
+                </div>
               </a>
             </div>
           </div>
