@@ -10,6 +10,7 @@ import energyImg from "@/assets/sector-energy.jpg";
 import transportationImg from "@/assets/sector-transportation.jpg";
 import manufacturingImg from "@/assets/sector-manufacturing.jpg";
 import publicImg from "@/assets/sector-public.jpg";
+import { useState, useEffect } from "react";
 
 const Index = () => {
   const { videoRef } = useVideoOptimization({
@@ -24,6 +25,22 @@ const Index = () => {
       console.warn('Hero video failed to load, using fallback background');
     }
   });
+
+  // Home Hero Auto-Slider Content
+  const heroMessages = [
+    { title: 'Powering the Third Wave of AI', subtitle: 'Applied AI for the Enterprise' },
+    { title: 'Applied AI, From Lab to Operations', subtitle: "Intelligence moves from lab experiments into the arteries of business and government." },
+    { title: 'From Pilots to Production', subtitle: "We bridge boardroom ambition and operational execution with tools, playbooks, partners, and governance." },
+    { title: 'Outcomes in Under 12 Months', subtitle: 'Cycle‑time reductions, compliance improvements, and ROI in under 12 months.' }
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => {
+      setCurrentSlide((p) => (p + 1) % heroMessages.length);
+    }, 4000);
+    return () => clearInterval(t);
+  }, [heroMessages.length]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -55,18 +72,42 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 z-10"></div>
         
         <div className="container mx-auto px-6 relative z-20">
-          <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-7xl md:text-8xl lg:text-9xl font-black mb-8 leading-none text-white drop-shadow-2xl">
-              POWERING THE
-              <br />
-              <span className="text-spacex-gradient drop-shadow-2xl">THIRD WAVE</span>
-              <br />
-              OF AI
-            </h1>
-            <p className="text-2xl md:text-3xl text-white/90 mb-12 font-light max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-              Applied AI for the Enterprise
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="max-w-6xl mx-auto text-center relative">
+            {/* Slide Indicators */}
+            <div className="flex justify-center space-x-3 mb-8 z-20 relative">
+              {heroMessages.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentSlide(i)}
+                  className={`h-3 rounded-full transition-all duration-300 border-2 ${
+                    i === currentSlide ? 'bg-primary border-primary w-12' : 'bg-transparent border-primary/40 w-3 hover:border-primary/70 hover:bg-primary/20'
+                  }`}
+                  aria-label={`Go to slide ${i + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Sliding Content */}
+            <div className="relative min-h-[320px] md:min-h-[280px] overflow-hidden">
+              {heroMessages.map((m, i) => (
+                <div
+                  key={i}
+                  className={`absolute inset-0 w-full transition-all duration-1000 ease-in-out transform ${
+                    i === currentSlide ? 'opacity-100 translate-x-0 z-10' : i < currentSlide ? 'opacity-0 -translate-x-full z-0' : 'opacity-0 translate-x-full z-0'
+                  }`}
+                >
+                  <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight text-white drop-shadow-2xl animate-fade-in">
+                    {m.title}
+                  </h1>
+                  <p className="text-2xl md:text-3xl text-white/90 font-light max-w-4xl mx-auto leading-relaxed drop-shadow-lg animate-fade-in">
+                    {m.subtitle}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button size="lg" className="btn-spacex-filled px-12 py-4 text-lg">
                 EXPLORE INVESTMENTS
               </Button>
