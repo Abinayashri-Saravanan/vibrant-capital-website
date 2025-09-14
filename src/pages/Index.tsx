@@ -251,8 +251,8 @@ const Index = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               
-              {/* Banking - Featured large card */}
-              <Card className="col-span-1 md:col-span-1 lg:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+               {/* Banking - Featured large card */}
+              <Card className="col-span-1 md:col-span-1 lg:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
                 <div className="relative h-72 overflow-hidden">
                   <img 
                     src={bankingImg} 
@@ -268,7 +268,7 @@ const Index = () => {
               </Card>
 
               {/* Insurance - Medium card */}
-              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
                 <div className="relative h-72 overflow-hidden">
                   <img 
                     src={insuranceImg} 
@@ -283,7 +283,7 @@ const Index = () => {
               </Card>
 
               {/* Healthcare - Medium card */}
-              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
                 <div className="relative h-72 overflow-hidden">
                   <img 
                     src={healthcareImg} 
@@ -298,7 +298,7 @@ const Index = () => {
               </Card>
 
               {/* Retail - Wide card */}
-              <Card className="col-span-1 md:col-span-1 lg:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+              <Card className="col-span-1 md:col-span-1 lg:col-span-2 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={retailImg} 
@@ -313,7 +313,7 @@ const Index = () => {
               </Card>
 
               {/* Energy - Medium card */}
-              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={energyImg} 
@@ -328,7 +328,7 @@ const Index = () => {
               </Card>
 
               {/* Manufacturing - Medium card */}
-              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300">
+              <Card className="col-span-1 group overflow-hidden border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => window.location.href = '/sectors'}>
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={manufacturingImg} 
