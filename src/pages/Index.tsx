@@ -146,38 +146,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Hero Message */}
-      <section className="py-20 section-spacex">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <Card className="card-spacex card-spacex-glow border-none">
-              <CardContent className="p-12">
-                <h2 className="text-4xl font-bold mb-8 text-center">APPLIED AI IS THE CURRENT WAVE</h2>
-                <div className="space-y-6 text-lg leading-relaxed">
-                  <p>
-                    Applied AI is the current wave where intelligence moves from lab experiments into the arteries of business and government. For us, this is not about futuristic speculation — it is about helping CIOs translate today's proven AI capabilities into cost savings, revenue growth, and risk reduction.
-                  </p>
-                  <p>
-                    We act as the bridge between boardroom ambition and operational execution, giving enterprises the tools, playbooks, partners, and governance frameworks to go from pilots to production.
-                  </p>
-                  <p>
-                    Our focus is on measurable outcomes — cycle‑time reductions, compliance improvements, and ROI in under 12 months — so that AI adoption is not a gamble but a reliable lever of transformation.
-                  </p>
-                  <p className="text-center text-2xl font-bold text-primary border-t border-b border-primary/20 py-8">
-                    Vibrant Capital exists to make AI practical and profitable today, while laying the foundations for tomorrow's AI‑native enterprises.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Four Waves Framework */}
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-semibold text-center mb-20 text-foreground">
+            <h2 className="text-4xl font-bold text-center mb-20 text-foreground uppercase tracking-wider">
               Four Waves Framework
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -237,6 +210,33 @@ const Index = () => {
               </Card>
 
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hero Message */}
+      <section className="py-20 section-spacex">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <Card className="card-spacex card-spacex-glow border-none">
+              <CardContent className="p-12">
+                <h2 className="text-4xl font-bold mb-8 text-center uppercase tracking-wider">APPLIED AI IS THE CURRENT WAVE</h2>
+                <div className="space-y-6 text-lg leading-relaxed">
+                  <p>
+                    Applied AI is the current wave where intelligence moves from lab experiments into the arteries of business and government. For us, this is not about futuristic speculation — it is about helping CIOs translate today's proven AI capabilities into cost savings, revenue growth, and risk reduction.
+                  </p>
+                  <p>
+                    We act as the bridge between boardroom ambition and operational execution, giving enterprises the tools, playbooks, partners, and governance frameworks to go from pilots to production.
+                  </p>
+                  <p>
+                    Our focus is on measurable outcomes — cycle‑time reductions, compliance improvements, and ROI in under 12 months — so that AI adoption is not a gamble but a reliable lever of transformation.
+                  </p>
+                  <p className="text-center text-2xl font-bold text-primary border-t border-b border-primary/20 py-8">
+                    Vibrant Capital exists to make AI practical and profitable today, while laying the foundations for tomorrow's AI‑native enterprises.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
