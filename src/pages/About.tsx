@@ -12,11 +12,11 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h1 className="text-5xl md:text-6xl font-black mb-8 text-foreground">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 text-foreground">
                 About
                 <span className="text-spacex-gradient block">Vibrant Capital</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
                 For CIOs, By CIOs — Leading the AI revolution in enterprises through operator experience and deep sector expertise.
               </p>
             </div>
@@ -64,7 +64,7 @@ const About = () => {
               <CardContent className="p-0">
                 <div className="grid lg:grid-cols-2 gap-0 items-stretch">
                   {/* Photo Section */}
-                  <div className="p-6 lg:p-8 space-y-6">
+                  <div className="p-4 sm:p-6 lg:p-8 space-y-6">
                     <div className="flex items-start justify-center">
                       <img 
                         src="/images/shadman-about.jpeg" 
@@ -76,8 +76,8 @@ const About = () => {
                     </div>
                     
                     {/* Quote Section */}
-                    <div className="p-6 bg-spacex-gradient/10 rounded-lg">
-                      <p className="text-center text-2xl font-bold text-spacex-gradient border-t border-b border-spacex-accent/20 py-8">
+                    <div className="p-4 sm:p-6 bg-spacex-gradient/10 rounded-lg">
+                      <p className="text-center text-lg sm:text-xl lg:text-2xl font-bold text-spacex-gradient border-t border-b border-spacex-accent/20 py-6 sm:py-8">
                         "My experience is not theoretical. I've presented to boards under pressure, 
                         answered regulators in the toughest jurisdictions, and delivered multi-billion-dollar transformations."
                       </p>
@@ -85,11 +85,11 @@ const About = () => {
                   </div>
                   
                   {/* Content Section */}
-                  <div className="p-12 lg:p-16 space-y-8">
-                    <div className="hidden lg:block">
-                      <h3 className="text-4xl font-bold text-foreground mb-4">Shadman Zafar</h3>
-                      <p className="text-xl text-spacex-gradient font-semibold mb-6">Founder, Chairman</p>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
+                  <div className="p-6 sm:p-8 lg:p-12 xl:p-16 space-y-8">
+                    <div className="text-center lg:text-left">
+                      <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">Shadman Zafar</h3>
+                      <p className="text-lg sm:text-xl text-spacex-gradient font-semibold mb-6">Founder, Chairman</p>
+                      <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                         A globally recognized technology leader and innovator whose career spans decades of 
                         driving transformation at Fortune 100 companies.
                       </p>
@@ -153,7 +153,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-center mb-12">
               Our <span className="text-gradient">Difference</span>
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               <Card className="card-premium">
                 <CardHeader>
                   <CardTitle className="text-xl text-primary">Operator DNA</CardTitle>
@@ -224,7 +224,7 @@ const About = () => {
                   They are no longer back-office operators; they are front-line leaders of growth, compliance, and innovation.
                 </p>
                 
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-8">
                   <div>
                     <h3 className="font-semibold text-primary mb-2">Empower CIOs</h3>
                     <p className="text-sm text-muted-foreground">Give them the playbooks, partners, and platforms to lead AI adoption confidently</p>
@@ -255,7 +255,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-center mb-12">
               Our <span className="text-gradient">Values</span>
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-primary mb-3">Practicality Over Theory</h3>
                 <p className="text-muted-foreground">We focus on outcomes, not hype. AI adoption must work in practice, not just in white papers.</p>
