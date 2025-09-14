@@ -39,70 +39,85 @@ const Philosophy = () => {
       {/* Hero Section with Auto-Slider */}
       <section className="pt-24 pb-16 section-gradient relative overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center relative">
+          <div className="max-w-6xl mx-auto text-center relative">
             {/* Slide Indicators */}
-            <div className="flex justify-center space-x-2 mb-8">
+            <div className="flex justify-center space-x-3 mb-12 z-20 relative">
               {heroMessages.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    index === currentSlide ? 'bg-primary w-8' : 'bg-primary/30 hover:bg-primary/60'
+                  className={`h-3 rounded-full transition-all duration-300 border-2 ${
+                    index === currentSlide 
+                      ? 'bg-primary border-primary w-12' 
+                      : 'bg-transparent border-primary/40 w-3 hover:border-primary/70 hover:bg-primary/20'
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
             </div>
 
-            {/* Sliding Content */}
-            <div className="relative h-48 md:h-32">
+            {/* Sliding Content Container */}
+            <div className="relative min-h-[400px] md:min-h-[300px] overflow-hidden">
               {heroMessages.map((message, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                  className={`absolute inset-0 w-full transition-all duration-1000 ease-in-out transform ${
                     index === currentSlide
-                      ? 'opacity-100 transform translate-x-0'
+                      ? 'opacity-100 translate-x-0 z-10'
                       : index < currentSlide
-                      ? 'opacity-0 transform -translate-x-full'
-                      : 'opacity-0 transform translate-x-full'
+                      ? 'opacity-0 -translate-x-full z-0'
+                      : 'opacity-0 translate-x-full z-0'
                   }`}
                 >
-                  <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-                    {message.title.split(' ').map((word, i) => 
-                      word === 'Edge' || word === 'Scatter' || word === 'Readiness' || word === 'De-Risk' ? (
-                        <span key={i} className="text-gradient">{word}</span>
-                      ) : (
-                        <span key={i}>{word} </span>
-                      )
-                    )}
-                  </h1>
-                  <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in">
-                    {message.subtitle}
-                  </p>
+                  <div className="space-y-6">
+                    <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                      {message.title.split(' ').map((word, i) => {
+                        const highlightWords = ['Edge', 'Scatter', 'Readiness', 'De-Risk'];
+                        return highlightWords.includes(word) ? (
+                          <span key={i} className="text-gradient">{word} </span>
+                        ) : (
+                          <span key={i}>{word} </span>
+                        );
+                      })}
+                    </h1>
+                    <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+                      {message.subtitle}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
 
             {/* Navigation Arrows */}
-            <div className="flex justify-between items-center absolute top-1/2 left-0 right-0 transform -translate-y-1/2 px-4">
+            <div className="absolute top-1/2 left-4 right-4 flex justify-between items-center transform -translate-y-1/2 z-20 pointer-events-none">
               <button
                 onClick={() => setCurrentSlide((prev) => (prev - 1 + heroMessages.length) % heroMessages.length)}
-                className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors duration-200 group"
+                className="p-3 rounded-full bg-background/20 backdrop-blur-sm hover:bg-background/40 transition-all duration-200 group pointer-events-auto border border-primary/20 hover:border-primary/40"
                 aria-label="Previous slide"
               >
-                <svg className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-primary group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
               <button
                 onClick={() => setCurrentSlide((prev) => (prev + 1) % heroMessages.length)}
-                className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors duration-200 group"
+                className="p-3 rounded-full bg-background/20 backdrop-blur-sm hover:bg-background/40 transition-all duration-200 group pointer-events-auto border border-primary/20 hover:border-primary/40"
                 aria-label="Next slide"
               >
-                <svg className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-primary group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
+            </div>
+
+            {/* Progress Bar */}
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-primary/20 rounded-full overflow-hidden">
+              <div 
+                className="h-full bg-primary transition-all duration-1000 ease-linear"
+                style={{ 
+                  width: `${((currentSlide + 1) / heroMessages.length) * 100}%` 
+                }}
+              />
             </div>
           </div>
         </div>
