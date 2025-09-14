@@ -176,11 +176,6 @@ Bold, minimal, futuristic aesthetic with high contrast.
     transform: scale(1.05);
   }
 
-  /* Green logo styling for top wave, "Capital" text and "wave of AI" */
-  .logo-green-style {
-    filter: brightness(1.6) contrast(1.3) hue-rotate(45deg) saturate(1.2);
-  }
-
   /* Grid pattern overlay */
   .grid-pattern {
     background-image:

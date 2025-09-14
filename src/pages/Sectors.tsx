@@ -8,6 +8,16 @@ import energyImg from "@/assets/sector-energy.jpg";
 import transportationImg from "@/assets/sector-transportation.jpg";
 import manufacturingImg from "@/assets/sector-manufacturing.jpg";
 import publicImg from "@/assets/sector-public.jpg";
+import telecomImg from "@/assets/sector-telecom.jpg";
+import bankingIcon from "@/assets/sector-icons/banking-icon.jpg";
+import insuranceIcon from "@/assets/sector-icons/insurance-icon.jpg";
+import healthcareIcon from "@/assets/sector-icons/healthcare-icon.jpg";
+import retailIcon from "@/assets/sector-icons/retail-icon.jpg";
+import energyIcon from "@/assets/sector-icons/energy-icon.jpg";
+import transportationIcon from "@/assets/sector-icons/transportation-icon.jpg";
+import manufacturingIcon from "@/assets/sector-icons/manufacturing-icon.jpg";
+import publicIcon from "@/assets/sector-icons/public-icon.jpg";
+import telecomIcon from "@/assets/sector-icons/telecom-icon.jpg";
 
 const Sectors = () => {
   return (
@@ -30,35 +40,47 @@ const Sectors = () => {
             </p>
             
             {/* Quick Navigation */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-              <a href="#banking" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
-                <h3 className="font-semibold text-sm mb-1">Banking &</h3>
-                <h3 className="font-semibold text-sm">Capital Markets</h3>
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
+              <a href="#banking" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
+                <img src={bankingIcon} alt="Banking" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-xs text-center">Banking &</h3>
+                <h3 className="font-semibold text-xs text-center">Capital Markets</h3>
               </a>
-              <a href="#insurance" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
-                <h3 className="font-semibold text-sm">Insurance</h3>
+              <a href="#insurance" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
+                <img src={insuranceIcon} alt="Insurance" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-xs text-center">Insurance</h3>
               </a>
-              <a href="#healthcare" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
-                <h3 className="font-semibold text-sm">Healthcare &</h3>
-                <h3 className="font-semibold text-sm">Life Sciences</h3>
+              <a href="#healthcare" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
+                <img src={healthcareIcon} alt="Healthcare" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-xs text-center">Healthcare &</h3>
+                <h3 className="font-semibold text-xs text-center">Life Sciences</h3>
               </a>
-              <a href="#retail" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
-                <h3 className="font-semibold text-sm">Retail &</h3>
-                <h3 className="font-semibold text-sm">Consumer Goods</h3>
+              <a href="#retail" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
+                <img src={retailIcon} alt="Retail" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-xs text-center">Retail &</h3>
+                <h3 className="font-semibold text-xs text-center">Consumer Goods</h3>
               </a>
-              <a href="#transportation" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
-                <h3 className="font-semibold text-sm">Transportation &</h3>
-                <h3 className="font-semibold text-sm">Logistics</h3>
+              <a href="#transportation" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
+                <img src={transportationIcon} alt="Transportation" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-xs text-center">Transportation &</h3>
+                <h3 className="font-semibold text-xs text-center">Logistics</h3>
               </a>
-              <a href="#energy" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
-                <h3 className="font-semibold text-sm">Energy &</h3>
-                <h3 className="font-semibold text-sm">Utilities</h3>
+              <a href="#energy" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
+                <img src={energyIcon} alt="Energy" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-xs text-center">Energy &</h3>
+                <h3 className="font-semibold text-xs text-center">Utilities</h3>
               </a>
-              <a href="#manufacturing" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
-                <h3 className="font-semibold text-sm">Manufacturing</h3>
+              <a href="#manufacturing" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
+                <img src={manufacturingIcon} alt="Manufacturing" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-xs text-center">Manufacturing</h3>
               </a>
-              <a href="#public" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50">
-                <h3 className="font-semibold text-sm">Public Sector</h3>
+              <a href="#telecom" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
+                <img src={telecomIcon} alt="Telecom" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-xs text-center">Telecom</h3>
+              </a>
+              <a href="#public" className="p-4 bg-card border border-border/50 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-primary/50 group">
+                <img src={publicIcon} alt="Public Sector" className="w-8 h-8 mx-auto mb-2 rounded group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-xs text-center">Public Sector</h3>
               </a>
             </div>
           </div>
@@ -501,6 +523,61 @@ const Sectors = () => {
                         <li>• Higher efficiency with limited budgets</li>
                         <li>• Improved transparency and accountability</li>
                         <li>• Increased citizen trust</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Telecommunications */}
+            <Card id="telecom" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={telecomImg} 
+                  alt="Telecommunications"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 flex items-center">
+                  <div className="pl-8">
+                    <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-wider">
+                      TELECOMMUNICATIONS
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-2xl font-bold mb-6 text-primary uppercase tracking-wider">CHALLENGES</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
+                      Telecom operators manage vast networks generating massive amounts of real‑time data while facing pressure to reduce operational costs and improve service quality. Network outages, security threats, and customer churn are constant challenges. AI adoption has been slow due to the complexity of integrating with legacy OSS/BSS systems and the need for real‑time decision making.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-6 text-primary uppercase tracking-wider">APPLIED AI SOLUTIONS</h3>
+                    <div className="space-y-4">
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-4">
+                        <h4 className="font-bold mb-2 text-lg">NETWORK OPTIMIZATION</h4>
+                        <p className="text-muted-foreground">AI‑driven network optimization and predictive maintenance for infrastructure</p>
+                      </div>
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-4">
+                        <h4 className="font-bold mb-2 text-lg">FRAUD DETECTION</h4>
+                        <p className="text-muted-foreground">Real‑time fraud detection and security threat monitoring</p>
+                      </div>
+                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-4">
+                        <h4 className="font-bold mb-2 text-lg">CUSTOMER ANALYTICS</h4>
+                        <p className="text-muted-foreground">Customer experience analytics and churn prediction models</p>
+                      </div>
+                    </div>
+                    <div className="mt-6 p-6 bg-primary/10 border border-primary/20 rounded-lg">
+                      <h4 className="font-bold text-primary mb-3 text-xl uppercase tracking-wider">PROJECTED OUTCOMES</h4>
+                      <ul className="space-y-2 font-semibold">
+                        <li>• 30–50% reduction in network downtime</li>
+                        <li>• 20–40% decrease in operational costs</li>
+                        <li>• Improved customer satisfaction and retention</li>
+                        <li>• Enhanced security and compliance</li>
                       </ul>
                     </div>
                   </div>
