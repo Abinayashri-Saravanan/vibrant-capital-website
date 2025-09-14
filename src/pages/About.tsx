@@ -77,7 +77,7 @@ const About = () => {
                     
                     {/* Quote Section */}
                     <div className="p-6 bg-spacex-gradient/10 rounded-lg">
-                      <p className="text-center text-2xl font-bold text-spacex-gradient py-8">
+                      <p className="text-center text-2xl font-bold text-spacex-gradient border-t border-b border-spacex-accent/20 py-8">
                         "My experience is not theoretical. I've presented to boards under pressure, 
                         answered regulators in the toughest jurisdictions, and delivered multi-billion-dollar transformations."
                       </p>
