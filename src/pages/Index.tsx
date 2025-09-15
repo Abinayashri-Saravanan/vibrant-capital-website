@@ -89,7 +89,7 @@ const Index = () => {
             </div>
 
             {/* Sliding Content */}
-            <div className="relative min-h-[320px] md:min-h-[280px] overflow-hidden">
+            <div className="relative min-h-[400px] md:min-h-[380px] lg:min-h-[360px] overflow-hidden">
               {heroMessages.map((m, i) => (
                 <div
                   key={i}
@@ -108,7 +108,7 @@ const Index = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="mt-16 sm:mt-10 mb-12 sm:mb-0 flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="mt-20 sm:mt-16 mb-12 sm:mb-0 flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button size="lg" className="btn-spacex-filled px-12 py-4 text-lg" asChild>
                 <Link to="/investments">EXPLORE INVESTMENTS</Link>
               </Button>
