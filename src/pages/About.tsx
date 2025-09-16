@@ -190,13 +190,13 @@ const About = () => {
               </h3>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div className="grid lg:grid-cols-2 gap-16 items-stretch">
               {/* Video Section */}
-              <div className="order-2 lg:order-1">
-                <div className="relative w-full">
+              <div className="order-2 lg:order-1 flex flex-col">
+                <div className="relative w-full h-full flex-1">
                   <video
                     ref={videoRef}
-                    className="w-full h-auto rounded-xl shadow-2xl aspect-video object-cover"
+                    className="w-full h-full rounded-xl shadow-2xl object-cover"
                     muted={isMuted}
                     autoPlay
                     loop
@@ -247,7 +247,7 @@ const About = () => {
               </div>
 
               {/* Four Differences Grid */}
-              <div className="order-1 lg:order-2">
+              <div className="order-1 lg:order-2 flex flex-col">
                 <div className="grid grid-cols-1 gap-6">
                   <Card className="card-premium">
                     <CardHeader>
