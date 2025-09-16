@@ -7,16 +7,28 @@ import { useState, useRef } from "react";
 const About = () => {
   const navigate = useNavigate();
   const [isMuted, setIsMuted] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const handleJoinMission = () => {
     navigate('/contact');
   };
 
-  const handleUnmuteVideo = () => {
+  const toggleMute = () => {
     if (videoRef.current) {
-      videoRef.current.muted = false;
-      setIsMuted(false);
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPaused) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+      setIsPaused(!isPaused);
     }
   };
 
@@ -171,7 +183,7 @@ const About = () => {
               Our <span className="text-gradient">Difference</span>
             </h2>
             
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Video Section */}
               <div className="order-2 lg:order-1">
                 <div className="text-center mb-8">
@@ -189,23 +201,47 @@ const About = () => {
                     loop
                     playsInline
                     controls={false}
+                    onPlay={() => setIsPaused(false)}
+                    onPause={() => setIsPaused(true)}
                   >
                     <source src="/Video/About-Avatar.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   
-                  {/* Unmute Button Overlay */}
-                  {isMuted && (
-                    <div className="absolute inset-0 bg-black/20 rounded-xl flex items-center justify-center">
-                      <Button
-                        onClick={handleUnmuteVideo}
-                        className="bg-primary/90 backdrop-blur-sm hover:bg-primary text-primary-foreground font-semibold px-8 py-4 text-lg"
-                        size="lg"
-                      >
-                        🔊 Unmute Video
-                      </Button>
-                    </div>
-                  )}
+                  {/* Video Controls Overlay */}
+                  <div className="absolute bottom-4 left-4 flex gap-3">
+                    <Button
+                      onClick={togglePlay}
+                      size="sm"
+                      className="bg-black/70 backdrop-blur-sm hover:bg-black/80 text-white border-none p-2 h-auto"
+                    >
+                      {isPaused ? (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                        </svg>
+                      ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
+                        </svg>
+                      )}
+                    </Button>
+                    
+                    <Button
+                      onClick={toggleMute}
+                      size="sm"
+                      className="bg-black/70 backdrop-blur-sm hover:bg-black/80 text-white border-none p-2 h-auto"
+                    >
+                      {isMuted ? (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.59-.63-1.59-1.41V9.41c0-.78.71-1.41 1.59-1.41h6.75Z" />
+                        </svg>
+                      ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.59-.63-1.59-1.41V9.41c0-.78.71-1.41 1.59-1.41h6.75Z" />
+                        </svg>
+                      )}
+                    </Button>
+                  </div>
                 </div>
               </div>
 
