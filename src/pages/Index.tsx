@@ -89,7 +89,7 @@ const Index = () => {
             </div>
 
             {/* Sliding Content */}
-            <div className="relative min-h-[320px] md:min-h-[280px] overflow-hidden">
+            <div className="relative min-h-[400px] md:min-h-[380px] lg:min-h-[360px] overflow-hidden">
               {heroMessages.map((m, i) => (
                 <div
                   key={i}
@@ -108,7 +108,7 @@ const Index = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="mt-16 sm:mt-10 mb-12 sm:mb-0 flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="mt-20 sm:mt-16 mb-12 sm:mb-0 flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button size="lg" className="btn-spacex-filled px-12 py-4 text-lg" asChild>
                 <Link to="/investments">EXPLORE INVESTMENTS</Link>
               </Button>
@@ -120,95 +120,124 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Mission Statement */}
-      <section className="py-20 relative">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto text-center">
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-muted-foreground mb-8">
-              Vibrant Capital is a private equity firm{" "}
-              <span className="text-primary font-medium">founded by CIOs, for CIOs</span>. We invest in, operate, and accelerate companies that embed AI into the core of enterprise operations, ensuring transformation is practical, secure, and measurable.
-            </p>
-            <div className="max-w-5xl mx-auto text-base md:text-lg leading-relaxed text-muted-foreground space-y-4">
-              <p>
-                While the world is focused on chasing the newest advances in LLMs to achieve near‑AGI intelligence, we stay awake worrying about the fact that medium and large corporations and governments have yet to see transformational commercial or operational impacts from AI technologies that are already good enough to create step‑function changes.
-              </p>
-              <p>
-                While AI only firms debate whether scaling laws for LLM improvements are nearing their yield limits, we stay awake asking why the scaling of current AI capabilities is moving so slowly inside the average enterprise.
-              </p>
-              <p>
-                While AI and hyperscalers worry about how they will spend the next $100B on building a new data center, we refine our thinking on how exactly a CIO can take out $100 million in cost and add $100 million in revenue with AI solutions today.
-              </p>
-              <p className="text-primary font-semibold text-lg">
-                We focus on the pragmatic, practical basis of scaling AI in enterprises and governments. We know humanity has seen at least two AI winters when all investments froze after initial fervor subsided because commercial promise did not materialize. We stay awake to ensure another AI winter does not come — by making sure AI delivers practical, measurable results today.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Four Waves Framework */}
+      {/* Four Waves Framework - Progressive Steps */}
       <section className="py-20">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-20 text-foreground uppercase tracking-wider">
               Four Waves Framework
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div className="relative">
+              {/* Progressive Timeline */}
+              <div className="hidden md:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-r from-muted via-primary to-muted"></div>
               
-              {/* Wave 1 */}
-              <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6 h-full flex flex-col justify-between min-h-[280px]">
-                  <div>
-                    <div className="text-4xl font-bold text-primary/30 mb-4">01</div>
-                    <h3 className="text-lg font-semibold mb-3 text-foreground">Frontier Models</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm">
-                      Breakthrough research from labs and hyperscalers demonstrated AI's raw potential but remained impractical for enterprise scale. CIOs admired the headlines but could not integrate these models into regulated, legacy-heavy environments.
-                    </p>
+              <div className="space-y-16 md:space-y-0">
+                
+                {/* Wave 1 */}
+                <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
+                  <div className="md:col-span-3 mb-8 md:mb-0">
+                    <div className="relative">
+                      <div className="hidden md:block absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-background border-4 border-muted rounded-full flex items-center justify-center">
+                        <div className="w-4 h-4 bg-muted rounded-full"></div>
+                      </div>
+                      <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
+                        <CardContent className="p-6 text-center">
+                          <div className="text-6xl font-bold text-muted mb-4">01</div>
+                          <h3 className="text-xl font-semibold text-foreground">Frontier Models</h3>
+                        </CardContent>
+                      </Card>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
-
-              {/* Wave 2 */}
-              <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6 h-full flex flex-col justify-between min-h-[280px]">
-                  <div>
-                    <div className="text-4xl font-bold text-primary/30 mb-4">02</div>
-                    <h3 className="text-lg font-semibold mb-3 text-foreground">Tools & Platforms</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm">
-                      APIs, copilots, and SaaS tools democratized access. Enterprises experimented widely, but initiatives stayed fragmented. CIOs were left with pilots that looked exciting in demos but could not pass procurement, compliance, or ROI thresholds.
-                    </p>
+                  <div className="md:col-span-9">
+                    <div className="bg-card/50 rounded-lg p-6 border border-border/30">
+                      <p className="text-muted-foreground leading-relaxed">
+                        Breakthrough research from labs and hyperscalers demonstrated AI's raw potential but remained impractical for enterprise scale. CIOs admired the headlines but could not integrate these models into regulated, legacy-heavy environments.
+                      </p>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
 
-              {/* Wave 3 - Featured */}
-              <Card className="bg-primary/5 border border-primary/20 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6 h-full flex flex-col justify-between min-h-[280px]">
-                  <div>
-                    <div className="text-4xl font-bold text-primary mb-4">03</div>
-                    <h3 className="text-lg font-semibold mb-3 text-primary">Applied AI</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm mb-3">
-                      The wave we operate in. Applied AI is about embedding intelligence into critical workflows: automating claims, enhancing fraud detection, accelerating regulatory reporting, powering revenue cycle management. It is enterprise‑grade, governed, and outcome‑driven.
-                    </p>
-                    <div className="text-xs font-medium text-primary">← Our Focus</div>
+                {/* Wave 2 */}
+                <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
+                  <div className="md:col-span-3 mb-8 md:mb-0 md:order-2">
+                    <div className="relative">
+                      <div className="hidden md:block absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-background border-4 border-muted rounded-full flex items-center justify-center">
+                        <div className="w-4 h-4 bg-muted rounded-full"></div>
+                      </div>
+                      <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
+                        <CardContent className="p-6 text-center">
+                          <div className="text-6xl font-bold text-muted mb-4">02</div>
+                          <h3 className="text-xl font-semibold text-foreground">Tools & Platforms</h3>
+                        </CardContent>
+                      </Card>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
-
-              {/* Wave 4 - Vision */}
-              <Card className="bg-secondary/10 border border-secondary/20 hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6 h-full flex flex-col justify-between min-h-[280px]">
-                  <div>
-                    <div className="text-4xl font-bold text-foreground mb-4">04</div>
-                    <h3 className="text-lg font-semibold mb-3 text-foreground">AI‑Native Enterprises</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm mb-3">
-                      The future we are building toward. Entire enterprises re‑architected around AI — from infrastructure and governance to customer engagement and operations. CIOs won't bolt AI on; they will run organizations designed to be AI‑first from the ground up.
-                    </p>
-                    <div className="text-xs font-medium text-secondary">(Vision)</div>
+                  <div className="md:col-span-9 md:order-1">
+                    <div className="bg-card/50 rounded-lg p-6 border border-border/30 md:text-right">
+                      <p className="text-muted-foreground leading-relaxed">
+                        APIs, copilots, and SaaS tools democratized access. Enterprises experimented widely, but initiatives stayed fragmented. CIOs were left with pilots that looked exciting in demos but could not pass procurement, compliance, or ROI thresholds.
+                      </p>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
 
+                {/* Wave 3 - Current Focus */}
+                <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
+                  <div className="md:col-span-3 mb-8 md:mb-0">
+                    <div className="relative">
+                      <div className="hidden md:block absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-background border-4 border-primary rounded-full flex items-center justify-center shadow-lg">
+                        <div className="w-4 h-4 bg-primary rounded-full animate-pulse"></div>
+                      </div>
+                      <Card className="bg-primary/10 border-2 border-primary/40 hover:shadow-xl transition-all duration-300 shadow-primary/20">
+                        <CardContent className="p-6 text-center">
+                          <div className="text-6xl font-bold text-primary mb-4">03</div>
+                          <h3 className="text-xl font-semibold text-primary">Applied AI</h3>
+                          <div className="mt-3 px-3 py-1 bg-primary/20 rounded-full text-xs font-medium text-primary">
+                            OUR FOCUS
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+                  <div className="md:col-span-9">
+                    <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
+                      <p className="text-muted-foreground leading-relaxed">
+                        The wave we operate in. Applied AI is about embedding intelligence into critical workflows: automating claims, enhancing fraud detection, accelerating regulatory reporting, powering revenue cycle management. It is enterprise‑grade, governed, and outcome‑driven.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Wave 4 - Future Vision */}
+                <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
+                  <div className="md:col-span-3 mb-8 md:mb-0 md:order-2">
+                    <div className="relative">
+                      <div className="hidden md:block absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-background border-4 border-secondary/60 rounded-full flex items-center justify-center">
+                        <div className="w-4 h-4 bg-secondary/60 rounded-full"></div>
+                      </div>
+                      <Card className="bg-secondary/5 border border-secondary/30 hover:shadow-lg transition-all duration-300">
+                        <CardContent className="p-6 text-center">
+                          <div className="text-6xl font-bold text-secondary mb-4">04</div>
+                          <h3 className="text-xl font-semibold text-foreground">AI‑Native Enterprises</h3>
+                          <div className="mt-3 px-3 py-1 bg-secondary/20 rounded-full text-xs font-medium text-secondary">
+                            VISION
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+                  <div className="md:col-span-9 md:order-1">
+                    <div className="bg-secondary/5 rounded-lg p-6 border border-secondary/20 md:text-right">
+                      <p className="text-muted-foreground leading-relaxed">
+                        The future we are building toward. Entire enterprises re‑architected around AI — from infrastructure and governance to customer engagement and operations. CIOs won't bolt AI on; they will run organizations designed to be AI‑first from the ground up.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>

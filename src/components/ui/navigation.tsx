@@ -38,6 +38,7 @@ const Navigation = () => {
               <Link
                 key={item.href}
                 to={item.href}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className={cn(
                   "text-sm font-bold uppercase tracking-wider transition-all duration-300 relative group",
                   location.pathname === item.href
@@ -106,7 +107,10 @@ const Navigation = () => {
                 <Link
                   key={item.href}
                   to={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                   className={cn(
                     "text-sm font-bold uppercase tracking-wider transition-all duration-300 relative group px-4 py-2 rounded-lg",
                     location.pathname === item.href

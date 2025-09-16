@@ -143,6 +143,32 @@ Bold, minimal, futuristic aesthetic with high contrast.
     @apply bg-gradient-to-r from-primary to-primary-bright bg-clip-text text-transparent;
   }
 
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-bright bg-clip-text text-transparent;
+  }
+
+  /* Premium styles for enhanced consistency */
+  .card-premium {
+    @apply bg-card/90 backdrop-blur-md border border-border/50;
+    @apply hover:bg-card hover:border-primary/30 transition-all duration-500;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-glow {
+    box-shadow: var(--shadow-dramatic);
+    @apply hover:shadow-[0_30px_60px_-15px_hsl(var(--primary)/0.15)] transition-all duration-700;
+  }
+
+  .btn-premium {
+    @apply bg-primary text-primary-foreground font-bold uppercase tracking-wider;
+    @apply hover:bg-primary-bright hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)];
+    @apply transition-all duration-300;
+  }
+
+  .section-gradient {
+    background: var(--gradient-section);
+  }
+
   .section-spacex {
     background: var(--gradient-section);
   }
@@ -325,7 +351,7 @@ Bold, minimal, futuristic aesthetic with high contrast.
     transform: scale(1.05);
   }
 
-  /* Responsive navigation adjustments */
+  /* Responsive design improvements */
   @media (max-width: 1024px) {
     .nav-hero-bg {
       background: rgba(0, 0, 0, 0.99) !important;
@@ -336,14 +362,57 @@ Bold, minimal, futuristic aesthetic with high contrast.
       font-size: 0.875rem;
     }
 
-    .nav-char {
-      transition: all 0.2s ease;
+    /* Better mobile spacing */
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    /* Responsive typography */
+    h1 {
+      font-size: clamp(2rem, 8vw, 4rem);
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+
+    h3 {
+      font-size: clamp(1.25rem, 4vw, 1.875rem);
     }
   }
 
   @media (max-width: 768px) {
     .nav-hero-bg {
       background: rgba(0, 0, 0, 0.99) !important;
+    }
+
+    /* Mobile text alignment */
+    .text-center-mobile {
+      text-align: center;
+    }
+
+    /* Better mobile padding */
+    .p-mobile {
+      padding: 1rem;
+    }
+
+    /* Grid adjustments for mobile */
+    .grid-mobile-1 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    /* Extra small screen adjustments */
+    .container {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
+    /* Smaller cards on mobile */
+    .card-mobile {
+      padding: 1rem;
     }
   }
 }
