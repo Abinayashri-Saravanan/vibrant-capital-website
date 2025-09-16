@@ -183,19 +183,20 @@ const About = () => {
               Our <span className="text-gradient">Difference</span>
             </h2>
             
+            {/* Section Header */}
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Hear from <span className="text-spacex-gradient">Shadman's AI Avatar</span>
+              </h3>
+            </div>
+            
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Video Section */}
               <div className="order-2 lg:order-1">
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">
-                    Hear from <span className="text-spacex-gradient">Shadman's AI Avatar</span>
-                  </h3>
-                </div>
-                
                 <div className="relative w-full">
                   <video
                     ref={videoRef}
-                    className="w-full h-auto rounded-xl shadow-2xl"
+                    className="w-full h-auto rounded-xl shadow-2xl aspect-video object-cover"
                     muted={isMuted}
                     autoPlay
                     loop
