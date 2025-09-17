@@ -196,7 +196,7 @@ const About = () => {
                 <div className="relative w-full h-full flex-1">
                   <video
                     ref={videoRef}
-                    className="w-full h-full aspect-video rounded-xl shadow-2xl object-cover"
+                    className="w-full h-full rounded-xl shadow-2xl object-contain"
                     muted={isMuted}
                     autoPlay
                     loop
