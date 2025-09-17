@@ -139,12 +139,9 @@ const Index = () => {
                 <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
                   <div className="md:col-span-3 mb-8 md:mb-0">
                     <div className="relative">
-                      <div className="hidden md:block absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-background border-4 border-muted rounded-full flex items-center justify-center">
-                        <div className="w-4 h-4 bg-muted rounded-full"></div>
-                      </div>
                       <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
                         <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-foreground mb-4">01</div>
+                          <div className="text-6xl font-bold text-primary mb-4">01</div>
                           <h3 className="text-xl font-semibold text-foreground">Frontier Models</h3>
                         </CardContent>
                       </Card>
@@ -163,12 +160,9 @@ const Index = () => {
                 <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
                   <div className="md:col-span-3 mb-8 md:mb-0 md:order-2">
                     <div className="relative">
-                      <div className="hidden md:block absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-background border-4 border-muted rounded-full flex items-center justify-center">
-                        <div className="w-4 h-4 bg-muted rounded-full"></div>
-                      </div>
                       <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
                         <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-foreground mb-4">02</div>
+                          <div className="text-6xl font-bold text-primary mb-4">02</div>
                           <h3 className="text-xl font-semibold text-foreground">Tools & Platforms</h3>
                         </CardContent>
                       </Card>
@@ -187,9 +181,6 @@ const Index = () => {
                 <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
                   <div className="md:col-span-3 mb-8 md:mb-0">
                     <div className="relative">
-                      <div className="hidden md:block absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-background border-4 border-primary rounded-full flex items-center justify-center shadow-lg">
-                        <div className="w-4 h-4 bg-primary rounded-full animate-pulse"></div>
-                      </div>
                       <Card className="bg-primary/10 border-2 border-primary/40 hover:shadow-xl transition-all duration-300 shadow-primary/20">
                         <CardContent className="p-6 text-center">
                           <div className="text-6xl font-bold text-primary mb-4">03</div>
@@ -214,12 +205,9 @@ const Index = () => {
                 <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
                   <div className="md:col-span-3 mb-8 md:mb-0 md:order-2">
                     <div className="relative">
-                      <div className="hidden md:block absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-background border-4 border-secondary/60 rounded-full flex items-center justify-center">
-                        <div className="w-4 h-4 bg-secondary/60 rounded-full"></div>
-                      </div>
                       <Card className="bg-secondary/5 border border-secondary/30 hover:shadow-lg transition-all duration-300">
                         <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-foreground mb-4">04</div>
+                          <div className="text-6xl font-bold text-primary mb-4">04</div>
                           <h3 className="text-xl font-semibold text-foreground">AI‑Native Enterprises</h3>
                           <div className="mt-3 px-3 py-1 bg-secondary/20 rounded-full text-xs font-medium text-secondary">
                             VISION
