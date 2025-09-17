@@ -2,12 +2,34 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { useState, useRef } from "react";
 
 const About = () => {
   const navigate = useNavigate();
+  const [isMuted, setIsMuted] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const handleJoinMission = () => {
     navigate('/contact');
+  };
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPaused) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+      setIsPaused(!isPaused);
+    }
   };
 
   return (
@@ -156,67 +178,134 @@ const About = () => {
       {/* Our Difference */}
       <section className="py-16 section-gradient">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-16">
               Our <span className="text-gradient">Difference</span>
             </h2>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-              <Card className="card-premium">
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">Operator DNA</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    We are not outsiders with capital; we are insiders with conviction. Every member of our 
-                    leadership team has run technology at scale — leading thousands of engineers, managing 
-                    billion-dollar budgets, and defending transformation programs under board scrutiny.
-                  </p>
-                </CardContent>
-              </Card>
+            
+            {/* Section Header */}
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Hear from <span className="text-spacex-gradient">Shadman's AI Avatar</span>
+              </h3>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-16 items-stretch">
+              {/* Video Section */}
+              <div className="order-2 lg:order-1 flex flex-col">
+                <div className="relative w-full h-full flex-1">
+                  <video
+                    ref={videoRef}
+                    className="w-full h-full rounded-xl shadow-2xl object-cover"
+                    muted={isMuted}
+                    autoPlay
+                    loop
+                    playsInline
+                    controls={false}
+                    onPlay={() => setIsPaused(false)}
+                    onPause={() => setIsPaused(true)}
+                  >
+                    <source src="/Video/About-Avatar.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  
+                  {/* Video Controls Overlay */}
+                  <div className="absolute bottom-4 left-4 flex gap-3">
+                    <Button
+                      onClick={togglePlay}
+                      size="sm"
+                      className="bg-black/70 backdrop-blur-sm hover:bg-black/80 text-white border-none p-2 h-auto"
+                    >
+                      {isPaused ? (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                        </svg>
+                      ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
+                        </svg>
+                      )}
+                    </Button>
+                    
+                    <Button
+                      onClick={toggleMute}
+                      size="sm"
+                      className="bg-black/70 backdrop-blur-sm hover:bg-black/80 text-white border-none p-2 h-auto"
+                    >
+                      {isMuted ? (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.59-.63-1.59-1.41V9.41c0-.78.71-1.41 1.59-1.41h6.75Z" />
+                        </svg>
+                      ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.59-.63-1.59-1.41V9.41c0-.78.71-1.41 1.59-1.41h6.75Z" />
+                        </svg>
+                      )}
+                    </Button>
+                  </div>
+                </div>
+              </div>
 
-              <Card className="card-premium">
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">CIO Council</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    We are not a firm that guesses at what CIOs want. We convene an active council of current 
-                    and former CIOs who inform our strategy, validate our portfolio companies, and share 
-                    playbooks across industries.
-                  </p>
-                </CardContent>
-              </Card>
+              {/* Four Differences Grid */}
+              <div className="order-1 lg:order-2 flex flex-col">
+                <div className="grid grid-cols-1 gap-6">
+                  <Card className="card-premium">
+                    <CardHeader>
+                      <CardTitle className="text-xl text-primary">Operator DNA</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground leading-relaxed">
+                        We are not outsiders with capital; we are insiders with conviction. Every member of our 
+                        leadership team has run technology at scale — leading thousands of engineers, managing 
+                        billion-dollar budgets, and defending transformation programs under board scrutiny.
+                      </p>
+                    </CardContent>
+                  </Card>
 
-              <Card className="card-premium">
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">Conviction Over Hype</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    We don't spray investments across hundreds of AI startups. We curate a portfolio with 
-                    purpose — selecting companies that solve the real, mission-critical problems CIOs face 
-                    in scaling AI adoption.
-                  </p>
-                </CardContent>
-              </Card>
+                  <Card className="card-premium">
+                    <CardHeader>
+                      <CardTitle className="text-xl text-primary">CIO Council</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground leading-relaxed">
+                        We are not a firm that guesses at what CIOs want. We convene an active council of current 
+                        and former CIOs who inform our strategy, validate our portfolio companies, and share 
+                        playbooks across industries.
+                      </p>
+                    </CardContent>
+                  </Card>
 
-              <Card className="card-premium">
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">Design-Led Approach</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    From our LP dashboards to our sector playbooks, every experience we create — for CIOs, 
-                    investors, and founders — is crafted with care. Our design philosophy communicates 
-                    clarity, confidence, and credibility.
-                  </p>
-                </CardContent>
-              </Card>
+                  <Card className="card-premium">
+                    <CardHeader>
+                      <CardTitle className="text-xl text-primary">Conviction Over Hype</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground leading-relaxed">
+                        We don't spray investments across hundreds of AI startups. We curate a portfolio with 
+                        purpose — selecting companies that solve the real, mission-critical problems CIOs face 
+                        in scaling AI adoption.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="card-premium">
+                    <CardHeader>
+                      <CardTitle className="text-xl text-primary">Design-Led Approach</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground leading-relaxed">
+                        From our LP dashboards to our sector playbooks, every experience we create — for CIOs, 
+                        investors, and founders — is crafted with care. Our design philosophy communicates 
+                        clarity, confidence, and credibility.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Our Vision */}
       <section className="py-16">
         <div className="container mx-auto px-6">
