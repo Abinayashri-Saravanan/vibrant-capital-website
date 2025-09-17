@@ -12,7 +12,6 @@ const Navigation = () => {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/investments", label: "Investments" },
-    { href: "/philosophy", label: "Philosophy" },
     { href: "/sectors", label: "Sectors" },
     { href: "/for-investors", label: "For Investors" },
   ];
