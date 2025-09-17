@@ -190,10 +190,10 @@ const About = () => {
               </h3>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-16 items-stretch">
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Video Section */}
-              <div className="order-2 lg:order-1 flex flex-col">
-                <div className="relative w-full h-full flex-1">
+              <div className="order-2 lg:order-1">
+                <div className="relative w-full aspect-video video-container">
                   <video
                     ref={videoRef}
                     className="w-full h-full rounded-xl shadow-2xl object-cover"
@@ -247,7 +247,7 @@ const About = () => {
               </div>
 
               {/* Four Differences Grid */}
-              <div className="order-1 lg:order-2 flex flex-col">
+              <div className="order-1 lg:order-2">
                 <div className="grid grid-cols-1 gap-6">
                   <Card className="card-premium">
                     <CardHeader>

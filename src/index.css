@@ -351,6 +351,17 @@ Bold, minimal, futuristic aesthetic with high contrast.
     transform: scale(1.05);
   }
 
+  /* Video aspect ratio and layout fixes */
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Ensure video containers don't cause overflow */
+  .video-container {
+    max-height: 70vh;
+    overflow: hidden;
+  }
+
   /* Responsive design improvements */
   @media (max-width: 1024px) {
     .nav-hero-bg {
