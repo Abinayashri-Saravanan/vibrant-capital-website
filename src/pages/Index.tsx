@@ -120,15 +120,14 @@ const Index = () => {
         </div>
       </section>
 
-
-      {/* Four Waves Framework - Progressive Steps */}
-      <section className="py-20">
+      {/* Four Waves Framework - Compact Grid */}
+      <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-20 text-foreground uppercase tracking-wider">
+            <h2 className="text-4xl font-bold text-center mb-10 text-foreground uppercase tracking-wider">
               Four Waves Framework
             </h2>
-            
+
             {/* Compact 4-up grid, avoids vertical scrolling on desktop */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {/* Wave 1 */}
@@ -137,7 +136,7 @@ const Index = () => {
                   <div className="text-4xl font-extrabold text-foreground mb-2">01</div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Frontier Models</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Lab breakthroughs that capture headlines but remain impractical for enterprise scale. Cutting‑edge research that can’t integrate into regulated, legacy‑heavy environments.
+                    Lab breakthroughs that capture headlines but remain impractical for enterprise scale. Cutting‑edge research that can't integrate into regulated, legacy‑heavy environments.
                   </p>
                 </CardContent>
               </Card>
@@ -147,7 +146,7 @@ const Index = () => {
                 <CardContent className="p-6">
                   <div className="text-4xl font-extrabold text-foreground mb-2">02</div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Tools & Platforms</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed md:text-right">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     APIs and copilots democratize access but stay fragmented. Pilots excite in demos yet stall at procurement and compliance.
                   </p>
                 </CardContent>
@@ -169,7 +168,7 @@ const Index = () => {
                 <CardContent className="p-6">
                   <div className="text-4xl font-extrabold text-foreground mb-2">04</div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">AI‑Native Enterprises</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed md:text-right">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     Organizations designed to be AI‑first from the ground up. AI becomes the operating model across infrastructure, governance, and every customer touchpoint.
                   </p>
                 </CardContent>
@@ -178,102 +177,11 @@ const Index = () => {
 
             {/* Simple callout (no box/border) */}
             <p className="mt-10 text-center text-lg md:text-xl font-bold text-foreground">
-              “Vibrant Capital exists to make AI practical and profitable today — while laying the foundations for tomorrow’s AI‑native enterprises.”
+              "Vibrant Capital exists to make AI practical and profitable today — while laying the foundations for tomorrow's AI‑native enterprises."
             </p>
-                        Lab breakthroughs that capture headlines but remain impractical for enterprise scale. Cutting-edge research that can't integrate into regulated, legacy-heavy environments.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Wave 2 */}
-                <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
-                  <div className="md:col-span-3 mb-8 md:mb-0 md:order-2">
-                    <div className="relative">
-                      <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
-                        <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-primary mb-4">02</div>
-                          <h3 className="text-xl font-semibold text-foreground">Tools & Platforms</h3>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
-                  <div className="md:col-span-9 md:order-1">
-                    <div className="bg-card/50 rounded-lg p-6 border border-border/30 md:text-right">
-                      <p className="text-muted-foreground leading-relaxed">
-                        APIs and copilots that democratize access but stay fragmented. Pilots that look exciting in demos but can't pass procurement, compliance, or sustainability thresholds.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Wave 3 - Current Focus */}
-                <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
-                  <div className="md:col-span-3 mb-8 md:mb-0">
-                    <div className="relative">
-                      <Card className="bg-primary/10 border-2 border-primary/40 hover:shadow-xl transition-all duration-300 shadow-primary/20">
-                        <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-primary mb-4">03</div>
-                          <h3 className="text-xl font-semibold text-primary">Applied AI</h3>
-                          <div className="mt-3 px-3 py-1 bg-primary/20 rounded-full text-xs font-medium text-primary">
-                            OUR FOCUS
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
-                  <div className="md:col-span-9">
-                    <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
-                      <p className="text-muted-foreground leading-relaxed">
-                        <strong>Enterprise-grade adoption, moving from pilots to production.</strong> CIOs are under pressure to show results, not more failed experiments. We bridge ambition to execution with governance frameworks that ensure compliance while delivering measurable outcomes in critical workflows.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Wave 4 - Future Vision */}
-                <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
-                  <div className="md:col-span-3 mb-8 md:mb-0 md:order-2">
-                    <div className="relative">
-                      <Card className="bg-secondary/5 border border-secondary/30 hover:shadow-lg transition-all duration-300">
-                        <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-primary mb-4">04</div>
-                          <h3 className="text-xl font-semibold text-foreground">AI‑Native Enterprises</h3>
-                          <div className="mt-3 px-3 py-1 bg-secondary/20 rounded-full text-xs font-medium text-secondary">
-                            VISION
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
-                  <div className="md:col-span-9 md:order-1">
-                    <div className="bg-secondary/5 rounded-lg p-6 border border-secondary/20 md:text-right">
-                      <p className="text-muted-foreground leading-relaxed">
-                        Organizations designed to be AI-first from the ground up. Where AI becomes the operating model, not an add-on — transforming infrastructure, governance, and every customer touchpoint.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Callout Box */}
-                <div className="mt-16">
-                  <Card className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 border-2 border-primary/30 shadow-xl">
-                    <CardContent className="p-8 text-center">
-                      <h3 className="text-2xl font-bold text-primary mb-4">
-                        Vibrant Capital exists to make AI practical and profitable today — while laying the foundations for tomorrow's AI-native enterprises.
-                      </h3>
-                    </CardContent>
-                  </Card>
-                </div>
-
-              </div>
-            </div>
           </div>
         </div>
       </section>
-
-
-
 
       {/* Call to Action */}
       <section className="py-20 section-spacex">
