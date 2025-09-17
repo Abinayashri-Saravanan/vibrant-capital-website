@@ -2,13 +2,83 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const About = () => {
   const navigate = useNavigate();
   const [isMuted, setIsMuted] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Define slide timing and content
+  const slides = [
+    {
+      id: 0,
+      startTime: 0,
+      endTime: 11,
+      title: "Our Difference",
+      content: null,
+      isIntro: true
+    },
+    {
+      id: 1,
+      startTime: 12,
+      endTime: 28,
+      title: "Operator DNA",
+      content: "We are not outsiders with capital; we are insiders with conviction. Every member of our leadership team has run technology at scale — leading thousands of engineers, managing billion-dollar budgets, and defending transformation programs under board scrutiny."
+    },
+    {
+      id: 2,
+      startTime: 29,
+      endTime: 42,
+      title: "CIO Council",
+      content: "We are not a firm that guesses at what CIOs want. We convene an active council of current and former CIOs who inform our strategy, validate our portfolio companies, and share playbooks across industries."
+    },
+    {
+      id: 3,
+      startTime: 43,
+      endTime: 56,
+      title: "Conviction Over Hype",
+      content: "We don't spray investments across hundreds of AI startups. We curate a portfolio with purpose — selecting companies that solve the real, mission-critical problems CIOs face in scaling AI adoption."
+    },
+    {
+      id: 4,
+      startTime: 57,
+      endTime: 77,
+      title: "Design-Led Approach",
+      content: "From our LP dashboards to our sector playbooks, every experience we create — for CIOs, investors, and founders — is crafted with care. Our design philosophy communicates clarity, confidence, and credibility."
+    }
+  ];
+
+  // Handle video time updates to sync slides
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleTimeUpdate = () => {
+      const currentTime = video.currentTime;
+      const newSlide = slides.find(slide =>
+        currentTime >= slide.startTime && currentTime <= slide.endTime
+      );
+
+      if (newSlide && newSlide.id !== currentSlide) {
+        setCurrentSlide(newSlide.id);
+      }
+    };
+
+    video.addEventListener('timeupdate', handleTimeUpdate);
+    return () => video.removeEventListener('timeupdate', handleTimeUpdate);
+  }, [currentSlide, slides]);
+
+  // Function to manually change slide and sync video
+  const goToSlide = (slideIndex: number) => {
+    const slide = slides[slideIndex];
+    if (slide && videoRef.current) {
+      setCurrentSlide(slideIndex);
+      videoRef.current.currentTime = slide.startTime;
+    }
+  };
 
   const handleJoinMission = () => {
     navigate('/contact');
@@ -183,111 +253,183 @@ const About = () => {
               Our <span className="text-gradient">Difference</span>
             </h2>
 
-            {/* Video Section */}
-            <div className="text-center mb-16">
-              <h3 className="text-2xl font-bold text-foreground mb-8">
-                Hear from <span className="text-spacex-gradient">Shadman's AI Avatar</span>
-              </h3>
+            {/* Two Column Layout: Video + Synchronized Slides */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
 
-              <div className="flex justify-center mb-16">
-                <div className="relative w-full max-w-sm aspect-[3/4] video-container">
-                  <video
-                    ref={videoRef}
-                    className="w-full h-full rounded-2xl shadow-2xl object-contain bg-black/5"
-                    muted={isMuted}
-                    autoPlay
-                    loop
-                    playsInline
-                    controls={false}
-                    onPlay={() => setIsPaused(false)}
-                    onPause={() => setIsPaused(true)}
-                  >
-                    <source src="/Video/About-Avatar1.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+              {/* Left Column: Video */}
+              <div className="order-2 lg:order-1">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Hear from <span className="text-spacex-gradient">Shadman's AI Avatar</span>
+                  </h3>
+                </div>
 
-                  {/* Video Controls Overlay */}
-                  <div className="absolute top-4 right-4 flex gap-2 z-30">
-                    <button
-                      onClick={togglePlay}
-                      className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-black/80 transition-all duration-300 group shadow-lg"
-                      aria-label={isPaused ? "Play video" : "Pause video"}
+                <div className="flex justify-center">
+                  <div className="relative w-full max-w-md aspect-[3/4] video-container">
+                    <video
+                      ref={videoRef}
+                      className="w-full h-full rounded-2xl shadow-2xl object-contain bg-black/5"
+                      muted={isMuted}
+                      autoPlay
+                      loop
+                      playsInline
+                      controls={false}
+                      onPlay={() => setIsPaused(false)}
+                      onPause={() => setIsPaused(true)}
                     >
-                      {isPaused ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-white ml-0.5 group-hover:scale-110 transition-transform">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
-                        </svg>
-                      ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-white group-hover:scale-110 transition-transform">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
-                        </svg>
-                      )}
-                    </button>
+                      <source src="/Video/About-Avatar1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
 
-                    <button
-                      onClick={toggleMute}
-                      className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-black/80 transition-all duration-300 group shadow-lg"
-                      aria-label={isMuted ? "Unmute video" : "Mute video"}
-                    >
-                      {isMuted ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-white group-hover:scale-110 transition-transform">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.59-.63-1.59-1.41V9.41c0-.78.71-1.41 1.59-1.41h6.75Z" />
-                        </svg>
-                      ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-white group-hover:scale-110 transition-transform">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.59-.63-1.59-1.41V9.41c0-.78.71-1.41 1.59-1.41h6.75Z" />
-                        </svg>
-                      )}
-                    </button>
+                    {/* Video Controls Overlay */}
+                    <div className="absolute top-4 right-4 flex gap-2 z-30">
+                      <button
+                        onClick={togglePlay}
+                        className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-black/80 transition-all duration-300 group shadow-lg"
+                        aria-label={isPaused ? "Play video" : "Pause video"}
+                      >
+                        {isPaused ? (
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-white ml-0.5 group-hover:scale-110 transition-transform">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                          </svg>
+                        ) : (
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-white group-hover:scale-110 transition-transform">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
+                          </svg>
+                        )}
+                      </button>
+
+                      <button
+                        onClick={toggleMute}
+                        className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-black/80 transition-all duration-300 group shadow-lg"
+                        aria-label={isMuted ? "Unmute video" : "Mute video"}
+                      >
+                        {isMuted ? (
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-white group-hover:scale-110 transition-transform">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.59-.63-1.59-1.41V9.41c0-.78.71-1.41 1.59-1.41h6.75Z" />
+                          </svg>
+                        ) : (
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-white group-hover:scale-110 transition-transform">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.59-.63-1.59-1.41V9.41c0-.78.71-1.41 1.59-1.41h6.75Z" />
+                          </svg>
+                        )}
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Four Differences Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              <div className="bg-card/40 backdrop-blur-sm border border-border/30 rounded-xl p-6 hover:bg-card/60 hover:border-border/50 transition-all duration-500 group">
-                <h4 className="text-lg font-bold text-spacex-gradient mb-3 group-hover:scale-105 transition-transform duration-300">
-                  Operator DNA
-                </h4>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  We are not outsiders with capital; we are insiders with conviction. Every member of our
-                  leadership team has run technology at scale — leading thousands of engineers, managing
-                  billion-dollar budgets, and defending transformation programs under board scrutiny.
-                </p>
-              </div>
+              {/* Right Column: Synchronized Presentation Slides */}
+              <div className="order-1 lg:order-2">
+                <div className="relative h-full flex items-center justify-center min-h-[500px]">
+                  {slides.map((slide, index) => (
+                    <div
+                      key={slide.id}
+                      className={`absolute inset-0 transition-all duration-1000 ease-out ${
+                        currentSlide === index
+                          ? 'opacity-100 transform translate-x-0 scale-100'
+                          : currentSlide > index
+                          ? 'opacity-0 transform -translate-x-12 scale-95'
+                          : 'opacity-0 transform translate-x-12 scale-95'
+                      }`}
+                      style={{
+                        transitionDelay: currentSlide === index ? '100ms' : '0ms'
+                      }}
+                    >
+                      {slide.isIntro ? (
+                        // Intro slide - just the title
+                        <div className="flex items-center justify-center h-full">
+                          <div className="text-center transform transition-all duration-1200 ease-out">
+                            <h3 className={`text-5xl font-black text-spacex-gradient mb-4 transition-all duration-1000 ${
+                              currentSlide === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+                            }`}>
+                              {slide.title}
+                            </h3>
+                            <p className={`text-xl text-muted-foreground transition-all duration-1000 delay-200 ${
+                              currentSlide === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+                            }`}>
+                              Discover what sets us apart
+                            </p>
+                          </div>
+                        </div>
+                      ) : (
+                        // Content slides - cards with title and content
+                        <div className="flex items-center justify-center h-full p-8">
+                          <div className={`bg-card/60 backdrop-blur-sm border border-border/40 rounded-2xl p-8 shadow-2xl max-w-lg w-full transform hover:scale-105 transition-all duration-1000 ${
+                            currentSlide === index ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-8 opacity-0 scale-95'
+                          }`}>
+                            <div className="text-center mb-6">
+                              <div className={`w-16 h-16 bg-spacex-gradient rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-800 delay-300 ${
+                                currentSlide === index ? 'scale-100 rotate-0' : 'scale-0 rotate-180'
+                              }`}>
+                                <span className="text-2xl font-bold text-white">{slide.id}</span>
+                              </div>
+                              <h4 className={`text-2xl font-bold text-spacex-gradient mb-4 transition-all duration-800 delay-400 ${
+                                currentSlide === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+                              }`}>
+                                {slide.title}
+                              </h4>
+                            </div>
+                            <p className={`text-muted-foreground leading-relaxed text-lg text-center transition-all duration-800 delay-500 ${
+                              currentSlide === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+                            }`}>
+                              {slide.content}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
 
-              <div className="bg-card/40 backdrop-blur-sm border border-border/30 rounded-xl p-6 hover:bg-card/60 hover:border-border/50 transition-all duration-500 group">
-                <h4 className="text-lg font-bold text-spacex-gradient mb-3 group-hover:scale-105 transition-transform duration-300">
-                  CIO Council
-                </h4>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  We are not a firm that guesses at what CIOs want. We convene an active council of current
-                  and former CIOs who inform our strategy, validate our portfolio companies, and share
-                  playbooks across industries.
-                </p>
-              </div>
+                {/* Interactive Slide Navigation */}
+                <div className="flex justify-center mt-8 space-x-3">
+                  {slides.map((slide, index) => (
+                    <button
+                      key={index}
+                      onClick={() => goToSlide(index)}
+                      className={`group relative transition-all duration-500 hover:scale-110 ${
+                        currentSlide === index ? 'scale-125' : 'scale-100'
+                      }`}
+                      aria-label={`Go to slide ${index + 1}: ${slide.title}`}
+                    >
+                      <div className={`w-4 h-4 rounded-full transition-all duration-500 ${
+                        currentSlide === index
+                          ? 'bg-spacex-gradient shadow-lg'
+                          : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
+                      }`} />
 
-              <div className="bg-card/40 backdrop-blur-sm border border-border/30 rounded-xl p-6 hover:bg-card/60 hover:border-border/50 transition-all duration-500 group">
-                <h4 className="text-lg font-bold text-spacex-gradient mb-3 group-hover:scale-105 transition-transform duration-300">
-                  Conviction Over Hype
-                </h4>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  We don't spray investments across hundreds of AI startups. We curate a portfolio with
-                  purpose — selecting companies that solve the real, mission-critical problems CIOs face
-                  in scaling AI adoption.
-                </p>
-              </div>
+                      {/* Tooltip */}
+                      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-black/80 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                        {slide.title}
+                      </div>
 
-              <div className="bg-card/40 backdrop-blur-sm border border-border/30 rounded-xl p-6 hover:bg-card/60 hover:border-border/50 transition-all duration-500 group">
-                <h4 className="text-lg font-bold text-spacex-gradient mb-3 group-hover:scale-105 transition-transform duration-300">
-                  Design-Led Approach
-                </h4>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  From our LP dashboards to our sector playbooks, every experience we create — for CIOs,
-                  investors, and founders — is crafted with care. Our design philosophy communicates
-                  clarity, confidence, and credibility.
-                </p>
+                      {/* Active indicator ring */}
+                      {currentSlide === index && (
+                        <div className="absolute inset-0 rounded-full border-2 border-spacex-gradient animate-pulse" />
+                      )}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Progress Bar */}
+                <div className="mt-6 max-w-md mx-auto">
+                  <div className="h-1 bg-muted-foreground/20 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-spacex-gradient transition-all duration-1000 ease-out"
+                      style={{
+                        width: `${((currentSlide + 1) / slides.length) * 100}%`
+                      }}
+                    />
+                  </div>
+                  <div className="flex justify-between mt-2 text-xs text-muted-foreground">
+                    <span>0:00</span>
+                    <span className="text-spacex-gradient font-medium">
+                      {slides[currentSlide]?.title}
+                    </span>
+                    <span>1:17</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
