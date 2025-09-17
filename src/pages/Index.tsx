@@ -153,7 +153,7 @@ const Index = () => {
                   <div className="md:col-span-9">
                     <div className="bg-card/50 rounded-lg p-6 border border-border/30">
                       <p className="text-muted-foreground leading-relaxed">
-                        Breakthrough research from labs and hyperscalers demonstrated AI's raw potential but remained impractical for enterprise scale. CIOs admired the headlines but could not integrate these models into regulated, legacy-heavy environments.
+                        Lab breakthroughs that capture headlines but remain impractical for enterprise scale. Cutting-edge research that can't integrate into regulated, legacy-heavy environments.
                       </p>
                     </div>
                   </div>
@@ -177,7 +177,7 @@ const Index = () => {
                   <div className="md:col-span-9 md:order-1">
                     <div className="bg-card/50 rounded-lg p-6 border border-border/30 md:text-right">
                       <p className="text-muted-foreground leading-relaxed">
-                        APIs, copilots, and SaaS tools democratized access. Enterprises experimented widely, but initiatives stayed fragmented. CIOs were left with pilots that looked exciting in demos but could not pass procurement, compliance, or ROI thresholds.
+                        APIs and copilots that democratize access but stay fragmented. Pilots that look exciting in demos but can't pass procurement, compliance, or sustainability thresholds.
                       </p>
                     </div>
                   </div>
@@ -204,7 +204,7 @@ const Index = () => {
                   <div className="md:col-span-9">
                     <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
                       <p className="text-muted-foreground leading-relaxed">
-                        The wave we operate in. Applied AI is about embedding intelligence into critical workflows: automating claims, enhancing fraud detection, accelerating regulatory reporting, powering revenue cycle management. It is enterprise‑grade, governed, and outcome‑driven.
+                        <strong>Enterprise-grade adoption, moving from pilots to production.</strong> CIOs are under pressure to show results, not more failed experiments. We bridge ambition to execution with governance frameworks that ensure compliance while delivering measurable outcomes in critical workflows.
                       </p>
                     </div>
                   </div>
@@ -231,10 +231,21 @@ const Index = () => {
                   <div className="md:col-span-9 md:order-1">
                     <div className="bg-secondary/5 rounded-lg p-6 border border-secondary/20 md:text-right">
                       <p className="text-muted-foreground leading-relaxed">
-                        The future we are building toward. Entire enterprises re‑architected around AI — from infrastructure and governance to customer engagement and operations. CIOs won't bolt AI on; they will run organizations designed to be AI‑first from the ground up.
+                        Organizations designed to be AI-first from the ground up. Where AI becomes the operating model, not an add-on — transforming infrastructure, governance, and every customer touchpoint.
                       </p>
                     </div>
                   </div>
+                </div>
+
+                {/* Callout Box */}
+                <div className="mt-16">
+                  <Card className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 border-2 border-primary/30 shadow-xl">
+                    <CardContent className="p-8 text-center">
+                      <h3 className="text-2xl font-bold text-primary mb-4">
+                        Vibrant Capital exists to make AI practical and profitable today — while laying the foundations for tomorrow's AI-native enterprises.
+                      </h3>
+                    </CardContent>
+                  </Card>
                 </div>
 
               </div>
@@ -243,32 +254,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Hero Message */}
-      <section className="py-20 section-spacex">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <Card className="card-spacex card-spacex-glow border-none">
-              <CardContent className="p-12">
-                <h2 className="text-4xl font-bold mb-8 text-center uppercase tracking-wider">APPLIED AI IS THE CURRENT WAVE</h2>
-                <div className="space-y-6 text-lg leading-relaxed">
-                  <p>
-                    Applied AI is the current wave where intelligence moves from lab experiments into the arteries of business and government. For us, this is not about futuristic speculation — it is about helping CIOs translate today's proven AI capabilities into cost savings, revenue growth, and risk reduction.
-                  </p>
-                  <p>
-                    We act as the bridge between boardroom ambition and operational execution, giving enterprises the tools, playbooks, partners, and governance frameworks to go from pilots to production.
-                  </p>
-                  <p>
-                    Our focus is on measurable outcomes — cycle‑time reductions, compliance improvements, and ROI in under 12 months — so that AI adoption is not a gamble but a reliable lever of transformation.
-                  </p>
-                  <p className="text-center text-2xl font-bold text-primary border-t border-b border-primary/20 py-8">
-                    Vibrant Capital exists to make AI practical and profitable today, while laying the foundations for tomorrow's AI‑native enterprises.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
 
 
