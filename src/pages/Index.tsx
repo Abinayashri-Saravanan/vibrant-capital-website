@@ -144,7 +144,7 @@ const Index = () => {
                       </div>
                       <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
                         <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-muted mb-4">01</div>
+                          <div className="text-6xl font-bold text-foreground mb-4">01</div>
                           <h3 className="text-xl font-semibold text-foreground">Frontier Models</h3>
                         </CardContent>
                       </Card>
@@ -168,7 +168,7 @@ const Index = () => {
                       </div>
                       <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
                         <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-muted mb-4">02</div>
+                          <div className="text-6xl font-bold text-foreground mb-4">02</div>
                           <h3 className="text-xl font-semibold text-foreground">Tools & Platforms</h3>
                         </CardContent>
                       </Card>
@@ -219,7 +219,7 @@ const Index = () => {
                       </div>
                       <Card className="bg-secondary/5 border border-secondary/30 hover:shadow-lg transition-all duration-300">
                         <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-secondary mb-4">04</div>
+                          <div className="text-6xl font-bold text-foreground mb-4">04</div>
                           <h3 className="text-xl font-semibold text-foreground">AI‑Native Enterprises</h3>
                           <div className="mt-3 px-3 py-1 bg-secondary/20 rounded-full text-xs font-medium text-secondary">
                             VISION
