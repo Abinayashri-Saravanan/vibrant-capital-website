@@ -176,7 +176,7 @@ const About = () => {
       </section>
 
       {/* Our Difference */}
-      <section className="py-16 section-gradient">
+      <section className="py-8 section-gradient min-h-screen flex items-center">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-16">
@@ -189,7 +189,7 @@ const About = () => {
                 Hear from <span className="text-spacex-gradient">Shadman's AI Avatar</span>
               </h3>
             </div>
-            
+
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Video Section */}
               <div className="order-2 lg:order-1">
@@ -205,12 +205,12 @@ const About = () => {
                     onPlay={() => setIsPaused(false)}
                     onPause={() => setIsPaused(true)}
                   >
-                    <source src="/Video/About-Avatar.mp4" type="video/mp4" />
+                    <source src="/Video/About-Avatar1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   
                   {/* Video Controls Overlay */}
-                  <div className="absolute bottom-4 left-4 flex gap-3">
+                  <div className="absolute top-4 left-4 flex gap-3">
                     <Button
                       onClick={togglePlay}
                       size="sm"
