@@ -129,27 +129,57 @@ const Index = () => {
               Four Waves Framework
             </h2>
             
-            <div className="relative">
-              {/* Progressive Timeline */}
-              <div className="hidden md:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-r from-muted via-primary to-muted"></div>
-              
-              <div className="space-y-16 md:space-y-0">
-                
-                {/* Wave 1 */}
-                <div className="relative md:grid md:grid-cols-12 md:gap-8 items-center">
-                  <div className="md:col-span-3 mb-8 md:mb-0">
-                    <div className="relative">
-                      <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300">
-                        <CardContent className="p-6 text-center">
-                          <div className="text-6xl font-bold text-primary mb-4">01</div>
-                          <h3 className="text-xl font-semibold text-foreground">Frontier Models</h3>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
-                  <div className="md:col-span-9">
-                    <div className="bg-card/50 rounded-lg p-6 border border-border/30">
-                      <p className="text-muted-foreground leading-relaxed">
+            {/* Compact 4-up grid, avoids vertical scrolling on desktop */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              {/* Wave 1 */}
+              <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-6">
+                  <div className="text-4xl font-extrabold text-foreground mb-2">01</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Frontier Models</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Lab breakthroughs that capture headlines but remain impractical for enterprise scale. Cutting‑edge research that can’t integrate into regulated, legacy‑heavy environments.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Wave 2 */}
+              <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-6">
+                  <div className="text-4xl font-extrabold text-foreground mb-2">02</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Tools & Platforms</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed md:text-right">
+                    APIs and copilots democratize access but stay fragmented. Pilots excite in demos yet stall at procurement and compliance.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Wave 3 - CURRENT FOCUS */}
+              <Card className="bg-primary/5 border border-primary/30 hover:shadow-xl transition-all duration-300 h-full">
+                <CardContent className="p-6">
+                  <div className="text-4xl font-extrabold text-primary mb-2">03</div>
+                  <h3 className="text-lg font-semibold text-primary mb-2">Applied AI — CURRENT FOCUS</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Enterprise‑grade adoption: moving from pilots to production. CIOs are under pressure as pilots fail to scale; compliance and governance are non‑negotiable. Vibrant Capital bridges ambition to execution with the guardrails to deploy responsibly.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Wave 4 */}
+              <Card className="bg-card border border-border/50 hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-6">
+                  <div className="text-4xl font-extrabold text-foreground mb-2">04</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">AI‑Native Enterprises</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed md:text-right">
+                    Organizations designed to be AI‑first from the ground up. AI becomes the operating model across infrastructure, governance, and every customer touchpoint.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Simple callout (no box/border) */}
+            <p className="mt-10 text-center text-lg md:text-xl font-bold text-foreground">
+              “Vibrant Capital exists to make AI practical and profitable today — while laying the foundations for tomorrow’s AI‑native enterprises.”
+            </p>
                         Lab breakthroughs that capture headlines but remain impractical for enterprise scale. Cutting-edge research that can't integrate into regulated, legacy-heavy environments.
                       </p>
                     </div>
