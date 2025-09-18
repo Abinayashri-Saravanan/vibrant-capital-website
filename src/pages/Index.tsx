@@ -153,7 +153,14 @@ const Index = () => {
                 <Link to="/investments">EXPLORE INVESTMENTS</Link>
               </Button>
               <Button size="lg" className="btn-spacex px-12 py-4 text-lg" asChild>
-                <Link to="/about#our-difference">FOUNDERS MESSAGE</Link>
+                <Link to="/about" onClick={() => {
+                  setTimeout(() => {
+                    const element = document.getElementById('our-difference');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
+                }}>FOUNDERS MESSAGE</Link>
               </Button>
             </div>
           </div>
