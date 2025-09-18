@@ -160,7 +160,7 @@ const Index = () => {
                       element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }, 100);
-                }}>FOUNDERS MESSAGE</Link>
+                }}>FOUNDER'S MESSAGE</Link>
               </Button>
             </div>
           </div>
