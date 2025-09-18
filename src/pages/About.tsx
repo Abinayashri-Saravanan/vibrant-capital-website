@@ -246,7 +246,7 @@ const About = () => {
       </section>
 
       {/* Our Difference */}
-      <section className="py-16 section-gradient">
+      <section id="our-difference" className="py-16 section-gradient">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-16">
