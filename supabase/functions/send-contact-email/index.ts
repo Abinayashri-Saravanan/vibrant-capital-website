@@ -13,12 +13,14 @@ const corsHeaders = {
 };
 
 interface ContactRequest {
-  firstName: string;
-  lastName: string;
+  fullName: string;
   email: string;
   company?: string;
-  subject: string;
-  message: string;
+  phone?: string;
+  companySize?: string;
+  industry?: string;
+  yourInterest: string;
+  message?: string;
 }
 
 const handler = async (req: Request): Promise<Response> => {
@@ -28,13 +30,18 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { firstName, lastName, email, company, subject, message }: ContactRequest = await req.json();
+    const { fullName, email, company, phone, companySize, industry, yourInterest, message }: ContactRequest = await req.json();
 
     // Initialize Supabase client
     const supabaseClient = createClient(
       Deno.env.get('SUPABASE_URL') ?? '',
       Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
     );
+
+    // Split full name into first and last name
+    const nameParts = fullName.trim().split(' ');
+    const firstName = nameParts[0] || '';
+    const lastName = nameParts.slice(1).join(' ') || '';
 
     // Save to database
     const { data, error: dbError } = await supabaseClient
@@ -44,8 +51,12 @@ const handler = async (req: Request): Promise<Response> => {
         last_name: lastName,
         email,
         company,
-        subject,
-        message
+        phone,
+        company_size: companySize,
+        industry,
+        your_interest: yourInterest,
+        subject: yourInterest, // Use yourInterest as subject for backward compatibility
+        message: message || ''
       })
       .select()
       .single();
@@ -61,15 +72,17 @@ const handler = async (req: Request): Promise<Response> => {
     const emailResponse = await resend.emails.send({
       from: "Vibrant Capital <onboarding@resend.dev>",
       to: ["info@haiintel.com"],
-      subject: `New Contact Form: ${subject}`,
+      subject: `New Contact Request: ${yourInterest}`,
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+        <p><strong>Name:</strong> ${fullName}</p>
         <p><strong>Email:</strong> ${email}</p>
         ${company ? `<p><strong>Company:</strong> ${company}</p>` : ''}
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
+        ${companySize ? `<p><strong>Company Size:</strong> ${companySize}</p>` : ''}
+        ${industry ? `<p><strong>Industry:</strong> ${industry}</p>` : ''}
+        <p><strong>Interest:</strong> ${yourInterest}</p>
+        ${message ? `<p><strong>Message:</strong></p><p>${message.replace(/\n/g, '<br>')}</p>` : ''}
         <hr>
         <p><em>Submitted on: ${new Date().toLocaleString()}</em></p>
       `,

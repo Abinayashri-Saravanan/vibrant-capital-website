@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Navigation from "@/components/ui/navigation";
 import Footer from "@/components/ui/footer";
 import { Mail, MessageCircle } from "lucide-react";
@@ -12,12 +13,13 @@ import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
     company: "",
-    role: "",
-    subject: "",
+    phone: "",
+    companySize: "",
+    industry: "",
+    yourInterest: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -28,6 +30,13 @@ const Contact = () => {
     setFormData(prev => ({
       ...prev,
       [id]: value
+    }));
+  };
+
+  const handleSelectChange = (field: string, value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
     }));
   };
 
@@ -51,12 +60,13 @@ const Contact = () => {
 
       // Reset form
       setFormData({
-        firstName: "",
-        lastName: "",
+        fullName: "",
         email: "",
         company: "",
-        role: "",
-        subject: "",
+        phone: "",
+        companySize: "",
+        industry: "",
+        yourInterest: "",
         message: ""
       });
     } catch (error: any) {
@@ -79,101 +89,138 @@ const Contact = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
+              <h1 className="text-5xl font-bold mb-6">Get Started with Vibrant Capital</h1>
               <p className="text-xl text-muted-foreground">
-                Get in touch to discuss how Vibrant Capital can partner with your organization
+                Let's discuss how Vibrant Capital can embed intelligence into your operations and accelerate your transformation.
               </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
               <Card>
-                <CardHeader>
-                  <CardTitle>Send us a message</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
+                <CardContent className="space-y-6 p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="firstName">First Name *</Label>
+                        <Label htmlFor="fullName">Full Name *</Label>
                         <Input 
-                          id="firstName" 
-                          placeholder="Your first name" 
-                          value={formData.firstName}
+                          id="fullName" 
+                          placeholder="John Smith" 
+                          value={formData.fullName}
                           onChange={handleInputChange}
                           required
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="lastName">Last Name *</Label>
+                        <Label htmlFor="email">Email Address *</Label>
                         <Input 
-                          id="lastName" 
-                          placeholder="Your last name" 
-                          value={formData.lastName}
+                          id="email" 
+                          type="email" 
+                          placeholder="john@company.com" 
+                          value={formData.email}
                           onChange={handleInputChange}
                           required
                         />
                       </div>
                     </div>
                     
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
-                      <Input 
-                        id="email" 
-                        type="email" 
-                        placeholder="your.email@company.com" 
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                      />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="company">Company</Label>
+                        <Input 
+                          id="company" 
+                          placeholder="Your Company" 
+                          value={formData.company}
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="phone">Phone Number</Label>
+                        <Input 
+                          id="phone" 
+                          placeholder="+1 (555) 123-4567" 
+                          value={formData.phone}
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="companySize">Company Size</Label>
+                        <Select onValueChange={(value) => handleSelectChange('companySize', value)}>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select company size" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="startup">Startup (1-10 employees)</SelectItem>
+                            <SelectItem value="small">Small (11-50 employees)</SelectItem>
+                            <SelectItem value="medium">Medium (51-200 employees)</SelectItem>
+                            <SelectItem value="large">Large (201-1000 employees)</SelectItem>
+                            <SelectItem value="enterprise">Enterprise (1000+ employees)</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="industry">Industry</Label>
+                        <Select onValueChange={(value) => handleSelectChange('industry', value)}>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select industry" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="banking">Banking & Financial Services</SelectItem>
+                            <SelectItem value="healthcare">Healthcare</SelectItem>
+                            <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                            <SelectItem value="retail">Retail & E-commerce</SelectItem>
+                            <SelectItem value="energy">Energy & Utilities</SelectItem>
+                            <SelectItem value="transportation">Transportation & Logistics</SelectItem>
+                            <SelectItem value="telecom">Telecommunications</SelectItem>
+                            <SelectItem value="insurance">Insurance</SelectItem>
+                            <SelectItem value="public">Public Sector</SelectItem>
+                            <SelectItem value="technology">Technology</SelectItem>
+                            <SelectItem value="other">Other</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="company">Company</Label>
-                      <Input 
-                        id="company" 
-                        placeholder="Your company name" 
-                        value={formData.company}
-                        onChange={handleInputChange}
-                      />
+                      <Label htmlFor="yourInterest">Your Interest *</Label>
+                      <Select onValueChange={(value) => handleSelectChange('yourInterest', value)}>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select your interest" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="potential-investor">Potential Investor</SelectItem>
+                          <SelectItem value="strategic-partner">Strategic Partner</SelectItem>
+                          <SelectItem value="ai-strategy-session">AI Strategy Session</SelectItem>
+                          <SelectItem value="ai-readiness-assessment">AI Readiness Assessment</SelectItem>
+                          <SelectItem value="pilot-project">Pilot Project</SelectItem>
+                          <SelectItem value="full-implementation">Full Implementation</SelectItem>
+                          <SelectItem value="general-consultation">General Consultation</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="role">Role</Label>
-                      <Input 
-                        id="role" 
-                        placeholder="Your role or position" 
-                        value={formData.role}
-                        onChange={handleInputChange}
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="subject">Subject *</Label>
-                      <Input 
-                        id="subject" 
-                        placeholder="What would you like to discuss?" 
-                        value={formData.subject}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message *</Label>
+                      <Label htmlFor="message">Tell us more about your needs</Label>
                       <Textarea 
                         id="message" 
-                        placeholder="Tell us about your AI transformation goals..."
+                        placeholder="Please describe your specific requirements, goals, or how we can help you..."
                         className="min-h-[120px]"
                         value={formData.message}
                         onChange={handleInputChange}
-                        required
                       />
                     </div>
                     
-                    <Button type="submit" className="w-full" disabled={isSubmitting}>
-                      {isSubmitting ? "Sending..." : "Send Message"}
-                    </Button>
+                    <div className="flex gap-4">
+                      <Button type="button" variant="outline" className="flex-1">
+                        Cancel
+                      </Button>
+                      <Button type="submit" className="flex-1" disabled={isSubmitting}>
+                        {isSubmitting ? "Submitting..." : "Submit Request"}
+                      </Button>
+                    </div>
                   </form>
                 </CardContent>
               </Card>

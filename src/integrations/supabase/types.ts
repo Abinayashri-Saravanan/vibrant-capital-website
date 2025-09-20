@@ -41,33 +41,48 @@ export type Database = {
       contacts: {
         Row: {
           company: string | null
+          company_size: string | null
           created_at: string
           email: string
           first_name: string
           id: string
+          industry: string | null
           last_name: string
           message: string
+          phone: string | null
+          role: string | null
           subject: string
+          your_interest: string | null
         }
         Insert: {
           company?: string | null
+          company_size?: string | null
           created_at?: string
           email: string
           first_name: string
           id?: string
+          industry?: string | null
           last_name: string
           message: string
+          phone?: string | null
+          role?: string | null
           subject: string
+          your_interest?: string | null
         }
         Update: {
           company?: string | null
+          company_size?: string | null
           created_at?: string
           email?: string
           first_name?: string
           id?: string
+          industry?: string | null
           last_name?: string
           message?: string
+          phone?: string | null
+          role?: string | null
           subject?: string
+          your_interest?: string | null
         }
         Relationships: []
       }
