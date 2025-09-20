@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import Navigation from "@/components/ui/navigation";
 import Footer from "@/components/ui/footer";
 import { Mail, MessageCircle } from "lucide-react";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -24,9 +24,23 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  
+  const maxWords = 150;
+  const wordCount = useMemo(() => {
+    return formData.message.trim().split(/\s+/).filter(word => word.length > 0).length;
+  }, [formData.message]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;
+    
+    // For message field, check word count
+    if (id === 'message') {
+      const words = value.trim().split(/\s+/).filter(word => word.length > 0);
+      if (words.length > maxWords) {
+        return; // Don't update if exceeds word limit
+      }
+    }
+    
     setFormData(prev => ({
       ...prev,
       [id]: value
@@ -210,11 +224,16 @@ const Contact = () => {
                           </Select>
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="message">Message</Label>
+                          <div className="flex justify-between items-center">
+                            <Label htmlFor="message">Message</Label>
+                            <span className={`text-xs ${wordCount > maxWords * 0.9 ? 'text-destructive' : 'text-muted-foreground'}`}>
+                              {wordCount}/{maxWords} words
+                            </span>
+                          </div>
                           <Textarea 
                             id="message" 
                             placeholder="Tell us about your specific needs..."
-                            className="min-h-[80px] resize-none"
+                            className="min-h-[120px] resize-none"
                             value={formData.message}
                             onChange={handleInputChange}
                           />
