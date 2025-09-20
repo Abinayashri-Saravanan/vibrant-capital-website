@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Navigation from "@/components/ui/navigation";
-import { Mail, MessageCircle, Users, Target } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -15,6 +15,7 @@ const Contact = () => {
     lastName: "",
     email: "",
     company: "",
+    role: "",
     subject: "",
     message: ""
   });
@@ -53,6 +54,7 @@ const Contact = () => {
         lastName: "",
         email: "",
         company: "",
+        role: "",
         subject: "",
         message: ""
       });
@@ -92,7 +94,7 @@ const Contact = () => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="firstName">First Name</Label>
+                        <Label htmlFor="firstName">First Name *</Label>
                         <Input 
                           id="firstName" 
                           placeholder="Your first name" 
@@ -102,7 +104,7 @@ const Contact = () => {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="lastName">Last Name</Label>
+                        <Label htmlFor="lastName">Last Name *</Label>
                         <Input 
                           id="lastName" 
                           placeholder="Your last name" 
@@ -114,7 +116,7 @@ const Contact = () => {
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email">Email *</Label>
                       <Input 
                         id="email" 
                         type="email" 
@@ -136,7 +138,17 @@ const Contact = () => {
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="subject">Subject</Label>
+                      <Label htmlFor="role">Role</Label>
+                      <Input 
+                        id="role" 
+                        placeholder="Your role or position" 
+                        value={formData.role}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <Label htmlFor="subject">Subject *</Label>
                       <Input 
                         id="subject" 
                         placeholder="What would you like to discuss?" 
@@ -147,7 +159,7 @@ const Contact = () => {
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
+                      <Label htmlFor="message">Message *</Label>
                       <Textarea 
                         id="message" 
                         placeholder="Tell us about your AI transformation goals..."
@@ -175,7 +187,12 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold">Email</h3>
-                        <p className="text-muted-foreground">info@haiintel.com</p>
+                        <a 
+                          href="mailto:info@haiintel.com"
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          info@haiintel.com
+                        </a>
                       </div>
                     </div>
                   </CardContent>
@@ -191,38 +208,6 @@ const Contact = () => {
                         <h3 className="font-semibold mb-3">Let's Discuss Your AI Transformation</h3>
                         <p className="text-muted-foreground">
                           Ready to explore how Applied AI can revolutionize your industry? We're here to help you navigate the possibilities and create strategic value.
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-accent/5">
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="p-3 bg-accent/10 rounded-lg">
-                        <Users className="h-6 w-6 text-accent" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold mb-3">Partnership Opportunities</h3>
-                        <p className="text-muted-foreground">
-                          Interested in strategic partnerships or collaboration? We're always looking to connect with forward-thinking organizations.
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-secondary/5">
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="p-3 bg-secondary/10 rounded-lg">
-                        <Target className="h-6 w-6 text-secondary" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold mb-3">Investment Opportunities</h3>
-                        <p className="text-muted-foreground">
-                          Exploring investment possibilities? Learn more about our investment strategy and how we're shaping the future of AI.
                         </p>
                       </div>
                     </div>
