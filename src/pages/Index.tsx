@@ -369,8 +369,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Temporarily comment out Footer to test if it's causing the issue */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
