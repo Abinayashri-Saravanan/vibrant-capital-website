@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Mail, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,29 +11,6 @@ const Footer = () => {
             <p className="text-white/80 text-sm leading-relaxed">
               Making AI practical and profitable today while laying the foundations for tomorrow's AI-native enterprises.
             </p>
-            <div className="flex space-x-4">
-              <a 
-                href="mailto:info@haiintel.com" 
-                className="text-white/80 hover:text-white transition-colors"
-                aria-label="Email"
-              >
-                <Mail className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="text-white/80 hover:text-white transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="text-white/80 hover:text-white transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Navigation */}
@@ -90,12 +66,9 @@ const Footer = () => {
               © {new Date().getFullYear()} Vibrant Capital. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-white/80 hover:text-white transition-colors text-sm">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-white/80 hover:text-white transition-colors text-sm">
-                Terms of Service
-              </a>
+              <Link to="/legal" className="text-white/80 hover:text-white transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
+                Legal
+              </Link>
             </div>
           </div>
         </div>
