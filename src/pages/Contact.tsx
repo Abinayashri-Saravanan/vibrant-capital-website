@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Navigation from "@/components/ui/navigation";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { Mail, MessageCircle, Users, Target } from "lucide-react";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -171,42 +171,11 @@ const Contact = () => {
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4 mb-4">
                       <div className="p-3 bg-primary/10 rounded-lg">
-                        <MapPin className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold">Office Location</h3>
-                        <p className="text-muted-foreground">
-                          123 Innovation Drive<br />
-                          Tech District, CA 94000
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="p-3 bg-primary/10 rounded-lg">
-                        <Phone className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold">Phone</h3>
-                        <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="p-3 bg-primary/10 rounded-lg">
                         <Mail className="h-6 w-6 text-primary" />
                       </div>
                       <div>
                         <h3 className="font-semibold">Email</h3>
-                        <p className="text-muted-foreground">contact@vibrantcapital.com</p>
+                        <p className="text-muted-foreground">info@haiintel.com</p>
                       </div>
                     </div>
                   </CardContent>
@@ -214,10 +183,49 @@ const Contact = () => {
 
                 <Card className="bg-primary/5">
                   <CardContent className="p-6">
-                    <h3 className="font-semibold mb-4">For Investment Opportunities</h3>
-                    <p className="text-muted-foreground">
-                      Interested in partnering with us or learning more about our investment strategy? Use the contact form to get in touch.
-                    </p>
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="p-3 bg-primary/10 rounded-lg">
+                        <MessageCircle className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-3">Let's Discuss Your AI Transformation</h3>
+                        <p className="text-muted-foreground">
+                          Ready to explore how Applied AI can revolutionize your industry? We're here to help you navigate the possibilities and create strategic value.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-accent/5">
+                  <CardContent className="p-6">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="p-3 bg-accent/10 rounded-lg">
+                        <Users className="h-6 w-6 text-accent" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-3">Partnership Opportunities</h3>
+                        <p className="text-muted-foreground">
+                          Interested in strategic partnerships or collaboration? We're always looking to connect with forward-thinking organizations.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-secondary/5">
+                  <CardContent className="p-6">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="p-3 bg-secondary/10 rounded-lg">
+                        <Target className="h-6 w-6 text-secondary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-3">Investment Opportunities</h3>
+                        <p className="text-muted-foreground">
+                          Exploring investment possibilities? Learn more about our investment strategy and how we're shaping the future of AI.
+                        </p>
+                      </div>
+                    </div>
                   </CardContent>
                 </Card>
               </div>

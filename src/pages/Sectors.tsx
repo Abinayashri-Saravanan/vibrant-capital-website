@@ -5,7 +5,6 @@ import insuranceImg from "@/assets/sector-insurance.jpg";
 import healthcareImg from "@/assets/sector-healthcare.jpg";
 import retailImg from "@/assets/sector-retail.jpg";
 import energyImg from "@/assets/sector-energy.jpg";
-import transportationImg from "@/assets/sector-transportation.jpg";
 import manufacturingImg from "@/assets/sector-manufacturing.jpg";
 import publicImg from "@/assets/sector-public.jpg";
 import telecomImg from "@/assets/sector-telecom.jpg";
@@ -14,7 +13,6 @@ import insuranceIcon from "@/assets/sector-icons/insurance-icon.jpg";
 import healthcareIcon from "@/assets/sector-icons/healthcare-icon.jpg";
 import retailIcon from "@/assets/sector-icons/retail-icon.jpg";
 import energyIcon from "@/assets/sector-icons/energy-icon.jpg";
-import transportationIcon from "@/assets/sector-icons/transportation-icon.jpg";
 import manufacturingIcon from "@/assets/sector-icons/manufacturing-icon.jpg";
 import publicIcon from "@/assets/sector-icons/public-icon.jpg";
 import telecomIcon from "@/assets/sector-icons/telecom-icon.jpg";
@@ -40,7 +38,7 @@ const Sectors = () => {
             </p>
             
             {/* Quick Navigation */}
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-4 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
               <a href="#banking" className="group">
                 <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
                   <img src={bankingImg} alt="Banking" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
@@ -77,16 +75,6 @@ const Sectors = () => {
                   <div className="absolute bottom-2 left-2 right-2">
                     <h3 className="font-bold text-xs text-white text-center">Retail &</h3>
                     <h3 className="font-bold text-xs text-white text-center">Consumer Goods</h3>
-                  </div>
-                </div>
-              </a>
-              <a href="#transportation" className="group">
-                <div className="relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-                  <img src={transportationImg} alt="Transportation" className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-2 left-2 right-2">
-                    <h3 className="font-bold text-xs text-white text-center">Transportation &</h3>
-                    <h3 className="font-bold text-xs text-white text-center">Logistics</h3>
                   </div>
                 </div>
               </a>
@@ -348,61 +336,6 @@ const Sectors = () => {
                         <li>• Double‑digit margin improvements from better forecasting and pricing</li>
                         <li>• Stronger customer loyalty through personalization</li>
                         <li>• Faster inventory turns</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Transportation & Logistics */}
-            <Card id="transportation" className="card-spacex card-spacex-glow mb-16 overflow-hidden">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={transportationImg} 
-                  alt="Transportation & Logistics"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
-                <div className="absolute inset-0 flex items-center">
-                  <div className="pl-8">
-                    <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-wider">
-                      TRANSPORTATION &<br />LOGISTICS
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <CardContent className="p-8">
-                <div className="grid lg:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-6 text-primary uppercase tracking-wider">CHALLENGES</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                      Global supply chains face shocks from weather, geopolitics, and pandemics. Systems across carriers, ports, and warehouses rarely integrate. CIOs struggle to create real‑time visibility, and AI pilots often collapse under the scale and complexity of multi‑party logistics data.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-6 text-primary uppercase tracking-wider">APPLIED AI SOLUTIONS</h3>
-                    <div className="space-y-4">
-                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-4">
-                        <h4 className="font-bold mb-2 text-lg">ROUTING OPTIMIZERS</h4>
-                        <p className="text-muted-foreground">Routing optimizers that adapt in real time</p>
-                      </div>
-                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-4">
-                        <h4 className="font-bold mb-2 text-lg">EXCEPTION DETECTION</h4>
-                        <p className="text-muted-foreground">Copilots that detect and resolve shipment exceptions before they cascade</p>
-                      </div>
-                      <div className="bg-accent/20 border border-accent/30 rounded-lg p-4">
-                        <h4 className="font-bold mb-2 text-lg">INVENTORY POSITIONING</h4>
-                        <p className="text-muted-foreground">Predictive inventory positioning engines</p>
-                      </div>
-                    </div>
-                    <div className="mt-6 p-6 bg-primary/10 border border-primary/20 rounded-lg">
-                      <h4 className="font-bold text-primary mb-3 text-xl uppercase tracking-wider">PROJECTED OUTCOMES</h4>
-                      <ul className="space-y-2 font-semibold">
-                        <li>• 20–30% higher delivery reliability</li>
-                        <li>• 10–15% cost reductions</li>
-                        <li>• More resilient networks</li>
-                        <li>• Significantly better customer trust</li>
                       </ul>
                     </div>
                   </div>
