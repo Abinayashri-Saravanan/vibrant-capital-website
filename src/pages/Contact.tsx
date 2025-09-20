@@ -25,7 +25,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   
-  const maxWords = 150;
+  const maxWords = 1000;
   const wordCount = useMemo(() => {
     return formData.message.trim().split(/\s+/).filter(word => word.length > 0).length;
   }, [formData.message]);
@@ -226,9 +226,11 @@ const Contact = () => {
                         <div className="space-y-2">
                           <div className="flex justify-between items-center">
                             <Label htmlFor="message">Message</Label>
-                            <span className={`text-xs ${wordCount > maxWords * 0.9 ? 'text-destructive' : 'text-muted-foreground'}`}>
-                              {wordCount}/{maxWords} words
-                            </span>
+                            {wordCount > maxWords * 0.8 && (
+                              <span className={`text-xs ${wordCount > maxWords * 0.95 ? 'text-destructive' : 'text-muted-foreground'}`}>
+                                {wordCount}/{maxWords} words
+                              </span>
+                            )}
                           </div>
                           <Textarea 
                             id="message" 
