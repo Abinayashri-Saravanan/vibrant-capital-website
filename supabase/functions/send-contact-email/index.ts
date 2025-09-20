@@ -3,6 +3,8 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.57.4'
 import { Resend } from "npm:resend@2.0.0";
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+const airtableToken = Deno.env.get("AIRTABLE_PERSONAL_ACCESS_TOKEN");
+const airtableBaseId = Deno.env.get("AIRTABLE_BASE_ID");
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -67,6 +69,46 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     console.log("Contact saved to database:", data);
+
+    // Save to Airtable
+    if (airtableToken && airtableBaseId) {
+      try {
+        const airtableResponse = await fetch(`https://api.airtable.com/v0/${airtableBaseId}/Contacts`, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${airtableToken}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            fields: {
+              'First Name': firstName,
+              'Last Name': lastName,
+              'Email': email,
+              'Company': company || '',
+              'Phone': phone || '',
+              'Company Size': companySize || '',
+              'Industry': industry || '',
+              'Interest': yourInterest,
+              'Message': message || '',
+              'Submitted At': new Date().toISOString()
+            }
+          })
+        });
+
+        if (airtableResponse.ok) {
+          const airtableData = await airtableResponse.json();
+          console.log("Contact saved to Airtable:", airtableData);
+        } else {
+          const airtableError = await airtableResponse.text();
+          console.error("Airtable error:", airtableError);
+        }
+      } catch (airtableError) {
+        console.error("Failed to save to Airtable:", airtableError);
+        // Don't throw error here - we don't want Airtable issues to break the email flow
+      }
+    } else {
+      console.log("Airtable credentials not configured, skipping Airtable save");
+    }
 
     // Send email to company
     const emailResponse = await resend.emails.send({
