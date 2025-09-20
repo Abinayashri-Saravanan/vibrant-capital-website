@@ -278,7 +278,7 @@ const About = () => {
                       onPlay={() => setIsPaused(false)}
                       onPause={() => setIsPaused(true)}
                     >
-                      <source src="/Video/About-Avatar1.mp4" type="video/mp4" />
+                      <source src="/Video/About-Avatar2.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
 

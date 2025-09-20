@@ -41,16 +41,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-white">Navigation</h4>
             <div className="space-y-2">
-              <Link to="/" className="block text-white/80 hover:text-white transition-colors text-sm">
+              <Link to="/" className="block text-white/80 hover:text-white transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                 Home
               </Link>
-              <Link to="/about" className="block text-white/80 hover:text-white transition-colors text-sm">
+              <Link to="/about" className="block text-white/80 hover:text-white transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                 About
               </Link>
-              <Link to="/investments" className="block text-white/80 hover:text-white transition-colors text-sm">
+              <Link to="/investments" className="block text-white/80 hover:text-white transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                 Investments
               </Link>
-              <Link to="/sectors" className="block text-white/80 hover:text-white transition-colors text-sm">
+              <Link to="/sectors" className="block text-white/80 hover:text-white transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                 Sectors
               </Link>
             </div>
@@ -60,10 +60,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-white">Services</h4>
             <div className="space-y-2">
-              <Link to="/for-investors" className="block text-white/80 hover:text-white transition-colors text-sm">
+              <Link to="/for-investors" className="block text-white/80 hover:text-white transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                 For Investors
               </Link>
-              <Link to="/contact" className="block text-white/80 hover:text-white transition-colors text-sm">
+              <Link to="/contact" className="block text-white/80 hover:text-white transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                 Contact
               </Link>
             </div>
