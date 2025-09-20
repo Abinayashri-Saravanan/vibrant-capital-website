@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
+import Footer from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -298,6 +299,8 @@ const ForInvestors = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
+import Footer from "@/components/ui/footer";
 import bankingImg from "@/assets/sector-banking.jpg";
 import insuranceImg from "@/assets/sector-insurance.jpg";
 import healthcareImg from "@/assets/sector-healthcare.jpg";
@@ -582,6 +583,8 @@ const Sectors = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

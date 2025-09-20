@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
+import Footer from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
@@ -523,6 +524,8 @@ const About = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

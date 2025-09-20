@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Navigation from "@/components/ui/navigation";
+import Footer from "@/components/ui/footer";
 import { Mail, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -218,6 +219,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };

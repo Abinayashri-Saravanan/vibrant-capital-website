@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
+import Footer from "@/components/ui/footer";
 import { useVideoOptimization } from "@/hooks/use-video-optimization";
 import { ArrowRight, Target, Brain, Shield, BookOpen } from "lucide-react";
 import bankingImg from "@/assets/sector-banking.jpg";
@@ -367,6 +368,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

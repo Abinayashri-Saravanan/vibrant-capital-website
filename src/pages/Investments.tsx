@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/ui/navigation";
+import Footer from "@/components/ui/footer";
 
 const Investments = () => {
   return (
@@ -237,6 +238,8 @@ const Investments = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };
