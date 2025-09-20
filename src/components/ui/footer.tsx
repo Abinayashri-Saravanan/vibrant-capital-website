@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
+  console.log("Footer component rendering");
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-6 py-12">
