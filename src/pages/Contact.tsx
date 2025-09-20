@@ -85,7 +85,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="pt-20 pb-8">
+      <div className="pt-32 pb-8">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-8">
@@ -271,18 +271,6 @@ const Contact = () => {
                   </CardContent>
                 </Card>
 
-                {/* Response Time */}
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="text-center">
-                      <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <div className="w-6 h-6 bg-green-500 rounded-full"></div>
-                      </div>
-                      <h4 className="font-medium mb-1">Quick Response</h4>
-                      <p className="text-sm text-muted-foreground">We typically respond within 24 hours</p>
-                    </div>
-                  </CardContent>
-                </Card>
               </div>
             </div>
           </div>
