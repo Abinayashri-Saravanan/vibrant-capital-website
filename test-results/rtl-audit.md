@@ -1,0 +1,331 @@
+# RTL Audit (center-aligned on Arabic routes)
+
+## https://vibrant-capital-website.lovable.app/ar
+
+- 1. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.relative.h-screen.flex:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(3) > div.max-w-6xl.mx-auto.text-center:nth-of-type(1)`
+   - نقود الموجة الثالثة للذكاء الاصطناعي  الذكاء الاصطناعي التطبيقي للمؤسسات  من المختبر إلى العمليات  نحوّل الذكاء من تجارب
+- 2. `div.min-h-screen.bg-background:nth-of-type(2) > section.relative.h-screen.flex:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(3) > div.max-w-6xl.mx-auto.text-center:nth-of-type(1) > div.relative.min-h-[400px].md:min-h-[380px]:nth-of-type(2)`
+   - نقود الموجة الثالثة للذكاء الاصطناعي  الذكاء الاصطناعي التطبيقي للمؤسسات  من المختبر إلى العمليات  نحوّل الذكاء من تجارب
+- 3. `section.relative.h-screen.flex:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(3) > div.max-w-6xl.mx-auto.text-center:nth-of-type(1) > div.relative.min-h-[400px].md:min-h-[380px]:nth-of-type(2) > div.absolute.inset-0.w-full:nth-of-type(1)`
+   - نقود الموجة الثالثة للذكاء الاصطناعي  الذكاء الاصطناعي التطبيقي للمؤسسات
+- 4. `div.min-h-screen.bg-background:nth-of-type(2) > section.relative.h-screen.flex:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(3) > div.max-w-6xl.mx-auto.text-center:nth-of-type(1) > div.mt-20.sm:mt-16.mb-12:nth-of-type(3)`
+   - استكشف الاستثمارات رسالة المؤسس
+- 5. `section.relative.h-screen.flex:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(3) > div.max-w-6xl.mx-auto.text-center:nth-of-type(1) > div.mt-20.sm:mt-16.mb-12:nth-of-type(3) > a.inline-flex.items-center.justify-center:nth-of-type(1)`
+   - استكشف الاستثمارات
+- 6. `section.relative.h-screen.flex:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(3) > div.max-w-6xl.mx-auto.text-center:nth-of-type(1) > div.mt-20.sm:mt-16.mb-12:nth-of-type(3) > a.inline-flex.items-center.justify-center:nth-of-type(2)`
+   - رسالة المؤسس
+- 7. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(2) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > h2.text-4xl.font-bold.text-center:nth-of-type(1)`
+   - إطار الموجات الأربع
+- 8. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(2) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > p.mt-10.text-center.text-lg:nth-of-type(1)`
+   - "توجد فايبرانت كابيتال لجعل الذكاء الاصطناعي عمليًا ومربحًا اليوم — مع تأسيس مؤسسات أصيلة بالذكاء الاصطناعي لغدٍ أفضل."
+- 9. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1)`
+   - فلسفتنا الاستثمارية  أربعة مبادئ أساسية توجه كيفية تحديدنا للاستثمارات ونمو الشركات عند تقاطع الذكاء الاصطناعي وعمليات ا
+- 10. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-4xl.font-bold.mb-6:nth-of-type(1)`
+   - فلسفتنا الاستثمارية
+- 11. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-lg.text-muted-foreground.leading-relaxed:nth-of-type(1)`
+   - أربعة مبادئ أساسية توجه كيفية تحديدنا للاستثمارات ونمو الشركات عند تقاطع الذكاء الاصطناعي وعمليات المؤسسة.
+- 12. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(5) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-semibold.text-center:nth-of-type(1)`
+   - منهجيتنا الاستثمارية
+- 13. `div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > div.grid.md:grid-cols-3.gap-6:nth-of-type(1) > div.rounded-lg.text-card-foreground.shadow-sm:nth-of-type(1) > div.p-6.text-center:nth-of-type(1)`
+   - التحديد  شركات ذات أساسيات قوية في قطاعات مهيأة للتحول بالذكاء الاصطناعي، تقودها فرق مستعدة للتغيير.
+- 14. `div.max-w-6xl.mx-auto:nth-of-type(1) > div.grid.md:grid-cols-3.gap-6:nth-of-type(1) > div.rounded-lg.text-card-foreground.shadow-sm:nth-of-type(1) > div.p-6.text-center:nth-of-type(1) > h3.text-lg.font-semibold.mb-3:nth-of-type(1)`
+   - التحديد
+- 15. `div.max-w-6xl.mx-auto:nth-of-type(1) > div.grid.md:grid-cols-3.gap-6:nth-of-type(1) > div.rounded-lg.text-card-foreground.shadow-sm:nth-of-type(1) > div.p-6.text-center:nth-of-type(1) > p.text-muted-foreground.leading-relaxed.text-sm:nth-of-type(1)`
+   - شركات ذات أساسيات قوية في قطاعات مهيأة للتحول بالذكاء الاصطناعي، تقودها فرق مستعدة للتغيير.
+- 16. `div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > div.grid.md:grid-cols-3.gap-6:nth-of-type(1) > div.rounded-lg.text-card-foreground.shadow-sm:nth-of-type(2) > div.p-6.text-center:nth-of-type(1)`
+   - التحوّل  دمج قدرات الذكاء الاصطناعي بعمق في العمليات لخلق ميزات تنافسية مستدامة وتدفقات إيرادات جديدة.
+- 17. `div.max-w-6xl.mx-auto:nth-of-type(1) > div.grid.md:grid-cols-3.gap-6:nth-of-type(1) > div.rounded-lg.text-card-foreground.shadow-sm:nth-of-type(2) > div.p-6.text-center:nth-of-type(1) > h3.text-lg.font-semibold.mb-3:nth-of-type(1)`
+   - التحوّل
+- 18. `div.max-w-6xl.mx-auto:nth-of-type(1) > div.grid.md:grid-cols-3.gap-6:nth-of-type(1) > div.rounded-lg.text-card-foreground.shadow-sm:nth-of-type(2) > div.p-6.text-center:nth-of-type(1) > p.text-muted-foreground.leading-relaxed.text-sm:nth-of-type(1)`
+   - دمج قدرات الذكاء الاصطناعي بعمق في العمليات لخلق ميزات تنافسية مستدامة وتدفقات إيرادات جديدة.
+- 19. `div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > div.grid.md:grid-cols-3.gap-6:nth-of-type(1) > div.rounded-lg.text-card-foreground.shadow-sm:nth-of-type(3) > div.p-6.text-center:nth-of-type(1)`
+   - التوسّع  مساعدة المؤسسات الأصيلة بالذكاء الاصطناعي على قيادة السوق وتقديم عوائد متميزة لجميع أصحاب المصلحة.
+- 20. `div.max-w-6xl.mx-auto:nth-of-type(1) > div.grid.md:grid-cols-3.gap-6:nth-of-type(1) > div.rounded-lg.text-card-foreground.shadow-sm:nth-of-type(3) > div.p-6.text-center:nth-of-type(1) > h3.text-lg.font-semibold.mb-3:nth-of-type(1)`
+   - التوسّع
+- 21. `div.max-w-6xl.mx-auto:nth-of-type(1) > div.grid.md:grid-cols-3.gap-6:nth-of-type(1) > div.rounded-lg.text-card-foreground.shadow-sm:nth-of-type(3) > div.p-6.text-center:nth-of-type(1) > p.text-muted-foreground.leading-relaxed.text-sm:nth-of-type(1)`
+   - مساعدة المؤسسات الأصيلة بالذكاء الاصطناعي على قيادة السوق وتقديم عوائد متميزة لجميع أصحاب المصلحة.
+- 22. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.py-20.section-spacex:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1)`
+   - انضم إلى المهمة  نحن لا نستثمر في شركات فحسب. نحن نكتب الفصل التالي من تحول المؤسسات.  كن شريكًا لنا
+- 23. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-20.section-spacex:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-6xl.font-black.mb-12:nth-of-type(1)`
+   - انضم إلى المهمة
+- 24. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-20.section-spacex:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-2xl.text-muted-foreground.mb-12:nth-of-type(1)`
+   - نحن لا نستثمر في شركات فحسب. نحن نكتب الفصل التالي من تحول المؤسسات.
+- 25. `section.py-20.section-spacex:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-2xl.text-muted-foreground.mb-12:nth-of-type(1) > span.text-spacex-gradient.font-bold:nth-of-type(1)`
+   - نحن نكتب الفصل التالي من تحول المؤسسات.
+- 26. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-20.section-spacex:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > a.inline-flex.items-center.justify-center:nth-of-type(1)`
+   - كن شريكًا لنا
+- 27. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(1)`
+   - العربية
+- 28. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(2)`
+   - English
+- 29. `button#lovable-badge-close`
+   - ×
+
+## https://vibrant-capital-website.lovable.app/ar/about
+
+- 1. `div.min-h-screen.bg-background:nth-of-type(2) > section.pt-32.pb-16.bg-background:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > div.text-center.mb-16:nth-of-type(1)`
+   - من نحن فايبرانت كابيتال  لقادة التقنية، من قادة التقنية — نقود ثورة الذكاء الاصطناعي في المؤسسات عبر خبرة المشغلين والخب
+- 2. `section.pt-32.pb-16.bg-background:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > div.text-center.mb-16:nth-of-type(1) > h1.text-4xl.md:text-5xl.lg:text-6xl:nth-of-type(1)`
+   - من نحن فايبرانت كابيتال
+- 3. `div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > div.text-center.mb-16:nth-of-type(1) > h1.text-4xl.md:text-5xl.lg:text-6xl:nth-of-type(1) > span.text-spacex-gradient.block:nth-of-type(1)`
+   - فايبرانت كابيتال
+- 4. `section.pt-32.pb-16.bg-background:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > div.text-center.mb-16:nth-of-type(1) > p.text-lg.md:text-xl.lg:text-2xl:nth-of-type(1)`
+   - لقادة التقنية، من قادة التقنية — نقود ثورة الذكاء الاصطناعي في المؤسسات عبر خبرة المشغلين والخبرة العميقة في القطاعات.
+- 5. `div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-5xl.mx-auto:nth-of-type(1) > div.rounded-lg.border.text-card-foreground:nth-of-type(1) > div.p-12:nth-of-type(1) > h2.text-4xl.font-bold.mb-8:nth-of-type(1)`
+   - من نحن
+- 6. `div.max-w-5xl.mx-auto:nth-of-type(1) > div.rounded-lg.border.text-card-foreground:nth-of-type(1) > div.p-12:nth-of-type(1) > div.space-y-6.text-lg.leading-relaxed:nth-of-type(1) > p.text-center.text-2xl.font-bold:nth-of-type(4)`
+   - لا نستثمر في شركات الذكاء الاصطناعي فحسب. نصنعها.
+- 7. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > h2.text-4xl.font-bold.text-center:nth-of-type(1)`
+   - تعرف على مؤسسنا
+- 8. `section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > h2.text-4xl.font-bold.text-center:nth-of-type(1) > span.text-spacex-gradient:nth-of-type(1)`
+   - مؤسسنا
+- 9. `div.p-0:nth-of-type(1) > div.grid.lg:grid-cols-2.gap-0:nth-of-type(1) > div.p-4.sm:p-6.lg:p-8:nth-of-type(1) > div.p-4.sm:p-6.bg-spacex-gradient/10:nth-of-type(2) > p.text-center.text-lg.sm:text-xl:nth-of-type(1)`
+   - خبرتي ليست نظرية. قدّمتُ أمام مجالس الإدارة تحت ضغط، وأجبتُ الجهات التنظيمية في أصعب الولايات القضائية، وحققتُ تحوّلات ب
+- 10. `section#our-difference > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-7xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1)`
+   - اختلافنا \
+- 11. `section#our-difference > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-7xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - \
+- 12. `div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-7xl.mx-auto:nth-of-type(1) > div.grid.lg:grid-cols-2.gap-12:nth-of-type(1) > div.order-2.lg:order-1:nth-of-type(1) > div.text-center.mb-8:nth-of-type(1)`
+   - استمع إلى أفاتار الذكاء الخاص بشادمن
+- 13. `div.max-w-7xl.mx-auto:nth-of-type(1) > div.grid.lg:grid-cols-2.gap-12:nth-of-type(1) > div.order-2.lg:order-1:nth-of-type(1) > div.text-center.mb-8:nth-of-type(1) > h3.text-2xl.font-bold.text-foreground:nth-of-type(1)`
+   - استمع إلى أفاتار الذكاء الخاص بشادمن
+- 14. `div.grid.lg:grid-cols-2.gap-12:nth-of-type(1) > div.order-2.lg:order-1:nth-of-type(1) > div.text-center.mb-8:nth-of-type(1) > h3.text-2xl.font-bold.text-foreground:nth-of-type(1) > span.text-spacex-gradient:nth-of-type(1)`
+   - أفاتار الذكاء الخاص بشادمن
+- 15. `div.order-1.lg:order-2:nth-of-type(2) > div.relative.h-full.flex:nth-of-type(1) > div.absolute.inset-0.transition-all:nth-of-type(1) > div.flex.items-center.justify-center:nth-of-type(1) > div.text-center.transform.transition-all:nth-of-type(1)`
+   - اختلافنا  اكتشف ما يميزنا
+- 16. `div.relative.h-full.flex:nth-of-type(1) > div.absolute.inset-0.transition-all:nth-of-type(1) > div.flex.items-center.justify-center:nth-of-type(1) > div.text-center.transform.transition-all:nth-of-type(1) > h3.text-5xl.font-black.text-spacex-gradient:nth-of-type(1)`
+   - اختلافنا
+- 17. `div.relative.h-full.flex:nth-of-type(1) > div.absolute.inset-0.transition-all:nth-of-type(1) > div.flex.items-center.justify-center:nth-of-type(1) > div.text-center.transform.transition-all:nth-of-type(1) > p.text-xl.text-muted-foreground.transition-all:nth-of-type(1)`
+   - اكتشف ما يميزنا
+- 18. `div.relative.h-full.flex:nth-of-type(1) > div.absolute.inset-0.transition-all:nth-of-type(2) > div.flex.items-center.justify-center:nth-of-type(1) > div.bg-card/60.backdrop-blur-sm.border:nth-of-type(1) > div.text-center.mb-6:nth-of-type(1)`
+   - 1 حمض نووي للمشغلين
+- 19. `div.relative.h-full.flex:nth-of-type(1) > div.absolute.inset-0.transition-all:nth-of-type(3) > div.flex.items-center.justify-center:nth-of-type(1) > div.bg-card/60.backdrop-blur-sm.border:nth-of-type(1) > div.text-center.mb-6:nth-of-type(1)`
+   - 2 مجلس CIO
+- 20. `div.relative.h-full.flex:nth-of-type(1) > div.absolute.inset-0.transition-all:nth-of-type(4) > div.flex.items-center.justify-center:nth-of-type(1) > div.bg-card/60.backdrop-blur-sm.border:nth-of-type(1) > div.text-center.mb-6:nth-of-type(1)`
+   - 3 قناعة بدل الضجيج
+- 21. `div.relative.h-full.flex:nth-of-type(1) > div.absolute.inset-0.transition-all:nth-of-type(5) > div.flex.items-center.justify-center:nth-of-type(1) > div.bg-card/60.backdrop-blur-sm.border:nth-of-type(1) > div.text-center.mb-6:nth-of-type(1)`
+   - 4 نهج قائم على التصميم
+- 22. `div.max-w-7xl.mx-auto:nth-of-type(1) > div.grid.lg:grid-cols-2.gap-12:nth-of-type(1) > div.order-1.lg:order-2:nth-of-type(2) > div.flex.justify-center.mt-8:nth-of-type(2) > button.group.relative.transition-all:nth-of-type(1)`
+   - اختلافنا
+- 23. `div.max-w-7xl.mx-auto:nth-of-type(1) > div.grid.lg:grid-cols-2.gap-12:nth-of-type(1) > div.order-1.lg:order-2:nth-of-type(2) > div.flex.justify-center.mt-8:nth-of-type(2) > button.group.relative.transition-all:nth-of-type(2)`
+   - حمض نووي للمشغلين
+- 24. `div.max-w-7xl.mx-auto:nth-of-type(1) > div.grid.lg:grid-cols-2.gap-12:nth-of-type(1) > div.order-1.lg:order-2:nth-of-type(2) > div.flex.justify-center.mt-8:nth-of-type(2) > button.group.relative.transition-all:nth-of-type(3)`
+   - مجلس CIO
+- 25. `div.max-w-7xl.mx-auto:nth-of-type(1) > div.grid.lg:grid-cols-2.gap-12:nth-of-type(1) > div.order-1.lg:order-2:nth-of-type(2) > div.flex.justify-center.mt-8:nth-of-type(2) > button.group.relative.transition-all:nth-of-type(4)`
+   - قناعة بدل الضجيج
+- 26. `div.max-w-7xl.mx-auto:nth-of-type(1) > div.grid.lg:grid-cols-2.gap-12:nth-of-type(1) > div.order-1.lg:order-2:nth-of-type(2) > div.flex.justify-center.mt-8:nth-of-type(2) > button.group.relative.transition-all:nth-of-type(5)`
+   - نهج قائم على التصميم
+- 27. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(5) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1)`
+   - رؤيتنا \
+- 28. `section.py-16:nth-of-type(5) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - \
+- 29. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1)`
+   - قيمنا \
+- 30. `section.py-16.section-gradient:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - \
+- 31. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(7) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1)`
+   - أكثر من شركة رأس مال خاص  فايبرانت كابيتال أكثر من شركة رأس مال خاص. نحن حركة من CIOs والمشغلين والمبتكرين مصممون على جع
+- 32. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(7) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-6:nth-of-type(1)`
+   - أكثر من شركة رأس مال خاص
+- 33. `section.py-16:nth-of-type(7) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-6:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - شركة رأس مال خاص
+- 34. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(7) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-xl.text-muted-foreground.leading-relaxed:nth-of-type(1)`
+   - فايبرانت كابيتال أكثر من شركة رأس مال خاص. نحن حركة من CIOs والمشغلين والمبتكرين مصممون على جعل تبني الذكاء الاصطناعي ال
+- 35. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(7) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-lg.text-muted-foreground.leading-relaxed:nth-of-type(2)`
+   - نستثمر بقناعة، ونعمل بتعاطف، ونشارك مع CIOs لتقديم تحولات آمنة وقابلة للقياس ومستقبلية.
+- 36. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(7) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > button.inline-flex.items-center.justify-center:nth-of-type(1)`
+   - انضم إلى مهمتنا
+- 37. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(1)`
+   - العربية
+- 38. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(2)`
+   - English
+- 39. `button#lovable-badge-close`
+   - ×
+
+## https://vibrant-capital-website.lovable.app/ar/sectors
+
+- 1. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1)`
+   - القطاعات المستهدفة  نركز على الصناعات حيث البيانات وفيرة والتنظيم صارم وعدم الكفاءة مكلف. هذه هي القطاعات حيث يمكن للذكا
+- 2. `div.min-h-screen.bg-background:nth-of-type(2) > section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > h1.text-6xl.md:text-7xl.font-black:nth-of-type(1)`
+   - القطاعات المستهدفة
+- 3. `section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > h1.text-6xl.md:text-7xl.font-black:nth-of-type(1) > span.text-spacex-gradient:nth-of-type(1)`
+   - المستهدفة
+- 4. `div.min-h-screen.bg-background:nth-of-type(2) > section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > p.text-2xl.text-muted-foreground.leading-relaxed:nth-of-type(1)`
+   - نركز على الصناعات حيث البيانات وفيرة والتنظيم صارم وعدم الكفاءة مكلف. هذه هي القطاعات حيث يمكن للذكاء الاصطناعي خلق تأثي
+- 5. `div.min-h-screen.bg-background:nth-of-type(2) > section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1)`
+   - الخدمات المصرفية وأسواق رأس المال التأمين الرعاية الصحية والعلوم الحياتية التجارة وسلع المستهلك الطاقة والمرافق التصنيع 
+- 6. `section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(1)`
+   - الخدمات المصرفية وأسواق رأس المال
+- 7. `div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(1) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1)`
+   - الخدمات المصرفية وأسواق رأس المال
+- 8. `div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(1) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2)`
+   - الخدمات المصرفية وأسواق رأس المال
+- 9. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(1) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(1)`
+   - الخدمات المصرفية
+- 10. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(1) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(2)`
+   - وأسواق رأس المال
+- 11. `section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(2)`
+   - التأمين
+- 12. `div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(2) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1)`
+   - التأمين
+- 13. `div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(2) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2)`
+   - التأمين
+- 14. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(2) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(1)`
+   - التأمين
+- 15. `section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(3)`
+   - الرعاية الصحية والعلوم الحياتية
+- 16. `div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(3) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1)`
+   - الرعاية الصحية والعلوم الحياتية
+- 17. `div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(3) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2)`
+   - الرعاية الصحية والعلوم الحياتية
+- 18. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(3) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(1)`
+   - الرعاية الصحية
+- 19. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(3) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(2)`
+   - والعلوم الحياتية
+- 20. `section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(4)`
+   - التجارة وسلع المستهلك
+- 21. `div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(4) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1)`
+   - التجارة وسلع المستهلك
+- 22. `div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(4) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2)`
+   - التجارة وسلع المستهلك
+- 23. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(4) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(1)`
+   - التجارة
+- 24. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(4) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(2)`
+   - وسلع المستهلك
+- 25. `section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(5)`
+   - الطاقة والمرافق
+- 26. `div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(5) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1)`
+   - الطاقة والمرافق
+- 27. `div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(5) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2)`
+   - الطاقة والمرافق
+- 28. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(5) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(1)`
+   - الطاقة
+- 29. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(5) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(2)`
+   - والمرافق
+- 30. `section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(6)`
+   - التصنيع
+- 31. `div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(6) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1)`
+   - التصنيع
+- 32. `div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(6) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2)`
+   - التصنيع
+- 33. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(6) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(1)`
+   - التصنيع
+- 34. `section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(7)`
+   - الاتصالات
+- 35. `div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(7) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1)`
+   - الاتصالات
+- 36. `div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(7) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2)`
+   - الاتصالات
+- 37. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(7) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(1)`
+   - الاتصالات
+- 38. `section.relative.pt-24.pb-16:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(8)`
+   - القطاع العام
+- 39. `div.container.mx-auto.px-6:nth-of-type(2) > div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(8) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1)`
+   - القطاع العام
+- 40. `div.max-w-5xl.mx-auto.text-center:nth-of-type(1) > div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(8) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2)`
+   - القطاع العام
+- 41. `div.grid.grid-cols-2.md:grid-cols-4:nth-of-type(1) > a.group:nth-of-type(8) > div.relative.overflow-hidden.rounded-xl:nth-of-type(1) > div.absolute.bottom-2.left-2:nth-of-type(2) > h3.font-bold.text-xs.text-white:nth-of-type(1)`
+   - القطاع العام
+- 42. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1)`
+   - ختام البيان  هذه القطاعات ليست اختيارية — إنها أساسية للاقتصاد العالمي. عبر استهداف الصناعات ذات الحواجز الأصعب للتبني، 
+- 43. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-6:nth-of-type(1)`
+   - ختام البيان
+- 44. `section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-6:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - البيان
+- 45. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-xl.text-muted-foreground.leading-relaxed:nth-of-type(1)`
+   - هذه القطاعات ليست اختيارية — إنها أساسية للاقتصاد العالمي. عبر استهداف الصناعات ذات الحواجز الأصعب للتبني، تضمن فايبرانت
+- 46. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-lg.text-muted-foreground.leading-relaxed:nth-of-type(2)`
+   - نشارك مع CIOs للانتقال من التجارب إلى الإنتاج، مثبتين أن الذكاء يمكنه تقديم نتائج عملية ومنظمة وجاهزة لمجالس الإدارة الي
+- 47. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(1)`
+   - العربية
+- 48. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(2)`
+   - English
+- 49. `button#lovable-badge-close`
+   - ×
+
+## https://vibrant-capital-website.lovable.app/ar/investments
+
+- 1. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.pt-24.pb-16.section-gradient:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1)`
+   - منظومة من روّاد الذكاء الاصطناعي التطبيقي  في فايبرانت كابيتال، لا نستثمر من أجل التوسع الأفقي — بل من أجل العمق والمواء
+- 2. `div.min-h-screen.bg-background:nth-of-type(2) > section.pt-24.pb-16.section-gradient:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h1.text-4xl.md:text-5xl.font-bold:nth-of-type(1)`
+   - منظومة من روّاد الذكاء الاصطناعي التطبيقي
+- 3. `section.pt-24.pb-16.section-gradient:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h1.text-4xl.md:text-5xl.font-bold:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - روّاد الذكاء الاصطناعي التطبيقي
+- 4. `div.min-h-screen.bg-background:nth-of-type(2) > section.pt-24.pb-16.section-gradient:nth-of-type(1) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-xl.text-muted-foreground.leading-relaxed:nth-of-type(1)`
+   - في فايبرانت كابيتال، لا نستثمر من أجل التوسع الأفقي — بل من أجل العمق والمواءمة. نختار كل شركة لأنها تحل مشكلة حرجة لقاد
+- 5. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1)`
+   - بناء بنية الذكاء الاصطناعي المؤسسية  اختير شركاؤنا لما يقدّمونه من ثقة ووضوح وتحكم لقادة التقنية في عصر الذكاء — لتشكيل 
+- 6. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-6:nth-of-type(1)`
+   - بناء بنية الذكاء الاصطناعي المؤسسية
+- 7. `section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-6:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - بنية الذكاء الاصطناعي المؤسسية
+- 8. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-xl.text-muted-foreground.leading-relaxed:nth-of-type(1)`
+   - اختير شركاؤنا لما يقدّمونه من ثقة ووضوح وتحكم لقادة التقنية في عصر الذكاء — لتشكيل منظومة تمكّن تحولًا آمنًا وقابلًا للق
+- 9. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(1)`
+   - العربية
+- 10. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(2)`
+   - English
+- 11. `button#lovable-badge-close`
+   - ×
+
+## https://vibrant-capital-website.lovable.app/ar/for-investors
+
+- 1. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1)`
+   - لماذا الاستثمار مع فايبرانت كابيتال
+- 2. `section.py-16.section-gradient:nth-of-type(3) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-6xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - فايبرانت كابيتال
+- 3. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(4) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1)`
+   - فوائد المستثمرين
+- 4. `section.py-16:nth-of-type(4) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto:nth-of-type(1) > h2.text-3xl.font-bold.text-center:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - فوائد المستثمرين
+- 5. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(5) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1)`
+   - \ وعدُنا للمستثمرين سنستثمر بانضباط سنعمل بتعاطف سنقيس النتائج بدقة سنقدم شفافية في كل خطوة  وقبل كل شيء، سنضمن أن رأسما
+- 6. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(5) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-8:nth-of-type(1)`
+   - \ وعدُنا للمستثمرين
+- 7. `section.py-16.section-gradient:nth-of-type(5) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-8:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - للمستثمرين
+- 8. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16.section-gradient:nth-of-type(5) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > div.rounded-lg.border.bg-card:nth-of-type(1)`
+   - سنستثمر بانضباط سنعمل بتعاطف سنقيس النتائج بدقة سنقدم شفافية في كل خطوة  وقبل كل شيء، سنضمن أن رأسمالك لا يمول ثورة الذك
+- 9. `section.py-16.section-gradient:nth-of-type(5) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1)`
+   - سنستثمر بانضباط سنعمل بتعاطف سنقيس النتائج بدقة سنقدم شفافية في كل خطوة  وقبل كل شيء، سنضمن أن رأسمالك لا يمول ثورة الذك
+- 10. `div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > div.grid.md:grid-cols-2.gap-6:nth-of-type(1)`
+   - سنستثمر بانضباط سنعمل بتعاطف سنقيس النتائج بدقة سنقدم شفافية في كل خطوة
+- 11. `div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > div.grid.md:grid-cols-2.gap-6:nth-of-type(1) > div.text-center:nth-of-type(1)`
+   - سنستثمر بانضباط
+- 12. `div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > div.grid.md:grid-cols-2.gap-6:nth-of-type(1) > div.text-center:nth-of-type(1) > h3.text-xl.font-semibold.text-primary:nth-of-type(1)`
+   - سنستثمر بانضباط
+- 13. `div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > div.grid.md:grid-cols-2.gap-6:nth-of-type(1) > div.text-center:nth-of-type(2)`
+   - سنعمل بتعاطف
+- 14. `div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > div.grid.md:grid-cols-2.gap-6:nth-of-type(1) > div.text-center:nth-of-type(2) > h3.text-xl.font-semibold.text-primary:nth-of-type(1)`
+   - سنعمل بتعاطف
+- 15. `div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > div.grid.md:grid-cols-2.gap-6:nth-of-type(1) > div.text-center:nth-of-type(3)`
+   - سنقيس النتائج بدقة
+- 16. `div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > div.grid.md:grid-cols-2.gap-6:nth-of-type(1) > div.text-center:nth-of-type(3) > h3.text-xl.font-semibold.text-primary:nth-of-type(1)`
+   - سنقيس النتائج بدقة
+- 17. `div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > div.grid.md:grid-cols-2.gap-6:nth-of-type(1) > div.text-center:nth-of-type(4)`
+   - سنقدم شفافية في كل خطوة
+- 18. `div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > div.grid.md:grid-cols-2.gap-6:nth-of-type(1) > div.text-center:nth-of-type(4) > h3.text-xl.font-semibold.text-primary:nth-of-type(1)`
+   - سنقدم شفافية في كل خطوة
+- 19. `div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > p.text-lg.text-muted-foreground.leading-relaxed:nth-of-type(1)`
+   - وقبل كل شيء، سنضمن أن رأسمالك لا يمول ثورة الذكاء فحسب — بل يصوغها.
+- 20. `div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > div.rounded-lg.border.bg-card:nth-of-type(1) > div.p-8:nth-of-type(1) > p.text-lg.text-muted-foreground.leading-relaxed:nth-of-type(1) > span.text-primary.font-semibold:nth-of-type(1)`
+   - يصوغها
+- 21. `div#root > div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1)`
+   - الاستثمار في نموذج التشغيل المستقبلي  لن تُعرَّف الموجة الثالثة بمن يبني أكبر نموذج، بل بمن يعتمد الذكاء على نطاق واسع. 
+- 22. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-6:nth-of-type(1)`
+   - الاستثمار في نموذج التشغيل المستقبلي
+- 23. `section.py-16:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > h2.text-3xl.font-bold.mb-6:nth-of-type(1) > span.text-gradient:nth-of-type(1)`
+   - نموذج التشغيل المستقبلي
+- 24. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-xl.text-muted-foreground.leading-relaxed:nth-of-type(1)`
+   - لن تُعرَّف الموجة الثالثة بمن يبني أكبر نموذج، بل بمن يعتمد الذكاء على نطاق واسع.
+- 25. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > p.text-lg.text-muted-foreground.leading-relaxed:nth-of-type(2)`
+   - بشراكتك معنا، لا تستثمر في شركات فحسب — بل تستثمر في نموذج التشغيل المستقبلي للمؤسسة العالمية.
+- 26. `div.min-h-screen.bg-background:nth-of-type(2) > section.py-16:nth-of-type(6) > div.container.mx-auto.px-6:nth-of-type(1) > div.max-w-4xl.mx-auto.text-center:nth-of-type(1) > button.inline-flex.items-center.justify-center:nth-of-type(1)`
+   - كن شريكًا لنا
+- 27. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(1)`
+   - العربية
+- 28. `div.border-t.border-white/10.mt-8:nth-of-type(2) > div.flex.flex-col.md:flex-row:nth-of-type(1) > div.flex.items-center.gap-6:nth-of-type(1) > div.flex.items-center.gap-3:nth-of-type(1) > button.px-3.py-1.rounded:nth-of-type(2)`
+   - English
+- 29. `button#lovable-badge-close`
+   - ×
+

@@ -125,6 +125,11 @@ Bold, minimal, futuristic aesthetic with high contrast.
 }
 
 @layer components {
+  /* Arabic font when RTL is active */
+  .font-arabic * {
+    font-family: 'Cairo', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, 'Noto Sans Arabic', sans-serif !important;
+  }
+
   /* Elegant button variants */
   .btn-spacex {
     @apply bg-transparent border-2 border-primary text-primary font-bold uppercase tracking-wider;

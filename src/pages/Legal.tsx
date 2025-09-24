@@ -1,8 +1,10 @@
 import Navigation from "@/components/ui/navigation";
 import Footer from "@/components/ui/footer";
 import { Card, CardContent } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Legal = () => {
+  const { isArabic } = useLanguage();
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -10,13 +12,16 @@ const Legal = () => {
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
+            <div className={`${isArabic ? 'text-right' : 'text-center'} mb-16`}>
               <h1 className="text-4xl md:text-5xl font-black mb-8 text-foreground">
-                Legal Notices &
-                <span className="text-spacex-gradient block">Terms of Use</span>
+                {isArabic ? (
+                  <>الإشعارات القانونية و<span className="text-spacex-gradient block">شروط الاستخدام</span></>
+                ) : (
+                  <>Legal Notices &<span className="text-spacex-gradient block">Terms of Use</span></>
+                )}
               </h1>
               <p className="text-lg text-muted-foreground">
-                Effective Date: September 20, 2025
+                {isArabic ? "تاريخ النفاذ: 20 سبتمبر 2025" : "Effective Date: September 20, 2025"}
               </p>
             </div>
 
@@ -24,23 +29,22 @@ const Legal = () => {
               <CardContent className="p-8 md:p-12">
                 <div className="prose prose-lg max-w-none">
                   <section className="mb-8">
-                    <h2 className="text-2xl font-bold mb-4 text-foreground">Terms of Use</h2>
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">{isArabic ? "شروط الاستخدام" : "Terms of Use"}</h2>
                     <p className="text-muted-foreground mb-4">
-                      Welcome to the website of Vibrant Capital ("we," "us," or "our"), available at{" "}
-                      <span className="text-primary">www.vibrantcapital.ai</span> (the "Website"). Your use of this Website, 
-                      including the content, materials, and information available on or through it (together, the "Materials"), 
-                      is governed by these Terms of Use (these "Terms"). By accessing or using this Website, you acknowledge 
-                      that you have read, understood, and agree to be bound by these Terms.
+                      {isArabic ? (
+                        <>مرحبًا بكم في موقع فايبرانت كابيتال ("نحن" أو "لنا" أو "خاصتنا")، المتاح على{" "}
+                        <span className="text-primary">www.vibrantcapital.ai</span> ("الموقع"). استخدامكم لهذا الموقع، بما في ذلك المحتوى والمواد والمعلومات المتاحة عليه أو من خلاله (معًا، "المواد")، محكوم بشروط الاستخدام هذه ("الشروط"). بالوصول إلى هذا الموقع أو استخدامه، تقرون بأنكم قرأتم وفهمتم ووافقتم على الالتزام بهذه الشروط.</>
+                      ) : (
+                        <>Welcome to the website of Vibrant Capital ("we," "us," or "our"), available at{" "}
+                        <span className="text-primary">www.vibrantcapital.ai</span> (the "Website"). Your use of this Website, including the content, materials, and information available on or through it (together, the "Materials"), is governed by these Terms of Use (these "Terms"). By accessing or using this Website, you acknowledge that you have read, understood, and agree to be bound by these Terms.</>
+                      )}
                     </p>
                   </section>
 
                   <section className="mb-8">
-                    <h2 className="text-2xl font-bold mb-4 text-foreground">Who We Are</h2>
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">{isArabic ? "من نحن" : "Who We Are"}</h2>
                     <p className="text-muted-foreground mb-4">
-                      This Website is maintained and operated by Vibrant Capital, a private equity firm investing in and 
-                      operating companies that make Applied AI adoption practical, secure, and measurable. In accordance 
-                      with industry custom, terminology on this Website may sometimes suggest that Vibrant Capital operates 
-                      as a single unified entity. However, each Vibrant Capital entity has its own separate legal existence.
+                      {isArabic ? "هذا الموقع محتفظ به ومُشغل من قبل فايبرانت كابيتال، شركة رأس مال خاص تستثمر وتشغل شركات تجعل تبني الذكاء الاصطناعي التطبيقي عمليًا وآمنًا وقابلًا للقياس. وفقًا للعرف الصناعي، قد تشير المصطلحات في هذا الموقع أحيانًا إلى أن فايبرانت كابيتال تعمل ككيان موحد واحد. ومع ذلك، لكل كيان في فايبرانت كابيتال وجود قانوني منفصل." : "This Website is maintained and operated by Vibrant Capital, a private equity firm investing in and operating companies that make Applied AI adoption practical, secure, and measurable. In accordance with industry custom, terminology on this Website may sometimes suggest that Vibrant Capital operates as a single unified entity. However, each Vibrant Capital entity has its own separate legal existence."}
                     </p>
                   </section>
 
@@ -175,7 +179,7 @@ const Legal = () => {
                     </p>
                   </section>
 
-                  <div className="border-t border-border pt-8 mt-12 text-center">
+                  <div className={`border-t border-border pt-8 mt-12 ${isArabic ? 'text-right' : 'text-center'}` }>
                     <p className="text-muted-foreground">
                       © 2025 Vibrant Capital. All Rights Reserved.
                     </p>

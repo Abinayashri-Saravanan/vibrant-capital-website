@@ -12,6 +12,7 @@ import ForInvestors from "./pages/ForInvestors";
 import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
 import NotFound from "./pages/NotFound";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 const queryClient = new QueryClient();
 
@@ -20,20 +21,32 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/investments" element={<Investments />} />
-          
-          <Route path="/sectors" element={<Sectors />} />
-          <Route path="/for-investors" element={<ForInvestors />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/legal" element={<Legal />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <LanguageProvider>
+        <BrowserRouter>
+          <Routes>
+            {/* English */}
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/investments" element={<Investments />} />
+            <Route path="/sectors" element={<Sectors />} />
+            <Route path="/for-investors" element={<ForInvestors />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/legal" element={<Legal />} />
+
+            {/* Arabic mirrors - reuse same pages; content switches via context */}
+            <Route path="/ar" element={<Index />} />
+            <Route path="/ar/about" element={<About />} />
+            <Route path="/ar/investments" element={<Investments />} />
+            <Route path="/ar/sectors" element={<Sectors />} />
+            <Route path="/ar/for-investors" element={<ForInvestors />} />
+            <Route path="/ar/contact" element={<Contact />} />
+            <Route path="/ar/legal" element={<Legal />} />
+
+            {/* Catch-all */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </LanguageProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
