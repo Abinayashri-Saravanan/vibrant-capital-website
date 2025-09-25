@@ -2,6 +2,9 @@
 
 Modern React + Vite site with full Arabic Right‑to‑Left (RTL) support, language-aware routing, and a persistent language toggle.
 
+#lovable website URL
+https://vibrant-capital-website.lovable.app/ar/
+
 ## Key Features
 
 - Arabic RTL version of the entire site with Modern Standard Arabic translations
@@ -84,6 +87,3 @@ npm run preview
 
 Project URL: https://lovable.dev/projects/3b535d2b-1e41-4337-8ab2-0db4dd6117cd
 
-## Live Page
-
-- Arabic For Investors: https://vibrant-capital-website.lovable.app/ar/for-investors
