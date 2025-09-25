@@ -184,7 +184,7 @@ const Index = () => {
                   <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight text-white drop-shadow-2xl animate-fade-in" style={isArabic ? {textAlign:'right'}: undefined}>
                     {m.title}
                   </h1>
-                  <p className="text-2xl md:text-3xl text-white/90 font-light max-w-4xl leading-relaxed drop-shadow-lg animate-fade-in" style={isArabic ? {textAlign:'right'}: undefined}>
+                  <p className={`text-2xl md:text-3xl text-white/90 font-light max-w-4xl leading-relaxed drop-shadow-lg animate-fade-in ${isArabic ? '' : 'mx-auto text-center'}`} style={isArabic ? {textAlign:'right'}: undefined}>
                     {m.subtitle}
                   </p>
                 </div>
